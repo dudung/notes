@@ -2,6 +2,7 @@
 notes in video presentation format
 
 ## 03-jun-2023
++ [`diN5_3f-GsE`](https://youtu.be/diN5_3f-GsE) [&bull;](https://osf.io/gv9aw) numpy matrix intro &bull; 16
 + [`P9Dzy_Sn8Fg`](https://youtu.be/P9Dzy_Sn8Fg) [&bull;](https://osf.io/d7weq) tensor rank short intro &bull; 9
 
 ## 01-jun-2023
