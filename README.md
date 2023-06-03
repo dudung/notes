@@ -2,6 +2,7 @@
 notes in video presentation format
 
 ## 03-jun-2023
++ [``]() [&bull;](https://osf.io/7snp8) solving sle with numpy &bull; 9
 + [`v2w4OQjJsP0`](https://youtu.be/v2w4OQjJsP0) [&bull;](https://osf.io/dkrvb) numpy matrix basic operations &bull; 15
 + [`diN5_3f-GsE`](https://youtu.be/diN5_3f-GsE) [&bull;](https://osf.io/gv9aw) numpy matrix intro &bull; 16
 + [`P9Dzy_Sn8Fg`](https://youtu.be/P9Dzy_Sn8Fg) [&bull;](https://osf.io/d7weq) tensor rank short intro &bull; 9
