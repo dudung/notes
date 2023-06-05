@@ -1,6 +1,9 @@
 # notes
 notes in video presentation format
 
+## 05-jun-2023
++ [`IMcid3OVCKI`](https://youtu.be/IMcid3OVCKI) [&bull;](https://osf.io/863rz) least squares regression &bull; 9
+
 ## 03-jun-2023
 + [`TX4F_z7X-50`](https://youtu.be/TX4F_z7X-50) [&bull;](https://osf.io/7snp8) solving sle with numpy &bull; 9
 + [`v2w4OQjJsP0`](https://youtu.be/v2w4OQjJsP0) [&bull;](https://osf.io/dkrvb) numpy matrix basic operations &bull; 15
