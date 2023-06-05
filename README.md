@@ -1,6 +1,9 @@
 # notes
 notes in video presentation format
 
+## 06-jun-2023
++ [`TqUr4rvl9FA`](https://youtu.be/TqUr4rvl9FA) [&bull;](https://osf.io/6rsh9) sst ssr sse r2 &bull; 14
+
 ## 05-jun-2023
 + [`IMcid3OVCKI`](https://youtu.be/IMcid3OVCKI) [&bull;](https://osf.io/863rz) least squares regression &bull; 9
 
