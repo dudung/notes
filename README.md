@@ -2,6 +2,7 @@
 notes in video presentation format
 
 ## 06-jun-2023
++ [`Keaj_jUIows`](https://youtu.be/Keaj_jUIows) [&bull;](https://osf.io/skdfc) kinematics motion variables &bull; 34
 + [`TqUr4rvl9FA`](https://youtu.be/TqUr4rvl9FA) [&bull;](https://osf.io/6rsh9) sst ssr sse r2 &bull; 14
 
 ## 05-jun-2023
