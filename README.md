@@ -2,7 +2,7 @@
 notes in video presentation format
 
 ## 07-jun-2023
-+ [`0123456789a`]() [&bull;]() sop for note v0.1 &bull; 9
++ [`c3uhHVyHBo4`](https://youtu.be/c3uhHVyHBo4) [&bull;](https://osf.io/248xb) sop for note v0.1 &bull; 9
 
 ## 06-jun-2023
 + [`Keaj_jUIows`](https://youtu.be/Keaj_jUIows) [&bull;](https://osf.io/skdfc) kinematics motion variables &bull; 34
