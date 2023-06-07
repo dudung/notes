@@ -2,6 +2,7 @@
 notes in video presentation format
 
 ## 07-jun-2023
++ [`V_5emXIkTNc`](https://youtu.be/V_5emXIkTNc) [&bull;](https://osf.io/pnrvf) differential r-v-a &bull; 19
 + [`c3uhHVyHBo4`](https://youtu.be/c3uhHVyHBo4) [&bull;](https://osf.io/248xb) sop for note v0.1 &bull; 9
 
 ## 06-jun-2023
