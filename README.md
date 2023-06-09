@@ -1,6 +1,9 @@
 # notes
 notes in video presentation format
 
+## 10-jun-2023
++ [`MRtcFKJ7IHg`](https://youtu.be/MRtcFKJ7IHg) [&bull;](https://osf.io/r8a3z) fdm shm short intro & bull; 10
+
 ## 09-jun-2023
 + [`ZRDB1o3K-V0`](https://youtu.be/ZRDB1o3K-V0) [&bull;](https://osf.io/2pvh5) finite difference intro shm &bull; 17
 
