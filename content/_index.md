@@ -1,1 +1,1 @@
-raw, unstructured, spontaneous thoughts.
+raw, unstructured, spontaneous notes.

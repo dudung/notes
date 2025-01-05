@@ -7,7 +7,7 @@ tags = ['rusn']
 categories = ['notes']
 url = '25a10'
 +++
-Initialize a raw, unstructured, spontaneous note.
+Initialize a raw, unstructured, spontaneous note system.
 <!--more-->
 
 + Create a GitHub repository with name `rusn`. \
@@ -231,6 +231,20 @@ Initialize a raw, unstructured, spontaneous note.
    create mode 100644 .github/workflows/hugo.yml
   ```
 + Commit last changes if any and push it.
-```
-```
+  ```
+  $ git commit -a -m "finish init rusn"
+  warning: in the working copy of 'content/notes/25/a/10-init-rusn.md', LF will be replaced by CRLF the next time Git touches it
+  [main 15b0424] finish init rusn
+   1 file changed, 141 insertions(+), 1 deletion(-)
 
+  $ git push
+  Enumerating objects: 13, done.
+  Counting objects: 100% (13/13), done.
+  Delta compression using up to 16 threads
+  Compressing objects: 100% (5/5), done.
+  Writing objects: 100% (7/7), 2.89 KiB | 1.44 MiB/s, done.
+  Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+  To https://github.com/dudung/rusn
+     36b0d2a..15b0424  main -> main
+  ```
