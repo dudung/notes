@@ -1,0 +1,64 @@
+{{ define "main" }}
+  <head>
+    <link rel="stylesheet" href="/rusn/css/xtalk.css?v={{ now.Unix }}">
+  </head>
+  
+  <div class="slide-container">
+    <h1 class="slide-title">{{ .Title }}</h1>
+    <h2 class="slide-subtitle">{{ .Params.subtitle }}</h2>
+    <div class='slide-rect'></div>
+
+{{ if .Params.decks }}
+  <ul class="list-of-pages">
+    {{ range .Params.decks }}
+      {{ $matchingDecks := where site.RegularPages "Params.url" . }}
+      {{ $deck := index $matchingDecks 0 }}
+      {{ if $deck }}
+        <li>
+          <code style='font-size:60%;'>{{ $deck.Params.url }}</code>
+          <a href="{{ $deck.Permalink }}">{{ $deck.Title }}</a>
+          <!--p>{{ $deck.Content | safeHTML }}</p-->
+        </li>
+      {{ else }}
+        <li>
+          <p>Deck with URL "{{ . }}" not found.</p>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ else }}
+  {{ if not (in .Params.tags "osf") }}
+    <p>No decks found for this talk.</p>
+  {{ end }}
+{{ end }}
+
+
+    <div class="author-container">
+    {{- range .Params.authors }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        <span class="author">
+          <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+        </span>
+      {{ end }}
+    {{ end }}
+    </div>
+
+    <div class="version-link-container">
+      <span class="version">{{ .Params.version }}</span>
+      |
+      <span class="link">
+        <a href="{{ .Params.link }}" target="_blank">{{ .Params.link }}</a>
+      </span>
+    </div>
+    
+    <div class="slide-content">
+      {{ .Content }}
+    </div>
+    <div class="slide-date">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+      </div>
+  </div>
+  {{ partial "notes/math.html" . }}
+{{ end }}
