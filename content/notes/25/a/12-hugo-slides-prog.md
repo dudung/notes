@@ -8,5 +8,6 @@ tags = ['rusn', 'hugo']
 categories = ['slides']
 url = '25a12'
 +++
-Progress of Hugo slides template.
 <!--more-->
++ Progress of Hugo slides template.
++ This is an example of long sentences, isn't this or not?
