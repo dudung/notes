@@ -65,6 +65,9 @@ Initialize a raw, unstructured, spontaneous note system.
   
   enableEmoji = true
   
+  [pagination]
+  pagerSize = 20
+  
   [taxonomies]
     author = "authors"
     tag = "tags"
@@ -92,6 +95,8 @@ Initialize a raw, unstructured, spontaneous note system.
 + Copy `_default`, `partials`, `shortcodes` folders and their content from https://github.com/dudung/rust/tree/main/layouts to `layouts` folder.
 + Copy `footer.css` and `header.css` from https://github.com/dudung/rust/tree/main/static/css to `static/css` folder.
 + Modify `baseof.html` in `layouts/_default` to point top the previous CSS files.
++ Copy `index.html` from https://github.com/dudung/rust/tree/main/layouts to `layouts`.
++ Copy `main.css` from https://github.com/dudung/rust/tree/main/assets/css to `assets/css`.
 + Create notes in `content/notes` folder.
 + Test it and fix it as necessary.
 + Add files.
