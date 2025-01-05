@@ -1,0 +1,90 @@
+{{ $r := ( .Inner | chomp) }}
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+
+<div class="scatter-container">
+    <canvas id="{{ $id }}"></canvas>
+</div>
+
+
+<script>
+const container = document.querySelector('.scatter-container');
+const computedStyle = getComputedStyle(container);
+const height = computedStyle.getPropertyValue('--height').trim();
+const tempElement = document.createElement('div');
+tempElement.style.position = 'absolute';
+tempElement.style.visibility = 'hidden';
+tempElement.style.height = height;
+document.body.appendChild(tempElement);
+const resolvedHeight = parseFloat(getComputedStyle(tempElement).height);
+document.body.removeChild(tempElement);
+fs = 0.05 * resolvedHeight;
+
+var r = {{ ( .Inner | chomp) }};
+var eol = getEOL(r);
+var blocks = getBlocks(r, eol);
+var params = getParams(blocks.shift());
+var B_SERIES = [];
+for(b of blocks) {
+  var d = block2data(b, eol);
+  B_SERIES.push(d);
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script type="text/javascript">
+    var ctx = document.getElementById('{{ $id }}')
+      .getContext('2d');
+    
+    var config = {
+      type: 'scatter',
+      data: { datasets: datasets4Scatter(B_SERIES) },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: {
+            type: 'linear',
+            position: 'bottom',
+            title: {
+              display: true,
+              text: B_XLABEL,
+              font: {
+                size: fs
+              }
+            },
+            ticks: {
+              font: {
+                size: fs
+              }
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: B_YLABEL,
+              font: {
+                size: fs
+              }
+            },
+            ticks: {
+              font: {
+                size: fs
+              }
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            labels: {
+              font: {
+                size: fs
+              }
+            }
+          }
+        }
+      }
+    };
+    
+    new Chart(ctx, config);
+</script>

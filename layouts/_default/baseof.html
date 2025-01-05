@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <header>
+    {{ if and (ne .Type "xpage") (ne .Type "xdeck") (ne .Type "xtalk") }}
+      <link rel="stylesheet" href="/rusn/css/header.css?v={{ now.Unix }}">
+      {{ partial "header.html" . }}
+    {{ end }}
+    
+    {{ if .HasShortcode "scatter" }}
+      {{ partial "script/inner.html" . }}
+      {{ partial "script/chartjs.html" . }}
+    {{ end }}
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ if and (ne .Type "xpage") (ne .Type "xdeck") (ne .Type "xtalk") }}
+      <link rel="stylesheet" href="/rusn/css/footer.css?v={{ now.Unix }}">
+      {{ partial "footer.html" . }}
+    {{ end }}
+  </footer>
+
+  {{ if .HasShortcode "mermaid" }}
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
+    integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  {{ end }}
+
+</body>
+</html>

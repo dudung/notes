@@ -1,0 +1,1 @@
+raw, unstructured, spontaneous thoughts.
