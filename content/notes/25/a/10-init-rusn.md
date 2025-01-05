@@ -99,6 +99,37 @@ Initialize a raw, unstructured, spontaneous note system.
 + Copy `main.css` from https://github.com/dudung/rust/tree/main/assets/css to `assets/css`.
 + Create notes in `content/notes` folder.
 + Test it and fix it as necessary.
+  ```
+  hugo server
+  Watching for changes in M:\rusn\{archetypes,assets,content,data,i18n,layouts,static,themes}
+  Watching for config changes in M:\rusn\hugo.toml, M:\rusn\themes\default\hugo.toml
+  Start building sites …
+  hugo v0.139.3-2f6864387cd31b975914e8373d4bf38bddbd47bc+extended windows/amd64 BuildDate=2024-11-29T15:36:56Z VendorInfo=gohugoio
+
+
+                     | EN
+  -------------------+-----
+    Pages            | 17
+    Paginator pages  |  0
+    Non-page files   |  0
+    Static files     |  1
+    Processed images |  0
+    Aliases          |  0
+    Cleaned          |  0
+
+  Built in 112 ms
+  Environment: "development"
+  Serving pages from disk
+  Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+  Web Server is available at http://localhost:1313/rusn/ (bind address 127.0.0.1)
+  Press Ctrl+C to stop
+
+  Change detected, rebuilding site (#1).
+  2025-01-05 16:35:33.754 +0700
+  Template added /index.html
+  Web Server is available at http://localhost:1313/rusn/ (bind address 127.0.0.1)
+  Total in 64 ms
+  ```
 + Add files.
   ```
   $ git add .
