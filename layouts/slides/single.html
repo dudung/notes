@@ -1,13 +1,25 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <head>
+    <link rel="stylesheet" href="/rusn/css/slides.css?v={{ now.Unix }}">
+  </head>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  
+  <div class="slide-container">
+    <h1 class="slide-title">{{ .Title }}</h1>
+
+    <div class='slide-rect-left'></div>
+    <div class='slide-rect-right'></div>
+
+    <div class="slide-date">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+      </div>
+  </div>
+
   {{- range .Params.authors }}
     {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
       <figure class='authors'>
-        <!--img src="{{ .Params.photo }}" alt=""/ -->
+        <img src="{{ .Params.photo }}" alt="" />
         <figcaption>
           <a href="{{ .Permalink }}">{{ .Params.name }}</a>
         </figcaption>
@@ -15,13 +27,11 @@
     {{ end }}
   {{ end }}
   
-  <div class='readingtimedate'>
-    {{ partial "reading-time.html" . }} &middot;
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-  </div>
-  
   {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{ if false }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ end }}
   
   {{ partial "notes/math.html" . }}
 {{ end }}

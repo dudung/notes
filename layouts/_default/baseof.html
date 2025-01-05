@@ -5,7 +5,7 @@
 </head>
 <body>
   <header>
-    {{ if and (ne .Type "xpage") (ne .Type "xdeck") (ne .Type "xtalk") }}
+    {{ if and (ne .Type "xpage") (ne .Type "slides") }}
       <link rel="stylesheet" href="/rusn/css/header.css?v={{ now.Unix }}">
       {{ partial "header.html" . }}
     {{ end }}
@@ -19,7 +19,7 @@
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
-    {{ if and (ne .Type "xpage") (ne .Type "xdeck") (ne .Type "xtalk") }}
+    {{ if and (ne .Type "xpage") (ne .Type "slides") }}
       <link rel="stylesheet" href="/rusn/css/footer.css?v={{ now.Unix }}">
       {{ partial "footer.html" . }}
     {{ end }}
