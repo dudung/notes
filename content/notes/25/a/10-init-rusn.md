@@ -93,4 +93,144 @@ Initialize a raw, unstructured, spontaneous note.
 + Copy `footer.css` and `header.css` from https://github.com/dudung/rust/tree/main/static/css to `static/css` folder.
 + Modify `baseof.html` in `layouts/_default` to point top the previous CSS files.
 + Create notes in `content/notes` folder.
-+ Test it.
++ Test it and fix it as necessary.
++ Add files.
+  ```
+  $ git add .
+  warning: in the working copy of 'archetypes/default.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/00-wed-010125.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/01-thu-020125.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/03-sat-040125.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/04-sun-050125.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/05-hugo-tips.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/06-hugo-intro.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/07-hugo-sites-key-features.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/08-hugo-perform-score.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/09-static-site.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'content/notes/25/a/10-init-rusn.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'hugo.toml', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/LICENSE', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/README.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/archetypes/default.md', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/assets/css/main.css', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/assets/js/main.js', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/hugo.toml', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/_default/baseof.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/_default/home.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/_default/list.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/_default/single.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/footer.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/head.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/head/css.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/head/js.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/header.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/menu.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/layouts/partials/terms.html', LF will be replaced by CRLF the next time Git touches it
+  warning: in the working copy of 'themes/default/theme.toml', LF will be replaced by CRLF the next time Git touches it
+  ```
++ Commit changes.
+  ```
+  $ git commit -a -m "new files and folder"
+  [main 4d7f56b] new files and folder
+   58 files changed, 1067 insertions(+)
+   create mode 100644 .gitignore
+   create mode 100644 archetypes/default.md
+   create mode 100644 content/_index.md
+   create mode 100644 content/authors/arimasen/_index.md
+   create mode 100644 content/authors/dasch/_index.md
+   create mode 100644 content/authors/renik/_index.md
+   create mode 100644 content/authors/viridi/_index.md
+   create mode 100644 content/notes/25/a/00-wed-010125.md
+   create mode 100644 content/notes/25/a/01-thu-020125.md
+   create mode 100644 content/notes/25/a/02-fri-030125.md
+   create mode 100644 content/notes/25/a/03-sat-040125.md
+   create mode 100644 content/notes/25/a/04-sun-050125.md
+   create mode 100644 content/notes/25/a/05-hugo-tips.md
+   create mode 100644 content/notes/25/a/06-hugo-intro.md
+   create mode 100644 content/notes/25/a/07-hugo-sites-key-features.md
+   create mode 100644 content/notes/25/a/08-hugo-perform-score.md
+   create mode 100644 content/notes/25/a/09-static-site.md
+   create mode 100644 content/notes/25/a/10-init-rusn.md
+   create mode 100644 hugo.toml
+   create mode 100644 layouts/_default/_markup/render-blockquote.html
+   create mode 100644 layouts/_default/_markup/render-codeblock-mermaid.html
+   create mode 100644 layouts/_default/_markup/render-link.html
+   create mode 100644 layouts/_default/all-regular-pages.html
+   create mode 100644 layouts/_default/baseof.html
+   create mode 100644 layouts/notes/single.html
+   create mode 100644 layouts/partials/footer.html
+   create mode 100644 layouts/partials/notes/math.html
+   create mode 100644 layouts/partials/reading-time.html
+   create mode 100644 layouts/partials/script/chartjs.html
+   create mode 100644 layouts/partials/script/inner.html
+   create mode 100644 layouts/shortcodes/3dmoljs.html
+   create mode 100644 layouts/shortcodes/abcjs.html
+   create mode 100644 layouts/shortcodes/mermaid.html
+   create mode 100644 layouts/shortcodes/ref.html
+   create mode 100644 layouts/shortcodes/scatter.html
+   create mode 100644 layouts/shortcodes/twocolumn.html
+   create mode 100644 layouts/shortcodes/url.html
+   create mode 100644 static/css/footer.css
+   create mode 100644 static/css/header.css
+   create mode 100644 themes/default/LICENSE
+   create mode 100644 themes/default/README.md
+   create mode 100644 themes/default/archetypes/default.md
+   create mode 100644 themes/default/assets/css/main.css
+   create mode 100644 themes/default/assets/js/main.js
+   create mode 100644 themes/default/hugo.toml
+   create mode 100644 themes/default/layouts/_default/baseof.html
+   create mode 100644 themes/default/layouts/_default/home.html
+   create mode 100644 themes/default/layouts/_default/list.html
+   create mode 100644 themes/default/layouts/_default/single.html
+   create mode 100644 themes/default/layouts/partials/footer.html
+   create mode 100644 themes/default/layouts/partials/head.html
+   create mode 100644 themes/default/layouts/partials/head/css.html
+   create mode 100644 themes/default/layouts/partials/head/js.html
+   create mode 100644 themes/default/layouts/partials/header.html
+   create mode 100644 themes/default/layouts/partials/menu.html
+   create mode 100644 themes/default/layouts/partials/terms.html
+   create mode 100644 themes/default/static/favicon.ico
+   create mode 100644 themes/default/theme.toml
+  ```
++ Push commits to GitHub.
+  ```
+  $ git push
+  Enumerating objects: 92, done.
+  Counting objects: 100% (92/92), done.
+  Delta compression using up to 16 threads
+  Compressing objects: 100% (73/73), done.
+  Writing objects: 100% (91/91), 19.88 KiB | 496.00 KiB/s, done.
+  Total 91 (delta 3), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (3/3), done.
+  To https://github.com/dudung/rusn
+     a9c055c..4d7f56b  main -> main
+  ```
++ Visit https://github.com/dudung/rusn/settings/pages.
++ Under Build and deployment change Source to GitHub Actions.
++ Choose browse all workflows.
++ Type `hugo` in the Search workflows field.
++ Click Configure.
++ Click Commit changes..., the green button on the right.
++ Click Commit changes, the green button on the bottom.
++ Wait a couple of minutes.
++ Visit https://dudung.github.io/rusn/.
++ Pull the last changes.
+  ```
+  $ git pull
+  remote: Enumerating objects: 6, done.
+  remote: Counting objects: 100% (6/6), done.
+  remote: Compressing objects: 100% (3/3), done.
+  remote: Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+  Unpacking objects: 100% (5/5), 1.91 KiB | 139.00 KiB/s, done.
+  From https://github.com/dudung/rusn
+     4d7f56b..36b0d2a  main       -> origin/main
+  Updating 4d7f56b..36b0d2a
+  Fast-forward
+   .github/workflows/hugo.yml | 74 ++++++++++++++++++++++++++++++++++++++++++++++
+   1 file changed, 74 insertions(+)
+   create mode 100644 .github/workflows/hugo.yml
+  ```
++ Commit last changes if any and push it.
+```
+```
+
