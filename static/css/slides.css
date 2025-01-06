@@ -202,9 +202,9 @@ html, body {
   position: absolute;
   top: calc(0.00 * var(--height));
   right: calc(0.03 * var(--height));
-  font-size: calc(0.032 * var(--height));
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 .slide-navigation ul {
@@ -213,7 +213,7 @@ html, body {
 }
 
 .slide-navigation ul li {
-  margin: 0;
+  margin: calc(0.004 * var(--height));;
   padding-top: calc(0.01 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
   padding-left: calc(0.02 * var(--height));
@@ -222,8 +222,9 @@ html, body {
   border-bottom-right-radius: calc(0.02 * var(--height));
   border: 0px #4f81bd solid;
   background: #4f81bd;
+  list-style: none;
   display: inline;
-  height: calc(0.01 * var(--height));
+  font-size: calc(0.032 * var(--height));
 }
 
 .slide-navigation ul li a {
