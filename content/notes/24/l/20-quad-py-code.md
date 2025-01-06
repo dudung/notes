@@ -1,12 +1,18 @@
 +++
 title = 'quad py code'
 date = '2024-12-22T17:55:52+07:00'
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']
 authors = ['viridi']
 url = '24l20'
+[ref]
+author = 'dudung'
+source = 'OneCompiler'
+created = '22 Dec 2024'
+url = 'https://onecompiler.com/python/433sv39tn'
+accessed = '20241222'
 +++
 <!--more-->
 
@@ -23,7 +29,3 @@ for xi in range(2, 9):
 print(x)
 print(y)
 ```
-
-{{< ref >}}
-dudung, OneCompiler, 22 Dec 2024, {{< url "https://onecompiler.com/python/433sv39tn" >}} [20241222].
-{{< /ref >}}

@@ -1,7 +1,7 @@
 +++
 title = 'quad graph'
 date = '2024-12-22T19:33:06+07:00'
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']

@@ -1,12 +1,18 @@
 +++
 title = 'aspirin molecule'
 date = 2024-12-17T05:25:08+07:00
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']
 authors = ['viridi']
 url = '24l16'
+[ref]
+author = 'National Center for Biotechnology Information'
+title = 'Aspirin'
+source = 'PubChem Compound Summary for CID 2244'
+url = 'https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin'
+accessed = '20241218'
 +++
 <!--more-->
 
@@ -35,7 +41,3 @@ H    4.2045    0.6969   -0.6924
 H    3.7105   -0.3659    0.6426
 H   -0.2555   -3.5916   -0.7337
 {{< /3dmoljs >}}
-
-{{< ref >}}
-National Center for Biotechnology Information, "Aspirin", PubChem Compound Summary for CID 2244, {{< url "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin" >}} [20241218].
-{{< /ref >}}

@@ -1,7 +1,7 @@
 +++
 title = 'table'
 date = 2024-12-17T05:25:03+07:00
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']
@@ -17,4 +17,3 @@ No | Item | Price | Count | Total
 2 | Pencil | 200 | 5 | 1000
 3 | Ballpoint | 300 | 3 | 900
 4 | Paper | 50 | 25 | 1250
-5 | Ruler | 150 | 4 | 600

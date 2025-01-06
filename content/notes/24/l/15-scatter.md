@@ -1,7 +1,7 @@
 +++
 title = 'scatter'
 date = 2024-12-17T05:25:07+07:00
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']

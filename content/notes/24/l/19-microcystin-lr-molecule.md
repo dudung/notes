@@ -1,12 +1,18 @@
 +++
 title = 'microcystin-lr molecule'
 date = 2024-12-22T08:46:06+07:00
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']
 authors = ['viridi']
 url = '24l19'
+[ref]
+author = 'National Center for Biotechnology Information'
+title = 'microcystin-LR'
+source = 'PubChem Compound Summary for CID 445434'
+url = 'https://pubchem.ncbi.nlm.nih.gov/compound/445434'
+accessed = '20241222'
 +++
 <!--more-->
 
@@ -159,7 +165,3 @@ H   14.7656   -2.0297    0.0000
 H   13.2253   -3.9378    0.0000 
 H   12.3068   -3.3815    0.0000 
 {{< /3dmoljs >}}
-
-{{< ref >}}
-National Center for Biotechnology Information, "microcystin-LR", PubChem Compound Summary for CID 445434, {{< url "https://pubchem.ncbi.nlm.nih.gov/compound/445434" >}} [20241222].
-{{< /ref >}}

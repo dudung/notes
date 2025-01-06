@@ -1,12 +1,20 @@
 +++
 title = 'flowchart'
 date = 2024-12-17T05:25:05+07:00
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']
 authors = ['viridi']
 url = '24l13'
+[ref]
+author = 'Maciej Duraj'
+title = 'Basic overview of creating flowcharts using Mermaid'
+source = 'CKEditor'
+created = '8 Mar 2000'
+updated = ''
+url = 'https://ckeditor.com/blog/basic-overview-of-creating-flowcharts-using-mermaid/'
+accessed = '20241222'
 +++
 <!--more-->
 
@@ -26,7 +34,3 @@ flowchart LR
   E(["End"])
 {{< /mermaid >}}
 + Shapes are begin/end, I/O, condition, process.
-
-{{< ref >}}
-Maciej Duraj, "Basic overview of creating flowcharts using Mermaid", CKEditor, 8 Mar 2000, {{< url "https://ckeditor.com/blog/basic-overview-of-creating-flowcharts-using-mermaid/" >}} [20241222].
-{{< /ref >}}

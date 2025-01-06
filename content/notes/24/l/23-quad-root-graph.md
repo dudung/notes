@@ -1,7 +1,7 @@
 +++
 title = 'quad root graph'
 date = '2024-12-22T19:41:58+07:00'
-type = 'xpage'
+type = 'slides'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']
