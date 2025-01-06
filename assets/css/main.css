@@ -3,7 +3,8 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   margin: 1rem;
-  max-width: 768px;
+  --max-width: 768px;
+  max-width: var(--max-width);
   text-align: justify;
 }
 
@@ -123,14 +124,19 @@ figure.authors {
   text-align: left;
   word-break: break-all;
   margin: 2px 0px;
-  font-size: 90%;
+  font-size: 80%;
   background: #f4f4f4;
   border: 1px solid #ccc;
-  height: auto;
-  width: auto;
+  height: 50px;
+  width: 80px;
+  scrollbar-color: #4f81bd #f1f1f1;
+  scrollbar-width: thin;
+  overflow: auto;
+  line-height: 18.7px;
 }
 .posts-box-container {
   text-align: left;
+  line-height: 10px;
 }
 
 blockquote {
@@ -176,9 +182,10 @@ pre>code {
   padding: 5px 10px;
   border: 1px solid #333;
   border-radius: 4px;
-  background-color: #333;
+  /*background-color: #333;*/
+  background-color: #4f81bd;
   color: #fff;
-  #font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .pagination .prev,
@@ -223,4 +230,36 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
   /* Light gray for odd rows */
   background-color: #f2f2f2;
+}
+
+/*
+header nav ul li {
+  background-color: #4f81bd;
+  padding: 4px 8px;
+  margin: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0px solid #4f81bd !important;
+}
+
+nav ul li {
+}
+
+nav ul li a {
+  color: white;
+}
+
+footer {
+  border-top: 1px solid #4f81bd !important;
+}
+*/
+
+h1 {
+  #border: 1px blue solid;
+  color: #4f81bd;
 }
