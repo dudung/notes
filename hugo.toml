@@ -15,18 +15,18 @@ pagerSize = 20
 
 [[menu.main]]
   name = 'Home'
-  weight = 2
+  weight = 3
   identifier = 'home'
   url = '/'
 
 [[menu.main]]
   name = 'Tags'
-  weight = 1
+  weight = 2
   identifier = 'tags'
   url = '/tags'
 
 [[menu.main]]
   name = 'Cats'
-  weight = 0
+  weight = 1
   identifier = 'cats'
   url = '/categories'

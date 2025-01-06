@@ -207,14 +207,13 @@ html, body {
   padding: 0;
 }
 
-.slide-navigation nav ul {
+.slide-navigation ul {
   margin: 0;
   padding: 0;
-  gap: 10px;
 }
 
-.slide-navigation nav ul li {
-  margin: 0px 1px;
+.slide-navigation ul li {
+  margin: 0;
   padding-top: calc(0.01 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
   padding-left: calc(0.02 * var(--height));
@@ -225,9 +224,8 @@ html, body {
   background: #4f81bd;
   display: inline;
   height: calc(0.01 * var(--height));
-  margin-right: calc(-0.002 * var(--height));
 }
 
-.slide-navigation nav ul li a {
+.slide-navigation ul li a {
   color: white;
 }

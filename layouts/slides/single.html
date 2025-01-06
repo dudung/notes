@@ -7,13 +7,11 @@
     <h1 class="slide-title">{{ .Title }}</h1>
    
     <div class="slide-navigation">
-      <nav>
-        <ul>
-          {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
     </div>
     
     <div class='slide-rect-left'></div>
