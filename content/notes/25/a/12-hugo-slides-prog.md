@@ -11,7 +11,7 @@ url = '25a12'
 [ref]
 author = 'Sparisoma Viridi' 
 title = 'hugo slides prog and others'
-media = 'rusn'
+source = 'rusn'
 created = '6 Jan 2025'
 updated = ''
 url = 'https://dudung.github.io/rusn/25a12/'

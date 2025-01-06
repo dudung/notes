@@ -8,7 +8,7 @@ url = '25a08'
 [ref]
 author = 'codeStein'
 title = 'Why I chose Hugo (and why you should too)'
-media = 'DEV Community'
+source = 'DEV Community'
 created = '29 Oct 2022'
 updated =''
 url ='https://dev.to/codeystein/why-i-chose-hugo-and-why-you-should-too-2n76'
