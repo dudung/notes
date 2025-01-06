@@ -23,6 +23,8 @@
     <div class="slide-footer-right">
     </div>
   </div>
+  <div class='side-ref'>
+  </div>
 
   {{- range .Params.authors }}
     {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
@@ -35,8 +37,6 @@
     {{ end }}
   {{ end }}
   
-  {{ .Content }}
-
   {{ if false }}
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ end }}

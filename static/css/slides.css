@@ -37,11 +37,11 @@ html, body {
   font-size: calc(0.08 * var(--height));
   font-weight: normal;
   color: #000;
-  border: 1px solid #4f81bd;
   width: calc(var(--width) - 6px);
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  border: 0px solid #4f81bd;
 }
 
 .slide-rect-left {
@@ -67,14 +67,14 @@ html, body {
 .slide-footer-left {
   position: absolute;
   margin: auto;
-  left: 1em;
+  left: calc(0.05 * var(--height));
   bottom: calc(0.02 * var(--height));
   text-align: center;
   font-size: calc(0.03 * var(--height));
   width: calc(0.4 * var(--height));
   color: #888;
-  border: 1px solid #4f81bd;
   height: calc(0.045 * var(--height));
+  border: 0px solid #4f81bd;
 }
 
 .slide-footer-center {
@@ -87,21 +87,21 @@ html, body {
   font-size: calc(0.03 * var(--height));
   width: calc(0.4 * var(--height));
   color: #888;
-  border: 1px solid #4f81bd;
   height: calc(0.045 * var(--height));
+  border: 0px solid #4f81bd;
 }
 
 .slide-footer-right {
   position: absolute;
   margin: auto;
-  right: 1em;
+  right: calc(0.05 * var(--height));
   bottom: calc(0.02 * var(--height));
   text-align: center;
   font-size: calc(0.03 * var(--height));
   width: calc(0.4 * var(--height));
   color: #888;
-  border: 1px solid #4f81bd;
   height: calc(0.045 * var(--height));
+  border: 0px solid #4f81bd;
 }
 
 .slide-content {
@@ -113,19 +113,32 @@ html, body {
   top: calc(0.2 * var(--height));
   height: calc(0.71 * var(--height));
   text-align: left;
+  font-size: calc(0.055 * var(--height));
   border: 1px solid #4f81bd;
-  font-size: calc(0.075 * var(--height));
+  overflow: auto;
 }
 
 .slide-content ul {
   margin-top: 0;
-  padding-left: calc(0.14 * var(--height));
+  padding-left: calc(0.08 * var(--height));
+  border: 0px solid #4f81bd;
 }
 
 .slide-content li {
-  margin-top: 0;
   padding-left: calc(0.01 * var(--height));
-  line-height: calc(0.09 * var(--height));
+  line-height: calc(0.065 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
   padding-top: calc(0.0 * var(--height));
+  border: 0px solid #4f81bd;
+}
+
+.slide-ref {
+  font-size: calc(0.036 * var(--height));
+  position: absolute;
+  top: calc(0.83 * var(--height));
+  width: calc(1.57 * var(--height));
+  padding-left: calc(0.09 * var(--height));
+  padding-right: calc(0.12 * var(--height));
+  line-height: calc(0.04 * var(--height));
+  border: 1px solid #4f81bd;
 }
