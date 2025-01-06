@@ -1,16 +1,16 @@
 +++
-title = 'hugo slides prog'
+title = 'hugo slides progress and others'
 date = '2025-01-06T04:55:08+07:00'
 draft = false
 type = 'slides'
-author = ['viridi']
+authors = ['viridi']
 tags = ['rusn', 'hugo']
 categories = ['slides']
 math = true
 url = '25a12'
 [ref]
 author = 'Sparisoma Viridi' 
-title = 'hugo slides prog and some unrelated information'
+title = 'hugo slides prog and others'
 media = 'rusn'
 created = '6 Jan 2025'
 updated = ''

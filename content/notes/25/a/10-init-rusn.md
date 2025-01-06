@@ -2,7 +2,7 @@
 title = 'init rusn'
 date = '2025-01-05T16:10:52+07:00'
 draft = false
-author = ['viridi']
+authors = ['viridi']
 tags = ['rusn']
 categories = ['notes']
 url = '25a10'

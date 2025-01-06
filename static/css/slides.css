@@ -116,6 +116,7 @@ html, body {
   font-size: calc(0.055 * var(--height));
   overflow: auto;
   border: 0px solid #4f81bd;
+  scrollbar-color: #4f81bd #f1f1f1;
 }
 
 .slide-content ul {
@@ -194,4 +195,30 @@ html, body {
 }
 
 .mermaid {
+}
+
+
+.slide-navigation {
+  position: absolute;
+  right: calc(0.03 * var(--height));
+  font-size: calc(0.032 * var(--height));
+}
+
+.slide-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-navigation ul li {
+  margin: 0;
+  padding-top: calc(0.04 * var(--height));
+  padding-bottom: calc(0.015 * var(--height));
+  padding-left: calc(0.02 * var(--height));
+  padding-right: calc(0.02 * var(--height));
+  border-radius:  calc(0.02 * var(--height));
+  background: #4f81bd;
+}
+
+.slide-navigation ul li a {
+  color: white;
 }

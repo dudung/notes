@@ -5,7 +5,15 @@
 
   <div class="slide-container">
     <h1 class="slide-title">{{ .Title }}</h1>
-
+    
+    <nav class="slide-navigation">
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    
     <div class='slide-rect-left'></div>
     <div class='slide-rect-right'></div>
 
@@ -23,19 +31,23 @@
     <div class="slide-footer-right">
     </div>
     
-    <div class='slide-ref'>
-      {{ .Params.ref.author }}, "{{ .Params.ref.title }}", {{ .Params.ref.media }}, {{ .Params.ref.created }} ({{ .Params.ref.updated }}), url <a href="">{{ .Params.ref.url }}</a> [{{ .Params.ref.accessed }}]. 
-    </div>
+    {{ if .Params.ref }}
+      <div class='slide-ref'>
+        {{ .Params.ref.author }}, "{{ .Params.ref.title }}", {{ .Params.ref.media }}, {{ .Params.ref.created }} ({{ .Params.ref.updated }}), url <a href="">{{ .Params.ref.url }}</a> [{{ .Params.ref.accessed }}]. 
+      </div>
+    {{ end }}
   </div>
   
-  {{- range .Params.authors }}
-    {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-      <figure class='authors'>
-        <img src="{{ .Params.photo }}" alt="" />
-        <figcaption>
-          <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-        </figcaption>
-      </figure>
+  {{ if false }}
+    {{- range .Params.authors }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        <figure class='authors'>
+          <img src="{{ .Params.photo }}" alt="" />
+          <figcaption>
+            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+          </figcaption>
+        </figure>
+      {{ end }}
     {{ end }}
   {{ end }}
   
