@@ -5,14 +5,16 @@
 
   <div class="slide-container">
     <h1 class="slide-title">{{ .Title }}</h1>
-    
-    <nav class="slide-navigation">
-      <ul>
-        {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
-    </nav>
+   
+    <div class="slide-navigation">
+      <nav>
+        <ul>
+          {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
     
     <div class='slide-rect-left'></div>
     <div class='slide-rect-right'></div>

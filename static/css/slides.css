@@ -203,14 +203,16 @@ html, body {
   top: calc(0.00 * var(--height));
   right: calc(0.03 * var(--height));
   font-size: calc(0.032 * var(--height));
-}
-
-nav.slide-navigation ul {
   margin: 0;
   padding: 0;
 }
 
-nav.slide-navigation ul li {
+.slide-navigation nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-navigation nav ul li {
   margin: 0px 1px;
   padding-top: calc(0.01 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
@@ -224,6 +226,6 @@ nav.slide-navigation ul li {
   height: calc(0.01 * var(--height));
 }
 
-nav.slide-navigation ul li a {
+.slide-navigation nav ul li a {
   color: white;
 }
