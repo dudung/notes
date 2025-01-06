@@ -211,7 +211,7 @@ html, body {
 }
 
 .slide-navigation ul li {
-  margin-left: 0px 1px;
+  margin: 0px 1px;
   padding-top: calc(0.01 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
   padding-left: calc(0.02 * var(--height));
