@@ -22,10 +22,12 @@
     </div>
     <div class="slide-footer-right">
     </div>
+    
+    <div class='slide-ref'>
+      {{ .Params.ref.author }}, "{{ .Params.ref.title }}", {{ .Params.ref.media }}, {{ .Params.ref.created }} ({{ .Params.ref.updated }}), url <a href="">{{ .Params.ref.url }}</a> [{{ .Params.ref.accessed }}]. 
+    </div>
   </div>
-  <div class='side-ref'>
-  </div>
-
+  
   {{- range .Params.authors }}
     {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
       <figure class='authors'>
