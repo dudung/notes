@@ -210,6 +210,7 @@ html, body {
 .slide-navigation nav ul {
   margin: 0;
   padding: 0;
+  gap: 10px;
 }
 
 .slide-navigation nav ul li {
@@ -224,6 +225,7 @@ html, body {
   background: #4f81bd;
   display: inline;
   height: calc(0.01 * var(--height));
+  margin-right: calc(-0.002 * var(--height));
 }
 
 .slide-navigation nav ul li a {
