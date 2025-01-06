@@ -200,6 +200,7 @@ html, body {
 
 .slide-navigation {
   position: absolute;
+  top: calc(0.00 * var(--height));
   right: calc(0.03 * var(--height));
   font-size: calc(0.032 * var(--height));
 }
@@ -210,13 +211,16 @@ html, body {
 }
 
 .slide-navigation ul li {
-  margin: 0;
-  padding-top: calc(0.04 * var(--height));
+  margin: 1px;
+  padding-top: calc(0.01 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
   padding-left: calc(0.02 * var(--height));
   padding-right: calc(0.02 * var(--height));
-  border-radius:  calc(0.02 * var(--height));
+  border-bottom-left-radius: calc(0.02 * var(--height));
+  border-bottom-right-radius: calc(0.02 * var(--height));
   background: #4f81bd;
+  display: inline;
+  height: calc(0.01 * var(--height));
 }
 
 .slide-navigation ul li a {
