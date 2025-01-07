@@ -115,8 +115,8 @@ html, body {
   text-align: left;
   font-size: calc(0.055 * var(--height));
   overflow: auto;
-  border: 0px solid #4f81bd;
   scrollbar-color: #4f81bd #f1f1f1;
+  border: 0px solid #4f81bd;
 }
 
 .slide-content ul {
@@ -229,4 +229,19 @@ html, body {
 
 .slide-navigation ul li a {
   color: white;
+}
+
+
+/* Modify previous defined in main.css */
+
+table {
+  font-size: 80%;
+}
+
+table th {
+  padding: 0.2em 0.4em;
+}
+
+table td {
+  padding: 0 1em;
 }

@@ -28,8 +28,13 @@
 
 	{{ end }}>
 	
+	{{ if strings.HasPrefix .Destination "/" }}
+	<span>
+		{{ .Text | safeHTML }}
+	</span>  
+  {{ else }}
 	<span>
 		{{ .Text | safeHTML }} <i class="fa fa-external-link" style="font-size:14px"></i>
 	</span>
-
+  {{ end }}
 </a>
