@@ -231,6 +231,13 @@ html, body {
   color: white;
 }
 
+/* code in slides */
+
+li > code {
+  font-size: 80%;
+  background: #eee;
+  padding: 0 0.2em;
+}
 
 /* Modify previous defined in main.css */
 
