@@ -6,7 +6,7 @@ theme = 'default'
 enableEmoji = true
 
 [pagination]
-pagerSize = 20
+pagerSize = 30
 
 [taxonomies]
   author = "authors"
