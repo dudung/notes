@@ -10,6 +10,9 @@ Image-based detection of moisture or water conten on sand, which later can be us
 
 <!--more-->
 
++ `07-jan-2025` []() Progress report on palette building.
++ `13-nov-2024` [`4kjbe`](https://osf.io/4kjbe) Creation of a [GitHub repository](https://github.com/restronout/Tugas_Akhir).
+
 It is a bachelor thesis project conducted by Revanka Mulya under my supervision and Dr. Nurhasan.
 
 In a preliminary study [^mulya_2024] it is observed that sand color depends on its water content, which is already obvious [^pillinger_2023]. Water content, in average, will determine state of interaction between gains through water bridge [^mitarai_2006], that later also determines cohesion between grains [^wang_2018]. This phenomenon is also observed in ternary system [^domenech_2015]. There is also previous observation and model to describe it qualitatively [^viridi_2018].
