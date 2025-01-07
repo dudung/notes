@@ -1,17 +1,20 @@
 +++
 title = 'sand color water content'
 date = 2024-10-23T05:10:18+07:00
+type = 'slides'
 draft = false
 tags = ['users']
 authors = ['viridi']
 url = '24j36'
 +++
-Image-based detection of moisture or water conten on sand, which later can be used for grains cohesion estimation.
-
 <!--more-->
 
 + `07-jan-2025` []() Progress report on palette building.
++ `14-dec-2024` [`rp4yq`](https://osf.io/rp4yq) Manual FRS process.
 + `13-nov-2024` [`4kjbe`](https://osf.io/4kjbe) Creation of a [GitHub repository](https://github.com/restronout/Tugas_Akhir).
++ `23-oct-2024` [`yan3e`](https://osf.io/yan3e) Create this entry on rust [24j36](https://dudung.github.io/rust/24j36/).
+{{< details >}}
+Image-based detection of moisture or water conten on sand, which later can be used for grains cohesion estimation.
 
 It is a bachelor thesis project conducted by Revanka Mulya under my supervision and Dr. Nurhasan.
 
@@ -28,3 +31,4 @@ Next step in this research is to build color palette for the sand, whose colors 
 [^viridi_2018]: Sparisoma Viridi, Zahrotul Firdaus Tri Wahyu Lestari, Triati Dewi Kencana Wungu, Suprijadi, "Simple grid-based model of sandpile avalanche due to heating process", Presentation for International Workshop on Computational Science, 30 June 2018, Kanazawa University, Japan, url https://osf.io/nker6/ [20241022].
 [^viridi_2024]: Sparisoma Viridi, Nurhasan, Revanka Mulya, "Sand color due to water content: Visual-based observation of a physical property", OSF, 22 Oct 2024, url https://osf.io/rzdes [20241023].
 [^wang_2018]: Ji-Peng Wang, Xia Li, Hai-Sui Yu, "A micro–macro investigation of the capillary strengthening effect in wet granular materials", Acta Geotech-nica, vol 13, p 513-533, Jun 2018, url https://doi.org/10.1007/s11440-017-0619-0.
+{{< /details >}}
