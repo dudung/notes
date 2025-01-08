@@ -11,7 +11,7 @@ url = '24j36'
 
 + `08-jan-2024` [`5enp8`](https://osf.io/5enp8) Sample imaging standard.
 {{< details markdown="no" >}}
-  {{< img src="https://private-user-images.githubusercontent.com/7240685/400972427-b223c0e3-4b86-4de9-969a-e3810e809a3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzYzMDIyNTEsIm5iZiI6MTczNjMwMTk1MSwicGF0aCI6Ii83MjQwNjg1LzQwMDk3MjQyNy1iMjIzYzBlMy00Yjg2LTRkZTktOTY5YS1lMzgxMGU4MDlhM2UucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDEwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAxMDhUMDIwNTUxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2UwNTNkZTEyNTFhMmRhMWNjYTk0NjZiNWQwN2FjMmE0ODBhZDFhMWZjMGIwZTc1NTU0ODk3MTg4ZTdmNGY3NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.hH65kIcX5MgApAlDWREfGft_O0-3FOR54g-hs8l9MPk" >}}
+  {{< img src="https://github.com/user-attachments/assets/b223c0e3-4b86-4de9-969a-e3810e809a3e" >}}
   
   See {{< url "https://github.com/restronout/Tugas_Akhir/issues/2" >}}
 {{< /details >}}
