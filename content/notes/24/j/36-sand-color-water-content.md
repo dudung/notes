@@ -9,7 +9,13 @@ url = '24j36'
 +++
 <!--more-->
 
-+ `07-jan-2025` []() Progress report on palette building.
++ `08-jan-2024` [`5enp8`](https://osf.io/5enp8) Sample imaging standard.
+{{< details markdown="no" >}}
+  {{< img src="https://private-user-images.githubusercontent.com/7240685/400972427-b223c0e3-4b86-4de9-969a-e3810e809a3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzYzMDIyNTEsIm5iZiI6MTczNjMwMTk1MSwicGF0aCI6Ii83MjQwNjg1LzQwMDk3MjQyNy1iMjIzYzBlMy00Yjg2LTRkZTktOTY5YS1lMzgxMGU4MDlhM2UucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDEwOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAxMDhUMDIwNTUxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9Y2UwNTNkZTEyNTFhMmRhMWNjYTk0NjZiNWQwN2FjMmE0ODBhZDFhMWZjMGIwZTc1NTU0ODk3MTg4ZTdmNGY3NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.hH65kIcX5MgApAlDWREfGft_O0-3FOR54g-hs8l9MPk" >}}
+  
+  See {{< url "https://github.com/restronout/Tugas_Akhir/issues/2" >}}
+{{< /details >}}
++ `07-jan-2025` [`z5vf3`](https://osf.io/z5vf3) Palette building and imaging progress.
 + `14-dec-2024` [`rp4yq`](https://osf.io/rp4yq) Manual FRS process.
 + `13-nov-2024` [`4kjbe`](https://osf.io/4kjbe) Creation of a [GitHub repository](https://github.com/restronout/Tugas_Akhir).
 + `23-oct-2024` [`yan3e`](https://osf.io/yan3e) Create this entry on rust [24j36](https://dudung.github.io/rust/24j36/).

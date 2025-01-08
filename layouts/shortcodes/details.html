@@ -1,5 +1,10 @@
 {{ $summary := .Get "summary" | default "Details" }}
+{{ $markdown := .Get "markdown" | default "yes"}}
 <details>
   <summary>{{ $summary }}</summary>
-  <div>{{ .Inner | markdownify }}</div>
+  {{ if eq $markdown "yes" }}
+    <div>{{ .Inner | markdownify }}</div>
+  {{ else }}
+    <div>{{ .Inner }}</div>
+  {{ end }}
 </details>
