@@ -14,7 +14,9 @@ url = '25a20'
 + Place in Staff room 2 (new).
 + Time is from 0800 to 1600.
 + Invited by NA and menu arranged by AK (see right).
-+ Archive on [6xdah](https://osf.io/6xdah).
++ Archive on [gh2s6](https://osf.io/gh2s6).
++ Pecel for breakfast (dine in), Na-si Padang for lunch (take home).
+
 {{< /column-left >}}
 
 {{< column-right markdown="yes" >}}
