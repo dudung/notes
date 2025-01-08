@@ -14,7 +14,7 @@ List of activities assigned by same llama to visit various universities around t
 List:
 + `Jan 2025` [`w2ena`](https://osf.io/w2ena) `KPG` `526-45201-1` `1-0000-0000`
 + `Jan 2025` [`6v3w5`](https://osf.io/6v3w5) `OFF` `000-00000-0` `00xx`
-  - `08-jan-2024` `NA` `0928-xxxx` [`c4zpk`](https://osf.io/c4zpk)
+  - `08-jan-2024` `NA` `0928-xxxx` [`gh2s6`](https://osf.io/gh2s6)
   - `07-jan-2024` `NA` `0845-1510` [`wmhra`](https://osf.io/wmhra)
   - `06-jan-2025` `NA` `0729-0742` [`uhqm2`](https://osf.io/uhqm2)
   - `03-jan-2025` `RK` `1100-1130` [`56zxy`](https://osf.io/56zxy)
