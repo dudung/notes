@@ -14,5 +14,5 @@ url = '25a24'
 {{< details >}}
 Fauzia P. Lestari, Freddy Haryanto, Sparisoma Viridi, Idam Arif, "Improvement on classification of lung cancer based on X-ray images by transfer deep Boltzmann machine with small scale dataset", AIP Conference Proceedings, vol 3210, no 1, p 030022, 2024, url https://doi.org/10.1063/5.0232276.
 {{< /details >}}
-+ `10-aug-2023` [`notav`]() 21th SEACOMP and 6th PIT-FMB, Mataram.
++ `10-aug-2023` [`6pdwj`](https://osf.io/6pdwj) 21th SEACOMP and 6th PIT-FMB, Mataram.
 + `02-aug-2022` [`6dumw`](https://osf.io/6dumw) Doctoral progress seminar 2.
