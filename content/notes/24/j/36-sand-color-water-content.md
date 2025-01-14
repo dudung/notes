@@ -9,6 +9,10 @@ url = '24j36'
 +++
 <!--more-->
 
++ `13-jan-2024` []() Two palettes progress.
+{{< details >}}
+url https://github.com/restronout/Tugas_Akhir/tree/main/Palette
+{{< /details >}}
 + `08-jan-2024` [`5enp8`](https://osf.io/5enp8) Sample imaging standard.
 {{< details markdown="no" >}}
   {{< img src="https://github.com/user-attachments/assets/b223c0e3-4b86-4de9-969a-e3810e809a3e" >}}
