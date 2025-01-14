@@ -18,7 +18,7 @@ accessed = '20250115'
 
 + Shortcode
 ```html
-<div style="height: {{ .Get 0 | default "1" }}em;"></div>
+<div style="height: {{ .Get 0 | default '1' }}em;"></div>
 ```
 
 + Usage
