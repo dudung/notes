@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'rusn'
 theme = 'default'
 
+ignoreLogs = ['warning-goldmark-raw-html']
 enableEmoji = true
 
 [pagination]
