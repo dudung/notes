@@ -20,6 +20,7 @@ accessed = '20250114'
 {{< column-left >}}
   {{< center >}}
     Boolean logic
+    {{< vspace 1.5 >}}
     {{< mermaid >}}
       flowchart LR
       C --> P1
