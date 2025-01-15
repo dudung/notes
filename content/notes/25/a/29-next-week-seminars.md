@@ -14,6 +14,6 @@ Day Date| 07 | 08 | 09 | 10 | 11 | 12 | 13 | 14 | 15 |
 Mon 13  |    |    |    | B1 | M1 |    |    |    |    |
 Tue 14  |    |    |    | B2 | B2 | D1 | D1 | D1 | D1 |
 &nbsp;  |    |    |    | -- | -- | -- | **B3** | **B3** | -- |
-Wed 15  |    | B4 | B4 | M2 | M3 |    | B5 | B5 | M4 |
-Thu 16  |    |    | M5 | B6 | B6 |    | B7 | B7 |    |
+Wed 15  |    | B4 | B4 | M2 | M3 |    | B5 | B5 |    |
+Thu 16  |    |    | M5 | B6 | B6 |    | B7 | B7 | M4 |
 + B: Bachelor, M: Magister, D: Doktor
