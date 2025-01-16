@@ -8,7 +8,7 @@ authors = ['viridi']
 url = '24j30'
 +++
 
-+ `16-jan-2025` []() Bachelor thesis seminar.
++ `16-jan-2025` [`h2kes`](https://osf.io/h2kes) Bachelor thesis seminar.
 + `27-dec-2024` [`m8tqp`](https://osf.io/m8tqp) Online 8th-supervision.
 {{< details >}}
   - `30-dec-2024` Submission of softcopy draft.
