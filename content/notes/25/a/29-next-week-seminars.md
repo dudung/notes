@@ -4,7 +4,7 @@ date = '2025-01-10T20:13:09+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['users', 'list']
+tags = ['users', 'seminars-schedule']
 url = '25a29'
 +++
 <!--more-->
