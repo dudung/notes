@@ -12,12 +12,13 @@ url = '25a47'
 Day Date| 07 | 08 | 09 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 :-:     | :-:| :-:| :-:| :-:| :-:| :-:| :-:| :-:| :-:| :-:|
 Mon 20  |    |    |    |    |    |    | M1 |    |    |    |
-Tue 21  |    |    |    |    |    |    |    |    |    |    |
-Wed 22  |    |    |    | M2 |    |    |    |    |    |    |
+Tue 21  |    |    |    |    | B0 |    |    |    |    |    |
+Wed 22  |    |    |    |    | M2 |    |    |    |    |    |
 Thu 23  |    |    | B1 | B2 |    |    |    |    | M3 | M4 |
 Fri 24  | B3 | B4 | D1 | M5 |    |    | M6 | M7 |    |    |
 + {{< fsize 0.8 >}}M1: AD-Rafi,
 M2: IK-Vinsensia,
+B0: MM-Aditya,
 B1: ID-Shaquille,
 B2: SV-Revanka,
 M3: NH-Ira,
