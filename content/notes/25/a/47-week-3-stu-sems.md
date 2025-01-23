@@ -17,7 +17,8 @@ Wed 22  |    |    |    |    | M2 |    |    |    |    |    |
 Thu 23  |    |    | B2 | B3 |    |    |    | B4 | M3 | M4 |
 Fri 24  | B5 | B6 | D1 | M5 |    |    | M6 | M7 |    |    |
 {{% /fsize %}}
-{{< fsize 0.8 >}}B: Bachelor, M: Magister, D: Doctor.{{< /fsize >}}
+
+{{< fsize 0.8 >}}&nbsp;&nbsp;&nbsp; B: Bachelor, M: Magister, D: Doctor.{{< /fsize >}}
 + {{< fsize 0.8 >}}M1: AD-Rafi,
 B1: MM-Aditya,
 M2: IK-Vinsensia,
