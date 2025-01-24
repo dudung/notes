@@ -4,11 +4,11 @@ date = '2025-01-25T05:16:37+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['scientific-writing']
+tags = ['sci-writ']
 url = '25a56'
 [ref]
 author = 'Ken Hyland, Françoise Salager-Meyer'
-title = 'Scientific Writing'
+title = 'Scientific writing'
 source = 'Annual Review of Information Science and Technology, vol 42, no 1, p 297-338'
 created = '2008'
 updated = ''
