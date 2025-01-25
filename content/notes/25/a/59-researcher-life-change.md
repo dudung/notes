@@ -9,7 +9,7 @@ url = '25a59'
 [ref]
 author = 'David Lindsay'
 title = 'Scientific writing = thinking in words'
-source = 'CSIRO Publishing, Collingwood, Australia'
+source = 'CSIRO Publishing, Collingwood, Australia, p 2'
 created = '9 Mar 2011'
 updated = ''
 url = 'https://isbnsearch.org/isbn/9780643100466'
