@@ -1,5 +1,5 @@
 +++
-title = 'reader read and interpret'
+title = 'readers read and interpret'
 date = '2025-01-25T05:43:51+07:00'
 draft = false
 type = 'slides'
