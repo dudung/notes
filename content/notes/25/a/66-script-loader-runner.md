@@ -11,16 +11,18 @@ url = '25a66'
 + Shortcodes
 ```toml
 {{</* script/loader */>}}
-utils.js
+experimental.js
 {{</* /script/loader */>}}
 
 {{</* script/runner id="div1" */>}}
-print("div1", "Hello, World!");
+display("Hello, World!").on("div1");
 {{</* /script/runner */>}}
 ```
+
 {{< script/loader >}}
-utils.js
+experimental.js
 {{< /script/loader >}}
+
 {{< script/runner id="div1" >}}
-print("div1", "Hello, World!");
+display("Hello, World!").on("div1");
 {{< /script/runner >}}
