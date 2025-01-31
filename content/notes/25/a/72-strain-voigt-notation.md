@@ -1,5 +1,5 @@
 +++
-title = 'strain in voight notation'
+title = 'strain in voigt notation'
 date = '2025-01-31T14:39:47+07:00'
 draft = false
 type = 'slides'
