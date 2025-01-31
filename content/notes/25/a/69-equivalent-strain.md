@@ -27,12 +27,11 @@ $$\tag{1}
 \right]
 $$
 
-$$\tag{2}
-\begin{array}{c}
-\displaystyle \epsilon_{\rm eqv} = \frac{1}{1 + \nu} \cdot \newline \displaystyle \sqrt{\frac{\Delta \epsilon_{xy}^2 + (\epsilon _{yy} - \epsilon _{zz})^2 + (\epsilon _{zz} - \epsilon _{xx})^2 + 6(\epsilon _{xy}^2 + \epsilon _{yz}^2 + \epsilon _{zx}^2)}{2}}
-\end{array}
-$$
 
-$$\tag{3}
-\Delta \epsilon_{xy} = \epsilon _{xx} - \epsilon _{yy}
+$$\tag{2}
+\begin{array}{rcl}
+\displaystyle \epsilon_{\rm eqv} & = & \displaystyle  \frac{1}{1 + \nu} \left[ \frac{1}{2} (\epsilon _{xx} - \epsilon _{yy})^2 + \frac{1}{2} (\epsilon _{yy} - \epsilon _{zz})^2  \right. \newline \newline
+& & \displaystyle \left.
+\frac{1}{2} (\epsilon _{zz} - \epsilon _{xx})^2 + 3(\epsilon _{xy}^2 + \epsilon _{yz}^2 + \epsilon _{zx}^2) \right] ^{1/2}
+\end{array}
 $$
