@@ -1,5 +1,5 @@
 +++
-title = 'strain tensor element'
+title = 'strain tensor component'
 date = '2025-01-31T10:49:41+07:00'
 draft = false
 type = 'slides'
