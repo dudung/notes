@@ -13,8 +13,8 @@ title = 'Chapter 2 - Fundamentals of aerospace composite materials'
 source = 'in Stress, Vibration, and Wave Analysis in Aerospace Composites, Academic Press, 2022, p 29-109'
 created = ''
 updated = ''
-url = 'https://www.astro.princeton.edu/~burrows/classes/542/papers/stress.strain.landaulifshitz.pdf'
-accessed = '20250131'
+url = 'https://doi.org/10.1016/B978-0-12-813308-8.00004-1'
+accessed = ''
 +++
 <!--mode-->
 
