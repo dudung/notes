@@ -24,7 +24,7 @@ $$\tag{1}
 \begin{array}{rcl}
 \displaystyle \varepsilon_{\rm eqv} & = & \displaystyle  \frac{1}{1 + \nu} \left[ \frac{1}{2} (\varepsilon _{xx} - \varepsilon _{yy})^2 + \frac{1}{2} (\varepsilon _{yy} - \varepsilon _{zz})^2  \right. \newline \newline
 & & \displaystyle \left.
-+ \frac{1}{2} (\varepsilon _{zz} - \varepsilon _{xx})^2 + 3(\varepsilon _{xy}^2 + \varepsilon _{yz}^2 + \varepsilon _{zx}^2) \right] ^{1/2}
++\frac{1}{2} (\varepsilon _{zz} - \varepsilon _{xx})^2 + 3(\varepsilon _{xy}^2 + \varepsilon _{yz}^2 + \varepsilon _{zx}^2) \right] ^{1/2}
 \end{array}
 $$
 {{< /fsize >}}
