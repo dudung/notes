@@ -1,5 +1,5 @@
 +++
-title = 'capture div as png'
+title = 'capture div as png info'
 date = '2025-02-14T20:35:10+07:00'
 draft = false
 type = 'slides'
