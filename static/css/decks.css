@@ -16,14 +16,14 @@ html, body {
   right: 0;
   
   box-shadow: 10 10px 30px rgba(0, 0, 0, 0.3);
-  border: 2px solid #ccc;
+  border: 0.5px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
   
   --width: min(100vw, calc(100vh * 16 / 9));
   --height: min(100vh, calc(100vw * 9 / 16));
   
-  width: var(--width);
+  width: calc(var(--width) - 6px);
   height: var(--height);
   
   overflow: hidden;
@@ -32,12 +32,11 @@ html, body {
 
 .slide-title {
   position: absolute;
-  top: calc(0.465 * var(--height));
+  top: calc(0.48 * var(--height));
   height: calc(0.27 * var(--height));
-  font-size: calc(0.11 * var(--height));
+  font-size: calc(0.1 * var(--height));
   font-weight: normal;
   color: #fff;
-  #border: 1px solid white;
   width: var(--width);
   padding-right: calc(0.08 * var(--height)); 
   display: flex;
@@ -45,39 +44,11 @@ html, body {
   box-sizing: border-box;
 }
 
-<div style="width: 300px; padding-right: 20px; border: 1px solid black; display: flex; justify-content: flex-end;">
-  This is some text.
-</div>
-
-
 .slide-content {
   text-align: left;
   font-size: calc(0.075 * var(--height));
   background-color: white;
   padding-right: calc(0.12 * var(--height));
-}
-
-.slide-content ul {
-  padding-left: calc(0.14 * var(--height));
-}
-
-.slide-content li {
-  padding-left: calc(0.01 * var(--height));
-  line-height: calc(0.09 * var(--height));
-  padding-bottom: calc(0.015 * var(--height));
-}
-
-.slide-content table {
-  #margin-left: calc(0.1 * var(--height));
-  margin-top: calc(0.02 * var(--height));
-  font-size: 75%;
-  line-height: 75%;
-  td { padding: calc(0.02 * var(--height)) 0; }
-  th {
-    text-align: center;
-    padding-left: calc(0.04 * var(--height));
-    padding-right: calc(0.04 * var(--height));
-  }
 }
 
 .slide-rect {
@@ -90,81 +61,42 @@ html, body {
   z-index: -1;
 }
 
-.slide-date {
-  width: calc(0.2 * var(--height));
-  padding: calc(0.01 * var(--height)) calc(0.05 * var(--height));
-  font-size: calc(0.04 * var(--height));
+.slide-footer-left {
+  position: absolute;
+  margin: auto;
+  left: calc(0.05 * var(--height));
+  bottom: calc(0.02 * var(--height));
+  text-align: center;
+  font-size: calc(0.03 * var(--height));
+  width: calc(0.4 * var(--height));
   color: #888;
+  height: calc(0.045 * var(--height));
+  border: 0px solid #4f81bd;
+}
+
+.slide-footer-center {
   position: absolute;
-  left: calc(50% - calc(0.12 * var(--height)));
-  top: calc(0.9 * var(--height));
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: calc(0.02 * var(--height));
+  text-align: center;
+  font-size: calc(0.03 * var(--height));
+  width: calc(0.4 * var(--height));
+  color: #888;
+  height: calc(0.045 * var(--height));
+  border: 0px solid #4f81bd;
 }
 
-.slide-ref {
-  font-size: calc(0.036 * var(--height));
+.slide-footer-right {
   position: absolute;
-  top: calc(0.83 * var(--height));
-  width: calc(1.57 * var(--height));
-  padding-left: calc(0.09 * var(--height));
-  padding-right: calc(0.12 * var(--height));
-  line-height: calc(0.04 * var(--height));
-}
-
-.slide-url {
-  color: #4f81bd;
-}
-
-.katex, .katex-display {
-  font-size: 100% !important;
-}
-
-.katex-display {
-  margin-top: calc(0.05 * var(--height)) !important;
-  margin-bottom: calc(0.02 * var(--height)) !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.mol-container {
   margin: auto;
-  position: relative;
-  height: calc(0.55 * var(--height));
-  width: calc(1.5 * var(--height));
-}
-
-.abcd-js-container {
-  margin: auto;
-  left: calc(0.05 * var(--height));
-  position: relative;
-  width: calc(1.55 * var(--height));
-}
-
-.scatter-container {
-  margin: auto;
-  position: relative;
-  left: calc(0.05 * var(--height));
-  width: calc(1.55 * var(--height));
-  height: calc(0.65 * var(--height));
-  #transform: scale(0.5);
-}
-
-.slide-content pre {
-  margin-left: calc(0.08 * var(--height)) !important;
-  padding-top: calc(0.02 * var(--height)) !important;
-  padding-bottom: calc(0.03 * var(--height)) !important;
-  padding-left: calc(0.075 * var(--height)) !important;
-}
-
-.slide-content pre > code {
-  font-size: calc(0.032 * var(--height));
-}
-
-.list-of-pages {
-  list-style-type: none;
-  text-align: left;
-  font-size: calc(0.075 * var(--height));
-  li {
-    display: inline-block;
-    padding-left: calc(0.04 * var(--height));
-  }
+  right: calc(0.05 * var(--height));
+  bottom: calc(0.02 * var(--height));
+  text-align: center;
+  font-size: calc(0.03 * var(--height));
+  width: calc(0.4 * var(--height));
+  color: #888;
+  height: calc(0.045 * var(--height));
+  border: 0px solid #4f81bd;
 }
