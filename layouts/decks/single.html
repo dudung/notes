@@ -1,0 +1,44 @@
+{{ define "main" }}
+  {{ if eq .Type "decks" }}
+    <head>
+      <link rel="stylesheet" href="/notes/css/decks.css?v={{ now.Unix }}">
+    </head>
+  {{ end }}
+  
+  <div class="slide-container">
+    <h1 class="slide-title">{{ .Title }}</h1>
+    <div class='slide-rect'></div>
+
+{{ if .Params.pages }}
+  <ul class="list-of-pages">
+    {{ range .Params.pages }}
+      {{ $matchingPages := where site.RegularPages "Params.url" . }}
+      {{ $page := index $matchingPages 0 }}
+      {{ if $page }}
+        <li>
+          <code style='font-size:60%;'>{{ $page.Params.url }}</code>
+          <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+          <!--p>{{ $page.Content | safeHTML }}</p-->
+        </li>
+      {{ else }}
+        <li>
+          <p>Page with URL "{{ . }}" not found.</p>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ else }}
+  <p>No pages found for this deck.</p>
+{{ end }}
+
+    <div class="slide-content">
+      {{ .Content }}
+    </div>
+    <div class="slide-date">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+      </div>
+  </div>
+  {{ partial "posts/math.html" . }}
+{{ end }}
