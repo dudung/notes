@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <head>
+    <link rel="stylesheet" href="/notes/css/talks.css?v={{ now.Unix }}">
+  </head>
+  
+  <div class="slide-container">
+    <h1 class="slide-title">{{ .Title }}</h1>
+    <h2 class="slide-subtitle">{{ .Params.subtitle }}</h2>
+
+    <nav class="slide-navigation">
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    <div class='slide-rect'></div>
+
+    <div class="author-container">
+    {{- range .Params.authors }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        <span class="author">
+          <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+        </span>
+      {{ end }}
+    {{ end }}
+    </div>
+
+    <div class="version-link-container">
+      <span class="version">{{ .Params.version }}</span>
+      |
+      <span class="link">
+        <a href="{{ .Params.link }}" target="_blank">{{ .Params.link }}</a>
+      </span>
+    </div>
+    
+    <div class="slide-footer-left">
+    </div>
+    <div class="slide-footer-center">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+    </div>
+    <div class="slide-footer-right">
+    </div>
+  
+  </div>
+{{ end }}
