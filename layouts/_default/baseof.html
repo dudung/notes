@@ -20,7 +20,7 @@
   </main>
   <footer>
     {{ if and (ne .Type "slides") (ne .Type "decks") (ne .Type "talks") }}
-      <link rel="stylesheet" href="/rusn/css/footer.css?v={{ now.Unix }}">
+      <link rel="stylesheet" href="/notes/css/footer.css?v={{ now.Unix }}">
       {{ partial "footer.html" . }}
     {{ end }}
   </footer>
@@ -40,6 +40,7 @@
     });
   </script>
   {{ end }}
+
 </body>
 </html>
 

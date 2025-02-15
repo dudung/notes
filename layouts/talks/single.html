@@ -44,6 +44,81 @@
     </div>
     <div class="slide-footer-right">
     </div>
-  
   </div>
+
+
+  <div id="floating-menu">
+    <button id="menu-toggle">☰</button>
+    <nav id="menu-list"></nav>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get slide data from Hugo front matter
+      const slides = {{ .Params.slides | jsonify }};
+      const menuList = document.getElementById("menu-list");
+
+      if (!slides || slides.length === 0) {
+        console.warn("No slides data found.");
+        return;
+      }
+
+      // Populate menu with slides
+      slides.forEach(slide => {
+        let slideItem = document.createElement("a");
+        slideItem.href = `/${slide}`;
+        slideItem.textContent = slide;
+        slideItem.classList.add("slide-link");
+        menuList.appendChild(slideItem);
+      });
+
+      // Restore menu visibility state
+      const menuToggle = document.getElementById("menu-toggle");
+      const savedState = localStorage.getItem("menuVisible");
+      if (savedState === "true") {
+        menuList.classList.add("visible");
+      }
+
+      // Toggle menu visibility
+      menuToggle.addEventListener("click", function () {
+        menuList.classList.toggle("visible");
+        localStorage.setItem("menuVisible", menuList.classList.contains("visible"));
+      });
+    });
+  </script>
+
+  <style>
+    #floating-menu {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+      z-index: 1000;
+    }
+
+    #menu-list {
+      display: none;
+      list-style: none;
+      padding: 0;
+    }
+
+    #menu-list.visible {
+      display: block;
+    }
+
+    .slide-link {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    .slide-link:hover {
+      background: gray;
+    }
+  </style>
+
+
 {{ end }}
