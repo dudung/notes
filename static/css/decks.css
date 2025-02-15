@@ -100,3 +100,36 @@ html, body {
   height: calc(0.045 * var(--height));
   border: 0px solid #4f81bd;
 }
+
+.slide-navigation {
+  position: absolute;
+  top: calc(0.00 * var(--height));
+  right: calc(0.03 * var(--height));
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.slide-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-navigation ul li {
+  margin: calc(0.004 * var(--height));;
+  padding-top: calc(0.01 * var(--height));
+  padding-bottom: calc(0.015 * var(--height));
+  padding-left: calc(0.02 * var(--height));
+  padding-right: calc(0.02 * var(--height));
+  border-bottom-left-radius: calc(0.02 * var(--height));
+  border-bottom-right-radius: calc(0.02 * var(--height));
+  border: 0px #4f81bd solid;
+  background: #4f81bd;
+  list-style: none;
+  display: inline;
+  font-size: calc(0.032 * var(--height));
+}
+
+.slide-navigation ul li a {
+  color: white;
+}
