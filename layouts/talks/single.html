@@ -55,7 +55,8 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // Get slide data from Hugo front matter
-      const slides = {{ .Params.slides | jsonify }};
+      const slides = {{ .Params.slides }};
+      console.log(slides);
       const menuList = document.getElementById("menu-list");
 
       if (!slides || slides.length === 0) {
@@ -66,7 +67,7 @@
       // Populate menu with slides
       slides.forEach(slide => {
         let slideItem = document.createElement("a");
-        slideItem.href = `/${slide}`;
+        slideItem.href = `/notes/${slide}`;
         slideItem.textContent = slide;
         slideItem.classList.add("slide-link");
         menuList.appendChild(slideItem);
@@ -91,11 +92,13 @@
     #floating-menu {
       position: fixed;
       top: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, 0.8);
-      padding: 10px;
-      border-radius: 8px;
+      left: 10px;
+      /* background: rgba(0, 0, 0, 0.8); */
+      background: #4f81bd;
+      padding: 6px;
+      border-radius: 4px;
       z-index: 1000;
+      width: 25%;
     }
 
     #menu-list {
@@ -106,13 +109,15 @@
 
     #menu-list.visible {
       display: block;
+      border: 0px red solid;
     }
 
     .slide-link {
-      display: block;
+      display: inline-block;
       color: white;
       text-decoration: none;
-      padding: 5px;
+      padding: 1px 4px;
+      font-family: Monospace;
     }
 
     .slide-link:hover {
