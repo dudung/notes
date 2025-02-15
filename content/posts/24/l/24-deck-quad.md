@@ -1,7 +1,7 @@
 +++
 title = 'deck quad'
 date = '2024-12-22T19:59:51+07:00'
-type = 'xdeck'
+type = 'decks'
 draft = false
 categories = ['decks']
 tags = ['slide-lib']

@@ -9,4 +9,7 @@ type = 'talks'
 tags = ['talks']
 authors = ['viridi', 'arimasen', 'renik', 'dasch']
 url = '25b21'
+
+[[slides]]
+slides = ['25b22', '25b20', '25b14', '25b16', '25b17', '25b18', '25b19', '24l24', '24l16', '24l17', '24l18', '24l19', '24l20', '24l21', '24l22', '24l23', '24l13']
 +++
