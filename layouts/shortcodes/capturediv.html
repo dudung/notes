@@ -1,0 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<button onclick="captureDiv()">Save as PNG</button>
+
+<script>
+    function captureDiv() {
+        let btn = document.getElementById("btn");
+        
+        let grandParent = btn.parentElement?.parentElement;
+        console.log(grandParent);
+
+        html2canvas(grandParent, { scale: 3 }).then(canvas => {
+            let link = document.createElement("a");
+            link.href = canvas.toDataURL("image/png");
+            link.download = "{{- .Page.File.BaseFileName -}}";
+            link.click();
+        });
+    }
+</script>
