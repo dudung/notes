@@ -1,2 +1,2 @@
-# rusn
-raw, unstructured, spontaneous notes
+# notes
+lectures, ideas, discussions
