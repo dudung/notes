@@ -195,12 +195,18 @@ html, body {
   font-size: calc(0.032 * var(--height));
 }
 
-.mermaid {
-  margin-left: 1.5em;
-  border: 1px red solid;
-  max-width: 100%;
+.mermaid-container {
 }
 
+.mermaid {
+  margin-left: 1.5em;
+  /*
+  border: 1px red solid;
+  transform: scale(2);
+  width: 100%;
+  transform-origin: top left;
+  */
+}
 
 .slide-navigation {
   position: absolute;
