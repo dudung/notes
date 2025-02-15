@@ -24,6 +24,12 @@ $$\tag{1}
 a \frac{d^2 x}{dt^2} + b \frac{dx}{dt} + c x = d
 $$
 
+x | y | z
+:-: | :-: | :-:
+1 | 2 | 3
+
++ Click `png` text on the lower right corner.
+
 {{< mermaid >}}
 flowchart LR
   B --> I --> P --> O --> E
