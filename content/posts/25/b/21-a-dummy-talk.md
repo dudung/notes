@@ -8,6 +8,5 @@ version = '20241228_v0'
 type = 'talks'
 tags = ['talks']
 authors = ['viridi', 'arimasen', 'renik', 'dasch']
-math = true
 url = '25b21'
 +++
