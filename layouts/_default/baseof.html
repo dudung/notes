@@ -6,7 +6,7 @@
 <body>
   <header>
     {{ if and (ne .Type "xpage") (ne .Type "slides") (ne .Type "xtalk") }}
-      <link rel="stylesheet" href="/rusn/css/header.css?v={{ now.Unix }}">
+      <link rel="stylesheet" href="/notes/css/header.css?v={{ now.Unix }}">
       {{ partial "header.html" . }}
     {{ end }}
     

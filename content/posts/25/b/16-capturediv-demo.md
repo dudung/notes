@@ -13,7 +13,7 @@ title = 'capturediv shortcode demo'
 source = 'rusn'
 created = '15 Feb 2025'
 updated = '-'
-url = 'https://dudung.github.io/rusn/25b16/'
+url = 'https://dudung.github.io/notes/25b16/'
 accessed = '20250215'
 +++
 <!--more-->

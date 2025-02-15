@@ -1,6 +1,6 @@
 {{ define "main" }}
   <head>
-    <link rel="stylesheet" href="/rusn/css/slides.css?v={{ now.Unix }}">
+    <link rel="stylesheet" href="/notes/css/slides.css?v={{ now.Unix }}">
   </head>
 
   <div class="slide-container">
@@ -55,5 +55,5 @@
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ end }}
   
-  {{ partial "notes/math.html" . }}
+  {{ partial "posts/math.html" . }}
 {{ end }}

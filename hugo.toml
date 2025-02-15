@@ -1,6 +1,6 @@
-baseURL = 'https://dudung.github.io/rusn'
+baseURL = 'https://dudung.github.io/notes'
 languageCode = 'en-us'
-title = 'rusn'
+title = 'notes'
 theme = 'default'
 
 ignoreLogs = ['warning-goldmark-raw-html']
