@@ -1,5 +1,5 @@
 +++
-title = 'capturediv shortcode demo'
+title = 'capturediv demo'
 date = '2025-02-15T05:14:58+07:00'
 draft = false
 type = 'slides'

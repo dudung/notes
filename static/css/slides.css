@@ -123,7 +123,7 @@ html, body {
   margin-top: 0;
   padding-left: calc(0.08 * var(--height));
   border: 0px solid #4f81bd;
-  margin-bottom: 0;
+  margin-bottom: 0em;
 }
 
 .slide-content li {
@@ -189,9 +189,11 @@ html, body {
   padding-top: calc(0.02 * var(--height)) !important;
   padding-bottom: calc(0.03 * var(--height)) !important;
   padding-left: calc(0.075 * var(--height)) !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.slide-content pre > code {
+.slide-content div > pre > code {
   font-size: calc(0.032 * var(--height));
 }
 
