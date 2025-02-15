@@ -22,4 +22,4 @@ accessed = '20250214'
 + The goal can be also achived using print and screenshot.
 
 - **Note**: This solution has not yet been tested.
-- **Update**: It is tested on [25b16](/rusn/25b16).
+- **Update**: It is tested on [25b16](/notes/25b16).
