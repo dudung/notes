@@ -15,5 +15,5 @@ url = '25b22'
 {{< /column-left >}}
 
 {{< column-right markdown="yes" >}}
-+ dd
++ summaries (in preparation)
 {{< /column-right >}}

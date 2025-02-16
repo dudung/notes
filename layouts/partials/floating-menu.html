@@ -24,18 +24,28 @@
 
     // Function to load slides from storage
     function loadSlidesFromStorage() {
-      const savedSlides = localStorage.getItem("slidesList");
-      if (savedSlides) {
+      const notATalk = localStorage.getItem("notATalk") === "true";
+      let savedSlides = localStorage.getItem("slidesList");
+      if(!savedSlides) {
+        savedSlides = localStorage.getItem("slideURL");
+      }
       
+      if(savedSlides) {
         // Toggle menu
         menuList.innerHTML = ""; // Clear existing menu
         const slides = JSON.parse(savedSlides);
+        
+        /*
+        console.log(slides);
+        */
+        
         slides.forEach(slide => {
           let slideItem = document.createElement("a");
+          slideItem.id = slide;
           slideItem.href = `/notes/${slide}`;
           slideItem.textContent = slide;
           slideItem.classList.add("slide-link");
-
+          
           // Mark navigation as via menu
           slideItem.addEventListener("click", function () {
             localStorage.setItem("usedMenu", "true");
@@ -43,7 +53,6 @@
 
           menuList.appendChild(slideItem);
         });
-        
         
         // Prev-home-next menu
         // Check for the index of the current slide
@@ -57,6 +66,14 @@
           currentSlide = window.location.pathname.split('/').pop();
         }
         const currentIndex = slides.indexOf(currentSlide);
+        
+        /*
+        console.log(slides[currentIndex]);
+        console.log(slideItem);
+        */
+        
+        const slideItem = document.getElementById(slides[currentIndex]);
+        slideItem.style.background = "#4f81bd";
         
         /*
         console.log(currentSlide);
@@ -87,28 +104,21 @@
     }
 
     // If on a "talks" page, store slides & mark talks visited
-    {{ if or (eq .Type "slides") (eq .Type "decks") (eq .Type "talks") }}
-      let slides = {{ .Params.slides }};
-      
-      /*
-      const currentSlide = {{ .Params.url }}
-      
-      if(slides == null) {
-        slides = [currentSlide];
-      }
-
-      if(slides && slides.indexOf(currentSlide) == -1) {
-        slides.unshift(currentSlide);
-      }
-      console.log(slides);
-      */
+    {{ if eq .Type "talks" }}
+      const slides = {{ .Params.slides }};
       
       if(slides && slides.length > 0) {
         localStorage.setItem("slidesList", JSON.stringify(slides));
         localStorage.setItem("talksVisited", "true");
         localStorage.setItem("usedMenu", "true"); // Mark first use
       }
-            
+    {{ else }}
+      const slideURL = [{{ .Params.url }}];
+
+      if(slideURL && slideURL.length > 0) {
+        localStorage.setItem("slideURL", JSON.stringify(slideURL));
+        localStorage.setItem("talksVisited", "true");
+      }
     {{ end }}
 
     // Reset talksVisited if user goes back to home or another page directly
@@ -171,8 +181,9 @@
     display: none;
     list-style: none;
     padding: 2px;
-    width: 12em;
+    max-width: 28.7em;
     border-radius: 4px;
+    text-align: left;
   }
 
   #menu-list.visible {
@@ -185,7 +196,12 @@
     color: white;
     text-decoration: none;
     padding: 5px;
-    font-family: Monospace
+    font-family: Monospace;
+    font-size: 13px;
+  }
+  
+  .slide-link.current {
+    background: #4f81bd;
   }
 
   .slide-link:hover {
