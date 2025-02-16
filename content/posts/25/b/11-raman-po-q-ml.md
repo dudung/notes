@@ -6,7 +6,6 @@ type = 'slides'
 authors = ['viridi']
 tags = ['daily-notes']
 url = '25b11'
-slides = ['25b11']
 +++
 <!--more-->
 

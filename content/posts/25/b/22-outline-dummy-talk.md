@@ -6,7 +6,6 @@ type = 'slides'
 layout = 'two-column'
 authors = ['viridi']
 url = '25b22'
-slides = ['25b22']
 +++
 <!--more-->
 

@@ -6,7 +6,6 @@ type = 'slides'
 authors = ['viridi']
 tags = ['daily-notes']
 url = '25b14'
-slides = ['25b14']
 [ref]
 author = 'GPT-4o'
 title = 'Capture Div as PNG'

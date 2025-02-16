@@ -6,7 +6,6 @@ type = 'slides'
 authors = ['viridi']
 tags = ['course-list']
 url = '25b08'
-slides = ['25b08']
 [ref]
 author = '-'
 title = 'Foundations in Stress Analysis using Ansys Mechanical - Associate Certification'
