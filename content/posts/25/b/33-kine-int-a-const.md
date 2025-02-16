@@ -8,6 +8,7 @@ tags = ['daily-notes']
 math = true
 url = '25b33'
 +++
+
 + With initial condition $v(t_0) = v_0$, velocity becomes
 $$\tag{G1}
 v(t) = v_0 + a(t - t_0).
@@ -16,4 +17,4 @@ $$
 $$\tag{G2}
 x(t) = x_0 + v_0 (t - t_0) +  \tfrac12 a (t - t_0)^2.
 $$
-+ Are they the same as the common kinematic equations?
++ Are they the same as the first two of common kinematic equations?

@@ -1,5 +1,5 @@
 +++
-title = 'kinematic equations, assumptions'
+title = 'kinematics equations, assumptions'
 date = '2025-02-17T03:23:56+07:00'
 draft = false
 type = 'slides'

@@ -8,6 +8,7 @@ tags = ['daily-notes']
 math = true
 url = '25b32'
 +++
+
 + Integrate velocity $v$ to obtain position $x$
 $$\tag{F1}
 x(t) - x(t_0) = \int_{t_0}^t  \left[ v_0 + \int_{t_0}^{\tau_2} a(\tau_1) d\tau_1 \right] d\tau_2.

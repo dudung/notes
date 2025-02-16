@@ -8,6 +8,7 @@ tags = ['daily-notes']
 math = true
 url = '25b31'
 +++
+
 + Integrate acceleration $a$ to obtain velocity $v$
 $$\tag{E1}
 v(t) - v(t_0) = \int_{t_0}^t a(\tau_1) d\tau_1.
