@@ -1,5 +1,5 @@
 +++
-title = 'kinematic equations'
+title = 'five kinematic equations'
 date = '2025-02-16T18:08:04+07:00'
 draft = false
 type = 'slides'
@@ -19,23 +19,23 @@ accessed = '20250216'
 <!--more-->
 
 {{< fsize "0.94" >}}
-$$\tag{1}
-\Delta x = \tfrac12 (v_1 + v_2) \Delta t
+$$\tag{B1}
+\Delta x = \tfrac12 (v_1 + v_2) \Delta t,
 $$
 
-$$\tag{2}
-v_2 = v_1 + a \Delta t
+$$\tag{B2}
+v_2 = v_1 + a \Delta t,
 $$
 
-$$\tag{3}
-\Delta x = v_1 \Delta t + \tfrac12 a t^2
+$$\tag{B3}
+\Delta x = v_1 \Delta t + \tfrac12 a t^2,
 $$
 
-$$\tag{4}
-v_2^2 = v_1^2 + 2 a \Delta x
+$$\tag{B4}
+v_2^2 = v_1^2 + 2 a \Delta x,
 $$
 
-$$\tag{5}
-\Delta x = v_2 \Delta t - \tfrac12 a t^2
+$$\tag{B5}
+\Delta x = v_2 \Delta t - \tfrac12 a t^2.
 $$
 {{< /fsize >}}
