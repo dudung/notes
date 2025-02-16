@@ -17,7 +17,7 @@ url = 'https://physics.stackexchange.com/q/709769'
 accessed = '20250217'
 +++
 
-+ Integrations of acceleration $a$ twice
++ Integrate acceleration $a$ twice to obtain velocity $v$ and position $x$
 $$\tag{D1}
 v(t) - v(t_0) = \int_{t_0}^t a(\tau) d\tau,
 $$
