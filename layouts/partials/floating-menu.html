@@ -1,5 +1,10 @@
 <div id="floating-menu" style="display: none;">
-  <button id="menu-toggle">☰</button>
+  <div id="visible-buttons">
+    <button id="menu-toggle">☰</button>
+    <button id="prev-button">Prev</button>
+    <button id="home-button">Home</button>
+    <button id="next-button">Next</button>
+  </div>
   <nav id="menu-list"></nav>
 </div>
 
@@ -7,6 +12,9 @@
   document.addEventListener("DOMContentLoaded", function () {
     const menuList = document.getElementById("menu-list");
     const floatingMenu = document.getElementById("floating-menu");
+    const prevButton = document.getElementById("prev-button");
+    const homeButton = document.getElementById("home-button");
+    const nextButton = document.getElementById("next-button");
 
     // Check navigation status
     const hasVisitedTalks = localStorage.getItem("talksVisited") === "true";
@@ -18,6 +26,8 @@
     function loadSlidesFromStorage() {
       const savedSlides = localStorage.getItem("slidesList");
       if (savedSlides) {
+      
+        // Toggle menu
         menuList.innerHTML = ""; // Clear existing menu
         const slides = JSON.parse(savedSlides);
         slides.forEach(slide => {
@@ -33,21 +43,72 @@
 
           menuList.appendChild(slideItem);
         });
+        
+        
+        // Prev-home-next menu
+        // Check for the index of the current slide
+        let pathname = window.location.pathname.split('/');
+        if(pathname[pathname.length -1 ] == "") {
+          pathname.pop();
+        }
+        
+        let currentSlide = pathname.pop();
+        if(currentSlide == "") {
+          currentSlide = window.location.pathname.split('/').pop();
+        }
+        const currentIndex = slides.indexOf(currentSlide);
+        
+        /*
+        console.log(currentSlide);
+        console.log(currentIndex);
+        console.log(slides);
+        */
+        
+        if (currentIndex !== -1) {
+          // Set the "Prev" and "Next" buttons based on the slide order
+          if (currentIndex > 0) {
+            prevButton.addEventListener("click", function () {
+              window.location.href = `/notes/${slides[currentIndex - 1]}`;
+            });
+          } else {
+            prevButton.disabled = true; // Disable prev if it's the first slide
+          }
+
+          if (currentIndex < slides.length - 1) {
+            nextButton.addEventListener("click", function () {
+              window.location.href = `/notes/${slides[currentIndex + 1]}`;
+            });
+          } else {
+            nextButton.disabled = true; // Disable next if it's the last slide
+          }
+        }
+        
       }
     }
 
     // If on a "talks" page, store slides & mark talks visited
-    {{ if eq .Type "talks" }}
-      const slides = {{ .Params.slides }};
+    {{ if or (eq .Type "slides") (eq .Type "decks") (eq .Type "talks") }}
+      let slides = {{ .Params.slides }};
       
-      // Debug menu visibility for first visit
-      //console.log(slides);
+      /*
+      const currentSlide = {{ .Params.url }}
       
-      if (slides && slides.length > 0) {
+      if(slides == null) {
+        slides = [currentSlide];
+      }
+
+      if(slides && slides.indexOf(currentSlide) == -1) {
+        slides.unshift(currentSlide);
+      }
+      console.log(slides);
+      */
+      
+      if(slides && slides.length > 0) {
         localStorage.setItem("slidesList", JSON.stringify(slides));
         localStorage.setItem("talksVisited", "true");
         localStorage.setItem("usedMenu", "true"); // Mark first use
       }
+            
     {{ end }}
 
     // Reset talksVisited if user goes back to home or another page directly
@@ -58,9 +119,12 @@
     }
     
     // Debug menu visibility for first visit
-    //console.log(talksVisited);
-    //console.log(hasVisitedTalks);
-    //console.log(usedMenu);
+    /*
+    console.log(talksVisited);
+    console.log(hasVisitedTalks);
+    console.log(usedMenu);
+    */
+    
     const talksVisited = localStorage.getItem("talksVisited") === "true";
 
     // Show menu only if navigated via menu or from a talks page
@@ -68,18 +132,24 @@
       floatingMenu.style.display = "block";
       loadSlidesFromStorage();
     }
-
+    
     // Handle menu toggle
     const menuToggle = document.getElementById("menu-toggle");
     const savedState = localStorage.getItem("menuVisible");
     if (savedState === "true") {
       menuList.classList.add("visible");
     }
-
+    
     menuToggle.addEventListener("click", function () {
       menuList.classList.toggle("visible");
       localStorage.setItem("menuVisible", menuList.classList.contains("visible"));
     });
+
+    // Handle "Home" button
+    homeButton.addEventListener("click", function () {
+      window.location.href = "/notes/";
+    });
+
   });
 </script>
 
@@ -88,31 +158,37 @@
     position: fixed;
     top: 10px;
     left: 10px;
-    background: #4f81bd;
-    padding: 10px;
-    border-radius: 8px;
     z-index: 1000;
+  }
+  
+  #visible-buttons {
+    background: #4f81bd;
+    border-radius: 4px;
+    padding: 4px;
   }
 
   #menu-list {
     display: none;
     list-style: none;
-    padding: 0;
-    width: 200px;
+    padding: 2px;
+    width: 12em;
+    border-radius: 4px;
   }
 
   #menu-list.visible {
     display: block;
+    background: rgba(79, 129, 189, 0.7);
   }
 
   .slide-link {
-    display: block;
+    display: inline;
     color: white;
     text-decoration: none;
     padding: 5px;
+    font-family: Monospace
   }
 
   .slide-link:hover {
-    background: gray;
+    background: #4f81bd;
   }
 </style>
