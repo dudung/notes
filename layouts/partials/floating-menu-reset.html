@@ -1,0 +1,27 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Only reset localStorage on the homepage
+    if (window.location.pathname === "/notes/") {
+      localStorage.removeItem("talksVisited");
+      localStorage.removeItem("usedMenu");
+      localStorage.removeItem("slidesList");
+    }
+
+    // Check if menu-related elements exist
+    const menuList = document.getElementById("menu-list");
+    const menuToggle = document.getElementById("menu-toggle");
+
+    if (menuList && menuToggle) {
+      // If there's saved state for menu visibility, show it
+      if (localStorage.getItem("usedMenu") === "true") {
+        menuList.classList.add("visible");
+      }
+
+      // Toggle menu visibility on button click
+      menuToggle.addEventListener("click", function () {
+        menuList.classList.toggle("visible");
+        localStorage.setItem("usedMenu", menuList.classList.contains("visible"));
+      });
+    }
+  });
+</script>
