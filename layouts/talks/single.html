@@ -3,8 +3,6 @@
     <link rel="stylesheet" href="/notes/css/talks.css?v={{ now.Unix }}">
   </head>
   
-  {{ partial "floating-menu.html" . }}
-  
   <div class="slide-container">
     <h1 class="slide-title">{{ .Title }}</h1>
     <h2 class="slide-subtitle">{{ .Params.subtitle }}</h2>
@@ -47,4 +45,7 @@
     <div class="slide-footer-right">
     </div>
   </div>
+
+  {{ partial "floating-menu.html" . }}
+
 {{ end }}

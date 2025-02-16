@@ -1,4 +1,4 @@
-<div id="floating-menu">
+<div id="floating-menu" style="display: none;">
   <button id="menu-toggle">☰</button>
   <nav id="menu-list"></nav>
 </div>
@@ -6,34 +6,70 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const menuList = document.getElementById("menu-list");
+    const floatingMenu = document.getElementById("floating-menu");
 
-    // Function to load slides from localStorage (persist navigation across pages)
+    // Check navigation status
+    const hasVisitedTalks = localStorage.getItem("talksVisited") === "true";
+    const usedMenu = localStorage.getItem("usedMenu") === "true";
+    const referrer = document.referrer;
+    const isDirectVisit = !referrer || referrer.indexOf(window.location.origin) === -1;
+
+    // Function to load slides from storage
     function loadSlidesFromStorage() {
       const savedSlides = localStorage.getItem("slidesList");
       if (savedSlides) {
-        menuList.innerHTML = ""; // Clear existing content
+        menuList.innerHTML = ""; // Clear existing menu
         const slides = JSON.parse(savedSlides);
         slides.forEach(slide => {
           let slideItem = document.createElement("a");
           slideItem.href = `/notes/${slide}`;
           slideItem.textContent = slide;
           slideItem.classList.add("slide-link");
+
+          // Mark navigation as via menu
+          slideItem.addEventListener("click", function () {
+            localStorage.setItem("usedMenu", "true");
+          });
+
           menuList.appendChild(slideItem);
         });
       }
     }
 
-    // If on a talk page, store slides in localStorage (overwrite previous list)
+    // If on a "talks" page, store slides & mark talks visited
     {{ if eq .Type "talks" }}
       const slides = {{ .Params.slides }};
+      
+      // Debug menu visibility for first visit
+      //console.log(slides);
+      
       if (slides && slides.length > 0) {
         localStorage.setItem("slidesList", JSON.stringify(slides));
+        localStorage.setItem("talksVisited", "true");
+        localStorage.setItem("usedMenu", "true"); // Mark first use
       }
     {{ end }}
 
-    loadSlidesFromStorage(); // Load stored slides on every page
+    // Reset talksVisited if user goes back to home or another page directly
+    if (isDirectVisit && !usedMenu) {
+      localStorage.removeItem("talksVisited");
+      localStorage.removeItem("usedMenu");
+      localStorage.removeItem("slidesList");
+    }
+    
+    // Debug menu visibility for first visit
+    //console.log(talksVisited);
+    //console.log(hasVisitedTalks);
+    //console.log(usedMenu);
+    const talksVisited = localStorage.getItem("talksVisited") === "true";
 
-    // Handle menu toggle button
+    // Show menu only if navigated via menu or from a talks page
+    if (hasVisitedTalks && usedMenu || talksVisited) {
+      floatingMenu.style.display = "block";
+      loadSlidesFromStorage();
+    }
+
+    // Handle menu toggle
     const menuToggle = document.getElementById("menu-toggle");
     const savedState = localStorage.getItem("menuVisible");
     if (savedState === "true") {
