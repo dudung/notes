@@ -6,4 +6,5 @@ type = 'decks'
 authors = ['viridi']
 tags = ['shortcodes']
 url = '25b20'
+slides = ['25b20']
 +++

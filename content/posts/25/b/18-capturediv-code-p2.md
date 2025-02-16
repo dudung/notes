@@ -6,6 +6,7 @@ type = 'slides'
 authors = ['viridi']
 tags = ['shortcodes']
 url = '25b18'
+slides = ['25b18']
 +++
 
 + Code (2/3)

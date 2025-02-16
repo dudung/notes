@@ -6,6 +6,7 @@ type = 'slides'
 authors = ['viridi']
 tags = ['shortcodes']
 url = '25b17'
+slides = ['25b17']
 +++
 
 + Usage in a post

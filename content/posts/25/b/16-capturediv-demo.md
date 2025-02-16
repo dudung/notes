@@ -7,6 +7,7 @@ authors = ['viridi']
 tags = ['shortcodes']
 url = '25b16'
 math = true
+slides = ['25b16']
 [ref]
 author = 'Sparisoma Viridi'
 title = 'capturediv shortcode demo'
