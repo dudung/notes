@@ -3,6 +3,8 @@
     <link rel="stylesheet" href="/notes/css/talks.css?v={{ now.Unix }}">
   </head>
   
+  {{ partial "floating-menu.html" . }}
+  
   <div class="slide-container">
     <h1 class="slide-title">{{ .Title }}</h1>
     <h2 class="slide-subtitle">{{ .Params.subtitle }}</h2>
@@ -45,85 +47,4 @@
     <div class="slide-footer-right">
     </div>
   </div>
-
-
-  <div id="floating-menu">
-    <button id="menu-toggle">☰</button>
-    <nav id="menu-list"></nav>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get slide data from Hugo front matter
-      const slides = {{ .Params.slides }};
-      console.log(slides);
-      const menuList = document.getElementById("menu-list");
-
-      if (!slides || slides.length === 0) {
-        console.warn("No slides data found.");
-        return;
-      }
-
-      // Populate menu with slides
-      slides.forEach(slide => {
-        let slideItem = document.createElement("a");
-        slideItem.href = `/notes/${slide}`;
-        slideItem.textContent = slide;
-        slideItem.classList.add("slide-link");
-        menuList.appendChild(slideItem);
-      });
-
-      // Restore menu visibility state
-      const menuToggle = document.getElementById("menu-toggle");
-      const savedState = localStorage.getItem("menuVisible");
-      if (savedState === "true") {
-        menuList.classList.add("visible");
-      }
-
-      // Toggle menu visibility
-      menuToggle.addEventListener("click", function () {
-        menuList.classList.toggle("visible");
-        localStorage.setItem("menuVisible", menuList.classList.contains("visible"));
-      });
-    });
-  </script>
-
-  <style>
-    #floating-menu {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      /* background: rgba(0, 0, 0, 0.8); */
-      background: #4f81bd;
-      padding: 6px;
-      border-radius: 4px;
-      z-index: 1000;
-      width: 25%;
-    }
-
-    #menu-list {
-      display: none;
-      list-style: none;
-      padding: 0;
-    }
-
-    #menu-list.visible {
-      display: block;
-      border: 0px red solid;
-    }
-
-    .slide-link {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      padding: 1px 4px;
-      font-family: Monospace;
-    }
-
-    .slide-link:hover {
-      background: gray;
-    }
-  </style>
-
-
 {{ end }}

@@ -1,0 +1,82 @@
+<div id="floating-menu">
+  <button id="menu-toggle">☰</button>
+  <nav id="menu-list"></nav>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuList = document.getElementById("menu-list");
+
+    // Function to load slides from localStorage (persist navigation across pages)
+    function loadSlidesFromStorage() {
+      const savedSlides = localStorage.getItem("slidesList");
+      if (savedSlides) {
+        menuList.innerHTML = ""; // Clear existing content
+        const slides = JSON.parse(savedSlides);
+        slides.forEach(slide => {
+          let slideItem = document.createElement("a");
+          slideItem.href = `/notes/${slide}`;
+          slideItem.textContent = slide;
+          slideItem.classList.add("slide-link");
+          menuList.appendChild(slideItem);
+        });
+      }
+    }
+
+    // If on a talk page, store slides in localStorage (overwrite previous list)
+    {{ if eq .Type "talks" }}
+      const slides = {{ .Params.slides }};
+      if (slides && slides.length > 0) {
+        localStorage.setItem("slidesList", JSON.stringify(slides));
+      }
+    {{ end }}
+
+    loadSlidesFromStorage(); // Load stored slides on every page
+
+    // Handle menu toggle button
+    const menuToggle = document.getElementById("menu-toggle");
+    const savedState = localStorage.getItem("menuVisible");
+    if (savedState === "true") {
+      menuList.classList.add("visible");
+    }
+
+    menuToggle.addEventListener("click", function () {
+      menuList.classList.toggle("visible");
+      localStorage.setItem("menuVisible", menuList.classList.contains("visible"));
+    });
+  });
+</script>
+
+<style>
+  #floating-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #4f81bd;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  #menu-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+  }
+
+  #menu-list.visible {
+    display: block;
+  }
+
+  .slide-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+  }
+
+  .slide-link:hover {
+    background: gray;
+  }
+</style>
