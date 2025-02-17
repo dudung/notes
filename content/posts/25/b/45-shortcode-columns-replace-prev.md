@@ -1,5 +1,5 @@
 +++
-title = 'shortcode columns'
+title = 'shortcode columns, replace prev'
 date = '2025-02-17T18:02:02+07:00'
 draft = false
 type = 'slides'

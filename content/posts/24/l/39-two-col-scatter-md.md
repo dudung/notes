@@ -2,7 +2,8 @@
 title = '2c scatter md'
 date = '2024-12-28T07:33:26+07:00'
 draft = false
-type = 'xpage'
+type = 'slides'
+layout = 'columns'
 tags = ['shortcode', 'two-col']
 authors = ['viridi']
 math = true
@@ -10,7 +11,7 @@ url = '24l39'
 +++
 <!--more-->
 
-{{< twocolumn >}}
+{{< columns raw="yes" >}}
 {{< scatter >}}
 B_XLABEL x
 B_YLABEL y
@@ -28,9 +29,9 @@ B_LCOLOR #ddf
 7, 0 
 8, 5
 {{< /scatter >}}
-{{< /twocolumn >}}
+{{< /columns >}}
 
-{{< twocolumn col="right" markdown="yes" >}}
+{{< columns >}}
 - Equation
 $$
 y = a x^2 + b x + c
@@ -39,7 +40,7 @@ $$
 a | b | c
 :-: | :-: | :-:
 1 | -10 | 21
-{{< /twocolumn >}}
+{{< /columns >}}
 
 {{< ref >}}
 Author, "Title", Source, Date, {{< url "https://url.com" >}} [20241124]

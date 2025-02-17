@@ -2,7 +2,8 @@
 title = '2c scatter flowchart'
 date = '2024-12-28T08:54:42+07:00'
 draft = false
-type = 'xpage'
+type = 'slides'
+layout = 'columns'
 tags = ['shortcode', 'two-col']
 authors = ['viridi']
 math = true
@@ -10,7 +11,7 @@ url = '24l41'
 +++
 <!--more-->
 
-{{< twocolumn >}}
+{{< columns raw="yes" >}}
 {{< scatter >}}
 B_XLABEL x
 B_YLABEL y
@@ -28,9 +29,9 @@ B_LCOLOR #ddf
 7, 0 
 8, 5
 {{< /scatter >}}
-{{< /twocolumn >}}
+{{< /columns >}}
 
-{{< twocolumn col="right" >}}
+{{< columns raw="yes" >}}
 {{< mermaid >}}
 flowchart LR
   B --> I --> C
@@ -51,7 +52,7 @@ flowchart LR
   o1b(("1"))
   o2b(("2"))
 {{< /mermaid >}}
-{{< /twocolumn >}}
+{{< /columns >}}
 
 {{< ref >}}
 Author, "Title", Source, Date, {{< url "https://url.com" >}} [20241124]
