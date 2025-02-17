@@ -13,9 +13,9 @@ url = '25b28'
 + Notice the unknown in every equation.
 No | Equation | Uknown
 :-: | :-: | :-:
-(C1) | $x - x_0 = \tfrac12 (v_0 + v) t$   | $a$
-(C2) | $v = v_0 + a t$                    | $x - x_0$
-(C3) | $x - x_0 = v_0 t + \tfrac12 a t^2$ | $v_t$
-(C4) | $v^2 = v_0^2 + 2a(x - x_0)$        | $t$
-(C5) | $x - x_0 = v t - \tfrac12 a t^2$   | $v_0$
+(C1) | $v = v_0 + a t$                    | $x - x_0$
+(C2) | $x - x_0 = v_0 t + \tfrac12 a t^2$ | $v_t$
+(C3) | $v^2 = v_0^2 + 2a(x - x_0)$        | $t$
+(C4) | $x - x_0 = v t - \tfrac12 a t^2$   | $v_0$
+(C5) | $x - x_0 = \tfrac12 (v_0 + v) t$   | $a$
 + The term $x - x_0$ is also written as $\Delta x$ or $s$, and there are other variations, e.g. $x = x_t = x(t)$, $v = v_t = v(t)$, etc.
