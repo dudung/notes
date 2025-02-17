@@ -1,7 +1,5 @@
 {{ define "main" }}
 
- {{ partial "floating-menu-reset.html" }}
-
   <main aria-role="main">
     <header class="homepage-header">
       {{ with .Params.subtitle }}
@@ -13,7 +11,7 @@
     </div>
     
     {{ $key := "type" }}
-    {{ $value := "talks" }}
+    {{ $value := "decks" }}
     {{ $paramskey := (printf "Params.%s" $key) }}
     
     <!--
@@ -27,7 +25,6 @@
         {{ $filteredPages = where .Site.RegularPages (printf "Params.%s" $key) "intersect" (slice $value) }}
       {{ end }}
       
-      {{ $filteredPages := .Site.RegularPages }}
       {{ $paginator := .Paginate $filteredPages }}
       {{ range $paginator.Pages }}
       
