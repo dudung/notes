@@ -1,0 +1,65 @@
+{{ define "main" }}
+  <head>
+    <link rel="stylesheet" href="/notes/css/slides.css?v={{ now.Unix }}">
+  </head>
+  
+  {{ partial "floating-menu.html" . }}
+
+  <div class="slide-container">
+    <h1 class="slide-title">{{ .Title }}</h1>
+   
+   <!--
+    <nav class="slide-navigation">
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    -->
+    
+    <div class='slide-rect-left'></div>
+    <div class='slide-rect-right'></div>
+
+    <div class="slide-content">
+      <div class="columns-container">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="slide-footer-left">
+    </div>
+    <div class="slide-footer-center">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+    </div>
+    <div class="slide-footer-right">
+    </div>
+    
+    {{ if .Params.ref }}
+      <div class='slide-ref'>
+        {{ .Params.ref.author }}, "{{ .Params.ref.title }}", {{ .Params.ref.source }}, {{ .Params.ref.created }} ({{ .Params.ref.updated }}), url <a href="{{ .Params.ref.url }}" target="blank">{{ .Params.ref.url }}</a> [{{ .Params.ref.accessed }}]. 
+      </div>
+    {{ end }}
+  </div>
+  
+  {{ if false }}
+    {{- range .Params.authors }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        <figure class='authors'>
+          <img src="{{ .Params.photo }}" alt="" />
+          <figcaption>
+            <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+          </figcaption>
+        </figure>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if false }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ end }}
+  
+  {{ partial "posts/math.html" . }}
+{{ end }}
