@@ -16,5 +16,5 @@ url = '25b40'
 {{< /columns >}}
 
 {{< columns >}}
-+ closing (available soon)
++ closing (in preparation)
 {{< /columns >}}
