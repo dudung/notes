@@ -271,3 +271,19 @@ table th {
 table td {
   padding: 0 1em;
 }
+
+/* n-columns layout */
+
+.columns-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.2em;
+  border: 0px blue solid;
+  width: 100%;
+}
+
+.columns {
+  border: 0px blue solid;
+  flex: 1;
+  padding: 0.2em;
+}

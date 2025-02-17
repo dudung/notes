@@ -3,17 +3,18 @@ title = 'outline'
 date = '2025-02-17T08:08:39+07:00'
 draft = false
 type = 'slides'
-template = 'two-column'
+layout = 'columns'
 authors = ['viridi']
 tags = ['kinematics']
 math = true
 url = '25b40'
 +++
 
-{{< column-left markdown="yes" >}}
+{{< columns >}}
 + intro
 + kinematics equations
-{{< /column-left >}}
+{{< /columns >}}
 
-{{< column-right markdown="yes" >}}
-{{< /column-right >}}
+{{< columns >}}
++ closing (available soon)
+{{< /columns >}}

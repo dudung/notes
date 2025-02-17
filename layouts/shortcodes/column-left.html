@@ -1,8 +1,0 @@
-{{ $markdown := .Get "markdown" }}
-<div class="slide-content-left">
-{{ if eq $markdown "yes" }}
-  {{ .Inner | markdownify }}
-{{ else }}
-  {{ .Inner }}
-{{ end }}
-</div>
