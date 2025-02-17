@@ -12,9 +12,9 @@ url = '25b40'
 
 {{< columns >}}
 + intro
++ syllabus
 + kinematics equations
 {{< /columns >}}
 
 {{< columns >}}
-+ closing (in preparation)
 {{< /columns >}}
