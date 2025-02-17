@@ -5,12 +5,13 @@ draft = false
 type = 'slides'
 template = 'two-column'
 authors = ['viridi']
-tags = ['daily-notes']
+tags = ['kinematics']
 math = true
 url = '25b40'
 +++
 
 {{< column-left markdown="yes" >}}
++ intro
 + kinematics equations
 {{< /column-left >}}
 

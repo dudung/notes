@@ -4,7 +4,7 @@ date = '2025-02-17T06:09:31+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['daily-notes']
+tags = ['kinematics']
 math = true
 url = '25b37'
 +++
