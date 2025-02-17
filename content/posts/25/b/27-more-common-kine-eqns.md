@@ -28,4 +28,4 @@ $$
 $$\tag{A3}
 v_t^2 = v_0^2 + 2a(x_t - x_0).
 $$
-+ There are other two equations, that can be obtained by substitution of (1) to (2) in order to eliminate $a$ or $v_0$.
++ There are other two equations, that can be obtained by substitution of (A1) to (A2) in order to eliminate $a$ or $v_0$.
