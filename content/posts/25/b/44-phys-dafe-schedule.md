@@ -15,6 +15,11 @@ url = '25b44'
 + Time 1300-1500
 + Room 1203
 + Sessions 16
+
+$$
+\\\\[2.5em]
+$$
+> Idul Fitri: 31/3 - 1/4
 {{< /columns >}}
 
 {{< columns >}}
