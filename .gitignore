@@ -3,7 +3,6 @@ cmd.lnk
 
 # Folders
 public
-s
 
 # Hugo
 .hugo_build.lock
