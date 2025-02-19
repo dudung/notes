@@ -15,31 +15,7 @@ pagerSize = 30
   category = "categories"
 
 [[menu.main]]
-  name = 'All'
-  weight = 4
-  identifier = 'all'
-  url = '/all'
-
-[[menu.main]]
   name = 'Home'
-  weight = 5
+  weight = 0
   identifier = 'home'
   url = '/'
-
-[[menu.main]]
-  name = 'Talks'
-  weight = 1
-  identifier = 'talks'
-  url = '/talks'
-
-[[menu.main]]
-  name = 'Decks'
-  weight = 2
-  identifier = 'decks'
-  url = '/decks'
-
-[[menu.main]]
-  name = 'Slides'
-  weight = 3
-  identifier = 'slides'
-  url = '/slides'
