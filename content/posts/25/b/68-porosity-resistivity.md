@@ -16,5 +16,5 @@ url = '25b68'
   {{< /details >}}
 + `14-feb-2025` [`f9c3y`](https://osf.io/f9c3y) Self introduction and first meeting.
   {{< details summary=" ">}}
-  Anzet Dianto Pebriwan, url https://osf.io/wv78b/.
+  A. D. Pebriwan, url https://osf.io/wv78b/.
   {{< /details >}}
