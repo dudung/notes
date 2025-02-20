@@ -1,5 +1,5 @@
 +++
-title = 'fgd ui-aidi-x'
+title = 'fgd ui-x-aidi'
 date = '2025-02-20T05:22:47+07:00'
 draft = false
 type = 'slides'
