@@ -4,7 +4,7 @@ date = '2025-02-20T14:44:26+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['aidi', 'fgd']
+tags = ['users', 'res']
 url = '25b68'
 +++
 
