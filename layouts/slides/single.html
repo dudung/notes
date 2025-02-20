@@ -24,8 +24,8 @@
     <div class="slide-content">
       {{ .Content }}
     </div>
-
     <div class="slide-footer-left">
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
     <div class="slide-footer-center">
       <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
@@ -54,10 +54,6 @@
       {{ end }}
     {{ end }}
   {{ end }}
-  
-  {{ if false }}
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-  {{ end }}
-  
+    
   {{ partial "posts/math.html" . }}
 {{ end }}
