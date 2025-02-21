@@ -33,6 +33,7 @@
       </time>
     </div>
     <div class="slide-footer-right">
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
     </div>
     
     {{ if .Params.ref }}

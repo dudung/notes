@@ -3,7 +3,8 @@ title = 'left footnote tags'
 date = '2025-02-21T08:14:07+07:00'
 authors = ['viridi']
 type = 'slides'
-tags = ['hugo', 'partials']
+tags = ['partials', 'footer']
+categories = ['hugo']
 url = '25b71'
 +++
 
