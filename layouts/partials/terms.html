@@ -12,11 +12,11 @@ For a given taxonomy, renders a list of terms assigned to the page.
 
 {{ if eq $page.Params.type "slides" }}
   {{- with $page.GetTerms $taxonomy }}
-    {{- range . }}
-      <ul class="tags-footer-left">
-        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-      </ul>
-    {{- end }}
+    <ul class="tags-footer-left">
+      {{- range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | lower }}</a></li>
+      {{- end }}
+    </ul>
   {{- end }}
 {{ else }}
   {{- with $page.GetTerms $taxonomy }}
