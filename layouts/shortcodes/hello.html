@@ -1,0 +1,6 @@
+{{ $myscript := resources.Get "js/hello.js" | resources.Minify | fingerprint | resources.ExecuteAsTemplate "js/hello.js" . }}
+{{ $str := .Get 0 | default "you" }}
+<script src="{{ $myscript.RelPermalink }}" integrity="{{ $myscript.Data.Integrity }}"></script>
+<script>
+hello({{$str}});
+</script>
