@@ -128,7 +128,7 @@ html, body {
 
 .slide-content li {
   padding-left: calc(0.01 * var(--height));
-  line-height: calc(0.065 * var(--height));
+  line-height: calc(0.064 * var(--height));
   padding-bottom: calc(0.015 * var(--height));
   padding-top: calc(0.0 * var(--height));
   border: 0px solid #4f81bd;
