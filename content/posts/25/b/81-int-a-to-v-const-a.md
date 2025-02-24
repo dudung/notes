@@ -20,5 +20,5 @@ v(t_n) = v_n.
 $$
 + Velocity
 $$\tag{A3}
-v(t) = v_n + a(t - t_n), \ \ \ \ t_n \le t \le t_{n+1}.
+v(t) = v_n + a_n(t - t_n), \ \ \ \ t_n \le t \le t_{n+1}.
 $$
