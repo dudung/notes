@@ -22,4 +22,4 @@ $$
 with $t_{n+1} = t_n + \tau_n$, where $\tau_n$ is $n$-th time interval.
 + Initial conditions
   - $v(t_0) = v_0$,
-  - $v(t_1) = v_1$ and $v_0 + a_0(t_1 - t_0)$.
+  - $v(t_1) = v_1$ and $v(t_1) = v_0 + a_0(t_1 - t_0)$.
