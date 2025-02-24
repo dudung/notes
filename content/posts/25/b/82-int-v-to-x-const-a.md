@@ -5,7 +5,7 @@ draft = false
 authors = ['viridi']
 type = 'slides'
 math = true
-tags = ['position', 'velocity', 'const-acceleration', 'piecewise']
+tags = ['pos', 'velo', 'acc', 'piecewise']
 categories = ['kinematics']
 url = '25b82'
 +++

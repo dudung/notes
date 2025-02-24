@@ -5,7 +5,7 @@ draft = false
 authors = ['viridi']
 type = 'slides'
 categories = ['refs']
-tags = ['Kinematics', 'piecewise', 'position']
+tags = ['kinematics', 'piecewise', 'pos']
 url = '25b80'
 [ref]
 author = 'Andrew Chin'

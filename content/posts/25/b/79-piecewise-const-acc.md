@@ -5,7 +5,7 @@ draft = false
 authors = ['viridi']
 type = 'slides'
 categories = ['refs']
-tags = ['Kinematics', 'piecewise', 'acceleration']
+tags = ['kinematics', 'piecewise', 'acc']
 url = '25b79'
 [ref]
 author = 'Christopher Duston (ed)'
