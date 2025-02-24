@@ -7,7 +7,7 @@ type = 'slides'
 math = true
 tags = ['velocity', 'const-acceleration', 'piecewise']
 categories = ['kinematics']
-url = '25b76'
+url = '25b81'
 +++
 
 + Constant acceleration
