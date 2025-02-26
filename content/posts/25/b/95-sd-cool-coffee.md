@@ -6,7 +6,7 @@ authors = ['viridi']
 type = 'slides'
 layout = 'columns'
 math = true
-tags = ['linear-growth']
+tags = ['exponential','cooling']
 categories = ['system-dynamics']
 url = '25b95'
 [ref]

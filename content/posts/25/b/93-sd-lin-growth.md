@@ -6,7 +6,7 @@ authors = ['viridi']
 type = 'slides'
 layout = 'columns'
 math = true
-tags = ['linear-growth']
+tags = ['linear', 'growth']
 categories = ['system-dynamics']
 url = '25b93'
 [ref]
