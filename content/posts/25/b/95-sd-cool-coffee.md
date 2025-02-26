@@ -20,7 +20,7 @@ accessed = '20250226'
 
 {{< columns >}}
 + Example: Cooling a hot cup of coffee.
-+ Stock: Temperature of coffee $T$.
++ Stock: Coffee temperature $T$.
 + Flow: Heat loss to the environment $kT$.
 + Behavior: Temperature decreases towards room temperature $T_{\rm room}$.
 {{< /columns >}}

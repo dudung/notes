@@ -28,7 +28,7 @@ accessed = '20250226'
 {{< columns raw="yes" >}}
 <li>Equation:</li>
 $$\tag{SD1}
-\frac{dP}{dt} = b,
+\frac{dP}{dt} = b.
 $$
 <li>Diagram:</li>
 {{< mermaid>}}
