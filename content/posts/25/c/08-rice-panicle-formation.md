@@ -5,7 +5,7 @@ draft = false
 type = 'slides'
 authors = ['viridi']
 tags = ['rki-25', 'plan']
-categories = ['res']
+categories = ['refs']
 url = '25c08'
 [ref]
 author = 'Thomas L. Rost'

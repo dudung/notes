@@ -5,7 +5,7 @@ draft = false
 type = 'slides'
 authors = ['viridi']
 tags = ['rki-25', 'plan']
-categories = ['res']
+categories = ['refs']
 url = '25c07'
 [ref]
 author = 'GPT-4o'
