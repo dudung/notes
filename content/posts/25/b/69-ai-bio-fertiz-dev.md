@@ -8,6 +8,7 @@ tags = ['users', 'res']
 url = '25b69'
 +++
 
++ `06-mar-2025` [`jxuze`](https://osf.io/jxuze) Online discussion-1 ai-dev biofertiz-palm.
 + `20-feb-2025` [`vuagw`](https://osf.io/vuagw) Microbe biofertilizer consortium design.
   {{< details summary=" ">}}
   - Adi Pancoro, "Mengembangkan model AI untuk merancang konsorsium biofertilizer mikrobayang optimal untuk perkebunan kelapa sawit dengan mengintegrasikan pengambilan sampel tanah, fisiologi tanaman, kumpulan data produksi, dan data metagenomik", private communication, 20 Feb 2025.
