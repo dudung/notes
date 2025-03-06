@@ -9,6 +9,14 @@ url = '25b11'
 +++
 <!--more-->
 
++ `06-mar-2025` []() Plan for 2nd-year in raman@lfd.
+{{< details >}}
+- Find paper for 11 parameters.
+- Build techno-economy model for this app.
+- Installation problem, wsl-linux-ubuntu, jupyter-notebook.
+- Exibition this year prep.
+- Ref peak deleted due to crop process.
+{{< /details >}}
 + `14-feb-2025` []() Friday monev in campus.
 + `12-feb-2025` [`sf6qg`](https://osf.io/sf6qg) Monev preparation in lfd.
 + `06-feb-2025` [`gj25s`](https://osf.io/gj25s) Prem-reg classses, int-monev.
