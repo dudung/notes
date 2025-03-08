@@ -17,14 +17,14 @@ url = 'https://dudung.github.io/notes/25c22/'
 accessed = '20250309'
 +++
 
-+ N/A.
++ customize container
 
 <!--more-->
 
 There was a pair of shortcodes allowing to have fun with JS inside a Hugo post. They are `script/loader` and `script/runner` [^viridi_2025]. The former is for loading JS from external and the later is for executing JS in the post. Here the last will be used in having fun with JS in a Hugo post.
 
 
-## customize div container
+## customize container
 a `div` is the container for DOM elements created by JS placed between pair of `script/runner` shortcode.
 
 {{< script/runner id="cnt1" >}}
@@ -61,7 +61,10 @@ with(cnt.style) {
 {{</* /script/runner */>}}
 ```
 
-Notice that `document.getElementById("cnt1")` is due to `id="cnt1`"`, argument of the shortcode. And the text "Hello, World!" is set using `.innerHTML` property of `div` element. There is better approach using `.appendChild()` method.
+Notice that `document.getElementById("cnt1")` is due to `id="cnt1"`, argument of the shortcode. And the text "Hello, World!" is set using 
+`.innerHTML` property of `div` element. There is better approach using `.appendChild()` method.
+
+If there is more that one use of `script/runner` shortcode, every container should have unique `id`. Otherwise it will only modified the first one.
 
 
 ## refs
