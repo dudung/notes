@@ -7,14 +7,15 @@ type = 'notes'
 authors = ['viridi', 'arimasen']
 tags = ['brain storming', 'raw idea']
 categories = ['notes']
-url = '25c18'
+url = '25c19'
 [ref]
 author = 'Sparisoma Viridi'
 title = 'multi-proj manage-plan'
 source = 'notes'
 date = '8 Mar 2025'
 updated = 'not yet'
-url = ''
+url = 'https://dudung.github.io/notes/25c18/'
+accessed = '20250308'
 +++
 
 + Before more: $y = ax^2 + bx + c$.
@@ -37,7 +38,6 @@ $$\tag{18}
 x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
 $$
 
-# title
 ## subtitle
 ### subsubtitle
 

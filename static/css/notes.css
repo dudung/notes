@@ -583,10 +583,30 @@ table td {
   margin-right: 0;
 }
 
+
+.article-title {
+  position: absolute;
+  top: calc(1.02 * var(--height));
+  padding-left: 2em;
+}
+
 .article-content {
   border: 0px solid red;
   position: absolute;
   top: calc(1 * var(--height));
-  width: calc(15/9 * var(--height));
+  width: calc(14.7/9 * var(--height));
   padding: 2em;
+  padding-top: 7em;
+}
+
+.authors-container {
+  position: absolute;
+  top: calc(1.15 * var(--height));
+  padding-left: 2em;
+}
+
+.readingtimedate {
+  position: absolute;
+  top: calc(1.15 * var(--height));
+  right: 1em;
 }
