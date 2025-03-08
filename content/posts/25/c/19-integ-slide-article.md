@@ -116,9 +116,20 @@ where the `split-mark` is `< !--more-->` but without space between `<` and `!`. 
 ## documentation
 This note can be considered as initial documentation. Further enhancement might later be released when I have sufficient energy and left passion.
 
+## others
+I am quite satisfied with this achievement. Even it is small for other people, but for me it helps to buid my confidence that I am able to realize an idea. It is really relieving and I hope it does help me to make my diverse taks more efficient.
+
+## to-do
++ Consider whether multi-slide feature is necessary or it just adds complexity than ease.
++ Find a way to hide the vertical scroll bar in full screen mode (or presentation mode).
++ Think of automatice resuming process in creating the slide part. Perhaps using AI? But it will not suitable for SSG like Hugo.
+
+## closing
+A layout for Hugo post that integrate slide for summary and article for full explanation, derivation, process and others, has been developed. It only supports single slide is the current limitation.
+
 ## refs
 Following are discussion with GPT-4o and GPT-4o mini (there is no more free access).
 
-+ GPT-4o, "Split Content Layout", Chat GPT, 8 Mar 2025, url https://chatgpt.com/share/67cbf9af-a014-800a-9777-492f89231319 [20250308].
++ GPT-4o, GPT-4o mini, "Split Content Layout", Chat GPT, 8 Mar 2025, url https://chatgpt.com/share/67cbf9af-a014-800a-9777-492f89231319 [20250308].
 + GPT-4o, "Date format in Hugo", Chat GPT, 8 Mar 2025, url https://chatgpt.com/share/67cbf9e3-9364-800a-a03f-77e348f02792 [20250308].
 + GPT-4o, "Inline List CSS", Chat GPT, 8 Mar 2025, url https://chatgpt.com/share/67cbfa13-b960-800a-9dbb-44b3494d748c [20250308].
