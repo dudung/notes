@@ -583,30 +583,59 @@ table td {
   margin-right: 0;
 }
 
+/* article section */
+
+.article-container {
+  border: 0px solid green;
+  position: absolute;
+  top: calc(1.0 * var(--height));
+  width: calc(var(--width) - 100px);
+  padding: 2em;
+  padding-top: 7em;
+}
 
 .article-title {
+  border: 0px solid red;
   position: absolute;
-  top: calc(1.02 * var(--height));
-  padding-left: 2em;
+  top: 1em;
+  padding-left: 1em;
+}
+
+.readingtimedate {
+  border: 0px solid red;
+  position: absolute;
+  top: 6em;
+  right: 2em;
+}
+
+ul.authors-container {
+  border: 0px solid red;
+  position: absolute;
+  top: 6em;
+  list-style: none;
+  padding: 0;
+  padding-left: 1em;
+  margin: 0;
+  width: fit-content; /* Adapts to content width */
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+ul.authors-container li.author {
+  display: inline;
+}
+
+ul.authors-container li.author::after {
+  content: ", ";
+  margin-left: -0.15em;
+}
+
+ul.authors-container li.author:last-child::after {
+  content: "";
 }
 
 .article-content {
   border: 0px solid red;
   position: absolute;
-  top: calc(1 * var(--height));
-  width: calc(14.7/9 * var(--height));
-  padding: 2em;
-  padding-top: 7em;
-}
-
-.authors-container {
-  position: absolute;
-  top: calc(1.15 * var(--height));
-  padding-left: 2em;
-}
-
-.readingtimedate {
-  position: absolute;
-  top: calc(1.15 * var(--height));
-  right: 1em;
+  top: 8em;
+  padding: 1em;
 }

@@ -28,34 +28,36 @@
         {{ index $parts 0 | markdownify }}
     </div>
     
-    <div class="article-content">
-       {{ index $parts 1 | markdownify }}
-    </div>
+    <div class="article-container">
+      
+      <div class="article-title">
+        <h1>{{ .Title }}</h1>
+      </div>
 
-    <div class="article-title">
-      <h1>{{ .Title }}</h1>
-    </div>
-
-    <div class='authors-container'>
-    {{- range .Params.authors }}
-      {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-        <figure class='authors'>
-          <!--img src="{{ .Params.photo }}" alt=""/ -->
-          <figcaption>
+      <ul class='authors-container'>
+      {{- range .Params.authors }}
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+          <li class='author'>
             <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-          </figcaption>
-        </figure>
+          </li>
+        {{ end }}
       {{ end }}
-    {{ end }}
-    </div>
+      </ul>
     
-    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-    {{ $dateHuman := .Date | time.Format ":date_long" }}
-    <div class='readingtimedate'>
-      {{ partial "reading-time.html" . }} &middot;
-      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    </div>
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05 07:00" }}
+      <!--{{ $dateHuman := .Date | time.Format ":date_long" }}-->
+      {{ $dateHuman := .Date | time.Format "2 Jan 2006" }}
+      <div class='readingtimedate'>
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        &middot;
+        {{ partial "reading-time.html" . }}
+      </div>
+      
+      <div class="article-content">
+        {{ index $parts 1 | markdownify }}
+      </div>
 
+    </div>
 
     <div class="slide-footer-left">
         {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
