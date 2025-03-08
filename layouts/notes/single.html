@@ -22,7 +22,7 @@
     <div class='slide-rect-right'></div>
 
     {{ $content := .RawContent }}
-    {{ $parts := split $content "<!-- more -->" }}    
+    {{ $parts := split $content "<!--more-->" }}    
     
     <div class="slide-content">
         {{ index $parts 0 | markdownify }}
