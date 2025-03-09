@@ -117,6 +117,31 @@ cnt.appendChild(btn);
 
 Using `click` event the `button` will toggle its state between `On` and `Off`. It is not a good example for toggle button. But just for now it is working. 
 
+## textarea
+..
+
+{{< script/runner id="cnt3" >}}
+const cnt = document.getElementById("cnt3");
+const ta = document.createElement("textarea");
+
+with(ta.style) {
+  overflowY = "scroll";
+  height = "100px";
+  width = "220px";
+}
+
+ta.value = "\
+10 REM Simple Program\n\
+15 BEGIN\n\
+20 PRINT 'Hello, World!'\n\
+30 END\
+";
+
+cnt.appendChild(ta);
+{{< /script/runner >}}
+
+..
+
 
 ## refs
 [^viridi_2025]: Sparisoma Viridi, "shortcodes script loader and runner", notes, 19 Jan 2025, url http://dudung.github.io/notes/25a66/ [20250309].
