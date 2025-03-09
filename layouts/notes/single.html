@@ -25,7 +25,9 @@
     {{ $parts := split $content "<!--more-->" }}    
     
     <div class="slide-content">
+      <div class="columns-container">
         {{ index $parts 0 | markdownify }}
+      </div>
     </div>
     
     <div class="article-container">

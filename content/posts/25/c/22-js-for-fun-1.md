@@ -10,14 +10,18 @@ categories = ['js']
 url = '25c22'
 [ref]
 author = 'Sparisoma Viridi'
-title = 'js for fun'
+title = 'js for fun 1'
 source = 'notes, 9 Mar 2025'
 updated = 'not yet'
 url = 'https://dudung.github.io/notes/25c22/'
 accessed = '20250309'
 +++
 
+{{< columns >}}
 + customize container
++ toggle button
++ refs
+{{< /columns >}}
 
 <!--more-->
 
@@ -67,5 +71,50 @@ Notice that `document.getElementById("cnt1")` is due to `id="cnt1"`, argument of
 If there is more that one use of `script/runner` shortcode, every container should have unique `id`. Otherwise it will only modified the first one.
 
 
+## toggle button
+Previously, how to customize a structural element is shown. In this part example of a form element, a button, is given. What elements fall in which categories, structural or form elements, can be found in some resources but not with the exact same categories [^gpt4o_20205].
+
+{{< script/runner id="cnt2" >}}
+const cnt = document.getElementById("cnt2");
+
+const btn = document.createElement("button");
+btn.innerHTML = "Off";
+
+btn.addEventListener("click", function() {
+    if(btn.innerHTML == "Off") {
+      btn.innerHTML = "On";
+    } else {
+      btn.innerHTML = "Off";
+    }
+});
+
+cnt.appendChild(btn);
+{{< /script/runner >}}
+
+Following is code to get above result.
+
+```php
+{{</* script/runner id="cnt2" */>}}
+const cnt = document.getElementById("cnt2");
+
+const btn = document.createElement("button");
+btn.innerHTML = "Off";
+
+btn.addEventListener("click", function() {
+    if(btn.innerHTML == "Off") {
+      btn.innerHTML = "On";
+    } else {
+      btn.innerHTML = "Off";
+    }
+});
+
+cnt.appendChild(btn);
+{{</* /script/runner */>}}
+```
+
+Using `click` event the `button` will toggle its state between `On` and `Off`. It is not a good example for toggle button. But just for now it is working. 
+
+
 ## refs
 [^viridi_2025]: Sparisoma Viridi, "shortcodes script loader and runner", notes, 19 Jan 2025, url http://dudung.github.io/notes/25a66/ [20250309].
+[^gpt4o_20205]: GPT-4o, "Structural and Form Elements", Chat GPT, 9 Mar 2025, url https://chatgpt.com/share/67cd065f-de60-800a-9aaa-d0d1b4f7966f [20250309].

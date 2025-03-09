@@ -548,16 +548,17 @@ table td {
 
 .columns-container {
   display: flex;
-  justify-content: space-evenly;
+  //justify-content: space-evenly;
   gap: 0.2em;
   border: 0px blue solid;
   width: 100%;
+  padding: 0.2em;
 }
 
 .columns {
   border: 0px blue solid;
   flex: 1;
-  padding: 0.2em;
+  padding: 0em;
 }
 
 
