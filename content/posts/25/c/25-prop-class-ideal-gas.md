@@ -17,7 +17,9 @@ accessed = '20250310'
 +++
 
 {{< columns >}}
-+ ..
++ state
++ process
++ cycle
 {{< /columns >}}
 
 {{< columns >}}
