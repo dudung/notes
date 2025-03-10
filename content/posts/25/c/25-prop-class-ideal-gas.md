@@ -6,7 +6,6 @@ math = false
 type = 'notes'
 authors = ['viridi']
 tags = ['ideal-gas']
-categories = ['proposal']
 url = '25c25'
 [ref]
 author = 'Sparisoma Viridi'
