@@ -13,7 +13,7 @@ url = '25c34'
 {{< columns >}}
 + equation of state
 + isobaric process
-+ isokhoric process
++ isochoric process
 + isothermal process
 + adiabatic process
 + work
