@@ -31,7 +31,7 @@ url = '25c34'
 
 <!--more-->
 
-.. (intro) ..
+Equations used in an ideal gas system are listed here, but they might be not complete.
 
 
 ## equation of state
