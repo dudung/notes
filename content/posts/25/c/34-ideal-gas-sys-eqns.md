@@ -22,6 +22,7 @@ url = '25c34'
 {{< /columns >}}
 
 {{< columns >}}
++ heat capacity ratio
 + cycle
 + entropy
 + the 1st law of thermodynamics
