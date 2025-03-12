@@ -11,27 +11,28 @@ url = '25c34'
 +++
 
 {{< columns >}}
-+ Equation of state
-+ Isobaric process
-+ Isokhoric process
-+ Isothermal process
-+ Adiabatic process
-+ Work
-+ Heat
-+ Internal energi change
++ equation of state
++ isobaric process
++ isokhoric process
++ isothermal process
++ adiabatic process
++ work
++ heat
++ internal energi change
 {{< /columns >}}
 
 {{< columns >}}
-+ Cycle
-+ Entropy
-+ The 1st law of thermodynamics
-+ The 2nd law of thermodynamics
++ cycle
++ entropy
++ the 1st law of thermodynamics
++ the 2nd law of thermodynamics
 {{< /columns >}}
 
 
 <!--more-->
 
-..
+.. (intro) ..
+
 
 ## equation of state
 Ideal gas obeys equation of state
@@ -41,7 +42,6 @@ PV = nRT,
 $$
 
 known as the ideal gas law [^britannica_2025].
-
 
 
 ## refs
