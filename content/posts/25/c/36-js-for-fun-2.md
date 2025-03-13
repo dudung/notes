@@ -107,7 +107,7 @@ function copy(t1, t2) {
 {{</* /script/runner */>}}
 ```
 
-Notice that the use of CSS `display: flex;` combined with `align-items: flex-start;` make it is easier to align elements to top compared to using div.
+Notice that the use of CSS `display: flex;` combined with `align-items: flex-start;` make it is easier to align elements to top of the container compared to using div as container of the button.
 
 
 ## refs
