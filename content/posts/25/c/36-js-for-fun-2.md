@@ -12,13 +12,14 @@ url = '25c36'
 author = 'Sparisoma Viridi'
 title = 'js for fun 2'
 source = 'notes, 13 Mar 2025'
-updated = '-'
+updated = '14 Mar 2025'
 url = 'https://dudung.github.io/notes/25c36/'
 accessed = '20250313'
 +++
 
 {{< columns >}}
 + copy textarea to textarea
++ draw circle
 {{< /columns >}}
 
 {{< columns >}}
@@ -108,6 +109,10 @@ function copy(t1, t2) {
 ```
 
 Notice that the use of CSS `display: flex;` combined with `align-items: flex-start;` make it is easier to align elements to top of the container compared to using div as container of the button.
+
+
+## draw circle
+Information to draw circle is inputted on canvas and a button click event triggers the drawing on canvas.
 
 
 ## refs
