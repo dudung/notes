@@ -12,7 +12,7 @@ url = '25c22'
 author = 'Sparisoma Viridi'
 title = 'js for fun 1'
 source = 'notes, 9 Mar 2025'
-updated = 'not yet'
+updated = '-'
 url = 'https://dudung.github.io/notes/25c22/'
 accessed = '20250309'
 +++
