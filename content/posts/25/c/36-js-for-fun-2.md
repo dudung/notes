@@ -112,7 +112,7 @@ Notice that the use of CSS `display: flex;` combined with `align-items: flex-sta
 
 
 ## draw circle
-Information to draw circle is inputted on canvas and a button click event triggers the drawing on canvas.
+Information to draw circle is inputted on `textarea` and a click on `button` triggers the drawing on `canvas`.
 
 {{< script/runner id="cnt2" >}}
 const cnt = document.getElementById("cnt2");
@@ -139,7 +139,6 @@ with(ca1.style) {
   border = "1px #888 solid";
 }
 
-
 ta1.value = "circle 80 80 50";
 
 bt1.innerHTML = "Draw";
@@ -152,6 +151,50 @@ cnt.appendChild(ca1);
 function draw(src, dest) {
 }
 {{< /script/runner >}}
+
+following lines are used to produce previous result.
+
+```php
+{{</* script/runner id="cnt2" */>}}
+const cnt = document.getElementById("cnt2");
+const ta1 = document.createElement("textarea");
+const bt1 = document.createElement("button");
+const ca1 = document.createElement("canvas");
+
+with(cnt.style) {
+    display = "flex";
+    alignItems = "flex-start";
+}
+
+with(ta1.style) {
+  boxSizing = "border-box";
+  width = "160px";
+  height = "160px";
+  overflowY = "scroll";
+}
+
+with(ca1.style) {
+  boxSizing = "border-box";
+  width = "160px";
+  height = "160px";
+  border = "1px #888 solid";
+}
+
+ta1.value = "circle 80 80 50";
+
+bt1.innerHTML = "Draw";
+bt1.addEventListener("click", function() { draw(ta1, ca1) });
+
+cnt.appendChild(ta1);
+cnt.appendChild(bt1);
+cnt.appendChild(ca1);
+
+function draw(src, dest) {
+}
+{{</* /script/runner */>}}
+```
+
+Notic that `draw()` function is the center of this example, where it obtains information from input (`textarea`), process it, and show the result on output (`canvas`).
 
 
 ## refs
