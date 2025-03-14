@@ -127,19 +127,23 @@ with(cnt.style) {
 
 with(ta1.style) {
   boxSizing = "border-box";
-  width = "160px";
-  height = "160px";
+  width = "200px";
+  height = "200px";
   overflowY = "scroll";
 }
 
 with(ca1.style) {
   boxSizing = "border-box";
-  width = "160px";
-  height = "160px";
+  width = "200px";
+  height = "200px";
   border = "1px #888 solid";
 }
 
-ta1.value = "circle 80 80 50";
+ta1.value = "";
+ta1.value += "circle 80 80 10 #000\n";
+ta1.value += "circle 120 80 10 #f00\n";
+ta1.value += "circle 120 120 10 #0f0\n";
+ta1.value += "circle 80 120 10 #00f";
 
 bt1.innerHTML = "Draw";
 bt1.addEventListener("click", function() { draw(ta1, ca1) });
@@ -149,6 +153,11 @@ cnt.appendChild(bt1);
 cnt.appendChild(ca1);
 
 function draw(src, dest) {
+  let lines = src.value.split("\n");
+  
+  for(let l of lines) {
+    console.log(l);
+  }
 }
 {{< /script/runner >}}
 
