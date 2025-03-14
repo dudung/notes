@@ -14,7 +14,7 @@ title = 'js for fun 2'
 source = 'notes, 13 Mar 2025'
 updated = '14 Mar 2025'
 url = 'https://dudung.github.io/notes/25c36/'
-accessed = '20250313'
+accessed = '20250314'
 +++
 
 {{< columns >}}
