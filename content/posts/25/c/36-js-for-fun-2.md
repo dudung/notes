@@ -23,6 +23,8 @@ accessed = '20250313'
 {{< /columns >}}
 
 {{< columns >}}
++ alternative
++ closing
 + refs
 {{< /columns >}}
 
@@ -145,7 +147,8 @@ ta1.value = "";
 ta1.value += "circle 80 80 10 #000\n";
 ta1.value += "circle 120 80 10 #f00\n";
 ta1.value += "circle 120 120 10 #0f0\n";
-ta1.value += "circle 80 120 10 #00f";
+ta1.value += "circle 80 120 10 #00f\n";
+ta1.value += "circle 100 100 18 #f0f";
 
 bt1.innerHTML = "Draw";
 bt1.addEventListener("click", function() { draw(ta1, ca1) });
@@ -194,19 +197,26 @@ with(cnt.style) {
 
 with(ta1.style) {
   boxSizing = "border-box";
-  width = "160px";
-  height = "160px";
+  width = "200px";
+  height = "200px";
   overflowY = "scroll";
 }
 
+ca1.width = "200";
+ca1.height = "200"; 
 with(ca1.style) {
   boxSizing = "border-box";
-  width = "160px";
-  height = "160px";
+  width = "200px";
+  height = "200px";
   border = "1px #888 solid";
 }
 
-ta1.value = "circle 80 80 50";
+ta1.value = "";
+ta1.value += "circle 80 80 10 #000\n";
+ta1.value += "circle 120 80 10 #f00\n";
+ta1.value += "circle 120 120 10 #0f0\n";
+ta1.value += "circle 80 120 10 #00f\n";
+ta1.value += "circle 100 100 18 #f0f";
 
 bt1.innerHTML = "Draw";
 bt1.addEventListener("click", function() { draw(ta1, ca1) });
@@ -240,8 +250,18 @@ function circle(can, x, y, r, c) {
 {{</* /script/runner */>}}
 ```
 
-Notic that `draw()` function is the center of this example, where it obtains information from input (`textarea`), process it, and show the result on output (`canvas`). In the function there is `circle()` for drawing circle. Functions for drawing another shapes can be added. 
+Notic that `draw()` function is the center of this example, where it obtains information from input (`textarea`), process it, and show the result on output (`canvas`). In the function there is `circle()` for drawing circle. Functions for drawing another shapes can be added if necessary.
+
+
+## alternative
+For drawing shapes there is other alternative using SVG with XML elements. Each approach has different strengths and weaknesses to considered [^gpt-4o]. Learning curve for Canvas and SVG is determined by the user’s programming knowledge and markup structure [^delighth_2023].
+
+
+## closing
+Two examples using JS in a Hugo post has been presented, where all using `textarea` as input, `button` as trigger, and another element for output (another `textarea` or `canvas`).
 
 
 ## refs
+[^delighth_2023]: Gabriel Delight, "SVG Vs. Canvas: A Comparison", Medium 2 May 2023, url https://medium.com/p/1b58e6c84326 [20250314].
+[^gpt-4o]: GPT-4o, "Canvas vs SVG Overview", Chat GPT, 14 Mar 2025, url https://chatgpt.com/share/67d40b51-469c-800a-b3b6-4a2a0239b139 [20250314].
 [^viridi_2025]: Sparisoma Viridi, "js for fun 1", notes, 9 Mar 2025, url https://dudung.github.io/notes/25c22/ [20250313].
