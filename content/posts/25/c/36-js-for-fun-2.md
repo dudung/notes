@@ -240,7 +240,7 @@ function circle(can, x, y, r, c) {
 {{</* /script/runner */>}}
 ```
 
-Notic that `draw()` function is the center of this example, where it obtains information from input (`textarea`), process it, and show the result on output (`canvas`).
+Notic that `draw()` function is the center of this example, where it obtains information from input (`textarea`), process it, and show the result on output (`canvas`). In the function there is `circle()` for drawing circle. Functions for drawing another shapes can be added. 
 
 
 ## refs
