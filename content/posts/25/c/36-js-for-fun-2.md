@@ -132,6 +132,8 @@ with(ta1.style) {
   overflowY = "scroll";
 }
 
+ca1.width = "200";
+ca1.height = "200"; 
 with(ca1.style) {
   boxSizing = "border-box";
   width = "200px";
@@ -156,8 +158,23 @@ function draw(src, dest) {
   let lines = src.value.split("\n");
   
   for(let l of lines) {
-    console.log(l);
+	let columns = l.split(" ");
+	if(columns[0] == "circle") {
+	  let x = parseInt(columns[1]);
+	  let y = parseInt(columns[2]);
+	  let r = parseInt(columns[3]);
+	  let c = columns[4];
+	  circle(ca1, x, y, r, c);
+	}
   }
+}
+
+function circle(can, x, y, r, c) {
+	const ctx = can.getContext("2d");
+	ctx.beginPath();
+	ctx.strokeStyle =  c;
+	ctx.arc(x, y, r, 0, 2*Math.PI);
+	ctx.stroke();
 }
 {{< /script/runner >}}
 
@@ -199,6 +216,26 @@ cnt.appendChild(bt1);
 cnt.appendChild(ca1);
 
 function draw(src, dest) {
+  let lines = src.value.split("\n");
+  
+  for(let l of lines) {
+	let columns = l.split(" ");
+	if(columns[0] == "circle") {
+	  let x = parseInt(columns[1]);
+	  let y = parseInt(columns[2]);
+	  let r = parseInt(columns[3]);
+	  let c = columns[4];
+	  circle(ca1, x, y, r, c);
+	}
+  }
+}
+
+function circle(can, x, y, r, c) {
+	const ctx = can.getContext("2d");
+	ctx.beginPath();
+	ctx.strokeStyle =  c;
+	ctx.arc(x, y, r, 0, 2*Math.PI);
+	ctx.stroke();
 }
 {{</* /script/runner */>}}
 ```
