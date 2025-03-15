@@ -200,36 +200,57 @@ with(cnt.style) {
 }
 
 with(ta1.style) {
-  width = "50px";
+  width = "60px";
   height = "160px";
   overflowY = "scroll";
 }
+ta1.value = "0";
 
 with(ta2.style) {
-  width = "50px";
+  width = "60px";
   height = "160px";
   overflowY = "scroll";
 }
+ta2.value = "0";
 
 with(ta3.style) {
-  width = "50px";
+  width = "60px";
   height = "160px";
   overflowY = "scroll";
 }
+ta3.value = "0";
+
 
 with(ta4.style) {
-  width = "50px";
+  width = "60px";
   height = "160px";
   overflowY = "scroll";
 }
+ta4.value = "0";
 
-btn.innerHTML = "Run"
+btn.innerHTML = "Run all";
+btn.addEventListener("click", toggle);
 
 cnt.appendChild(ta1);
 cnt.appendChild(ta2);
 cnt.appendChild(ta3);
 cnt.appendChild(ta4);
 cnt.appendChild(btn);
+
+const ms1 = 2000;
+const ms2 = 1000;
+const ms3 = 500;
+const ms4 = 250;
+
+function toggle(e) {
+  let caption = e.target.innerHTML;
+  if(caption == "Run all") {
+    caption = "Stop all";
+  } else {
+    caption = "Run all";
+  }
+  e.target.innerHTML = caption;
+}
 {{< /script/runner >}}
 
 ..
