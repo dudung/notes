@@ -19,6 +19,7 @@ accessed = '20250315'
 
 {{< columns >}}
 + select and options
++ click to move button
 {{< /columns >}}
 
 {{< columns >}}
@@ -105,6 +106,24 @@ function selectChange(e) {
 
 There is a trick to use firt `option` element as information but can be selected [^gam6itko_2014], which should be modified when use it using JS intead of HTML. Notice that to view the value printed using `console.log()` press CTRL+SHIFT+J for Google Chrome on Windows, where other browsers on different OS might have different keyboard shortcuts to open developer console [^turner_2023].
 
+
+## click to move button
+Position of an element can also be altered using an event, e.g. `button` horizontal position is advanced by clicking it.
+
+{{< script/runner id="cnt2" >}}
+const cnt = document.getElementById("cnt2");
+
+const btnL = document.createElement("button");
+btnL.innerHTML = "&leftarrow;";
+btnL.addEventListener("click", function() { decLeft(btnL, btnR) });
+
+const btnR = document.createElement("button");
+btnR.innerHTML = "&rightarrow;";
+btnR.addEventListener("click", function() { incLeft(btnL, btnR) });
+
+cnt.appendChild(btnL);
+cnt.appendChild(btnR);
+{{< /script/runner >}}
 
 
 ## refs
