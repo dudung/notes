@@ -183,6 +183,58 @@ function decLeft() {
 Two functions, `incLeft()` and `decLeft()`, are used to increse and decrease position of elements passed as their arguments with `10` pixels. Notice that it requires `parseInt()` function to get integer value, increase or decreas it, then append `px` at the end.
 
 
+## setinterval and clear interval
+..
+
+{{< script/runner id="cnt3" >}}
+const cnt = document.getElementById("cnt3");
+const ta1 = document.createElement("textarea");
+const ta2 = document.createElement("textarea");
+const ta3 = document.createElement("textarea");
+const ta4 = document.createElement("textarea");
+const btn = document.createElement("button");
+
+with(cnt.style) {
+    display = "flex";
+    alignItems = "flex-start";
+}
+
+with(ta1.style) {
+  width = "50px";
+  height = "160px";
+  overflowY = "scroll";
+}
+
+with(ta2.style) {
+  width = "50px";
+  height = "160px";
+  overflowY = "scroll";
+}
+
+with(ta3.style) {
+  width = "50px";
+  height = "160px";
+  overflowY = "scroll";
+}
+
+with(ta4.style) {
+  width = "50px";
+  height = "160px";
+  overflowY = "scroll";
+}
+
+btn.innerHTML = "Run"
+
+cnt.appendChild(ta1);
+cnt.appendChild(ta2);
+cnt.appendChild(ta3);
+cnt.appendChild(ta4);
+cnt.appendChild(btn);
+{{< /script/runner >}}
+
+..
+
+
 ## refs
 [^gam6itko_2014]: gam6itko, Michael Haddad, "Set the select option as blank as default in HTML select element", Stack Overflow, 13 May 2014 (edited 13 Jul 2022), url https://stackoverflow.com/a/23638053/9475509 [20250315].
 [^turner_2023]: Carl Turner, "Open the developer console to check for errors", Good Grants Help Center, 17 Aug 2023, url https://help.goodgrants.com/hc/en-gb/articles/360001956235 [20250315].
