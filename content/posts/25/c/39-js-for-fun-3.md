@@ -12,9 +12,9 @@ url = '25c39'
 author = 'Sparisoma Viridi'
 title = 'js for fun 3'
 source = 'notes, 15 Mar 2025'
-updated = '-'
+updated = '16 Mar 2025'
 url = 'https://dudung.github.io/notes/25c39/'
-accessed = '20250315'
+accessed = '20250316'
 +++
 
 {{< columns >}}
@@ -112,18 +112,75 @@ Position of an element can also be altered using an event, e.g. `button` horizon
 
 {{< script/runner id="cnt2" >}}
 const cnt = document.getElementById("cnt2");
+cnt.style.position = "relative";
+cnt.style.height = "20px";
 
 const btnL = document.createElement("button");
 btnL.innerHTML = "&leftarrow;";
+btnL.style.position = "absolute";
+btnL.style.left = "0px";
 btnL.addEventListener("click", function() { decLeft(btnL, btnR) });
 
 const btnR = document.createElement("button");
 btnR.innerHTML = "&rightarrow;";
+btnR.style.position = "absolute";
+btnR.style.left = "30px";
 btnR.addEventListener("click", function() { incLeft(btnL, btnR) });
 
 cnt.appendChild(btnL);
 cnt.appendChild(btnR);
+
+function incLeft() {
+  for(let el of arguments) {
+    el.style.left = parseInt(el.style.left) + 10 + "px";
+  }
+}
+
+function decLeft() {
+  for(let el of arguments) {
+    el.style.left = parseInt(el.style.left) - 10 + "px";
+  }
+}
 {{< /script/runner >}}
+
+Following are lines used to obtain above result.
+
+```php
+{{</* script/runner id="cnt2" */>}}
+const cnt = document.getElementById("cnt2");
+cnt.style.position = "relative";
+cnt.style.height = "20px";
+
+const btnL = document.createElement("button");
+btnL.innerHTML = "&leftarrow;";
+btnL.style.position = "absolute";
+btnL.style.left = "0px";
+btnL.addEventListener("click", function() { decLeft(btnL, btnR) });
+
+const btnR = document.createElement("button");
+btnR.innerHTML = "&rightarrow;";
+btnR.style.position = "absolute";
+btnR.style.left = "30px";
+btnR.addEventListener("click", function() { incLeft(btnL, btnR) });
+
+cnt.appendChild(btnL);
+cnt.appendChild(btnR);
+
+function incLeft() {
+  for(let el of arguments) {
+    el.style.left = parseInt(el.style.left) + 10 + "px";
+  }
+}
+
+function decLeft() {
+  for(let el of arguments) {
+    el.style.left = parseInt(el.style.left) - 10 + "px";
+  }
+}
+{{</* /script/runner */>}}
+```
+
+Two functions, `incLeft()` and `decLeft()`, are used to increse and decrease position of elements passed as their arguments with `10` pixels. Notice that it requires `parseInt()` function to get integer value, increase or decreas it, then append `px` at the end.
 
 
 ## refs
