@@ -20,6 +20,7 @@ accessed = '20250316'
 {{< columns >}}
 + select and options
 + click to move button
++ timer
 {{< /columns >}}
 
 {{< columns >}}
@@ -183,8 +184,8 @@ function decLeft() {
 Two functions, `incLeft()` and `decLeft()`, are used to increse and decrease position of elements passed as their arguments with `10` pixels. Notice that it requires `parseInt()` function to get integer value, increase or decreas it, then append `px` at the end.
 
 
-## setinterval and clear interval
-..
+## timer 
+Supposet that there are four independent processes in updating separate `textarea`s. This can be performed using timer with `setInterval()` to activate and `clearInterval()` to terminate, where all processes are concurrent but not parallel, since there will be no overlapping execution -- the next execution waits until the previous one finishes [^gpt-4o_2025].
 
 {{< script/runner id="cnt3" >}}
 const cnt = document.getElementById("cnt3");
@@ -220,6 +221,91 @@ with(ta3.style) {
 }
 ta3.value = "0";
 
+with(ta4.style) {
+  width = "60px";
+  height = "160px";
+  overflowY = "scroll";
+}
+ta4.value = "0";
+
+btn.innerHTML = "Run all";
+btn.addEventListener("click", toggle);
+
+cnt.appendChild(ta1);
+cnt.appendChild(ta2);
+cnt.appendChild(ta3);
+cnt.appendChild(ta4);
+cnt.appendChild(btn);
+
+const ms1 = 2000;
+const ms2 = 1000;
+const ms3 = 500;
+const ms4 = 250;
+
+let id1, id2, id3, id4;
+
+function toggle(e) {
+  let caption = e.target.innerHTML;
+  if(caption == "Run all") {
+    caption = "Stop all";
+    id1 = setInterval(function() { update(ta1, 1); }, ms1);
+    id2 = setInterval(function() { update(ta2, 1); }, ms2);
+    id3 = setInterval(function() { update(ta3, 1); }, ms3);
+    id4 = setInterval(function() { update(ta4, 1); }, ms4);
+  } else {
+    caption = "Run all";
+    clearInterval(id1);
+    clearInterval(id2);
+    clearInterval(id3);
+    clearInterval(id4);
+  }
+  e.target.innerHTML = caption;
+}
+
+function update(ta, inc) {
+  let last = parseInt(ta.value.split("\n").at(-1));
+  last += inc;
+  ta.value += "\n" + last;
+  ta.scrollTop = ta.scrollHeight;
+}
+{{< /script/runner >}}
+
+Above result can be produced using following lines.
+
+```php
+{{</* script/runner id="cnt3" */>}}
+const cnt = document.getElementById("cnt3");
+const ta1 = document.createElement("textarea");
+const ta2 = document.createElement("textarea");
+const ta3 = document.createElement("textarea");
+const ta4 = document.createElement("textarea");
+const btn = document.createElement("button");
+
+with(cnt.style) {
+    display = "flex";
+    alignItems = "flex-start";
+}
+
+with(ta1.style) {
+  width = "60px";
+  height = "160px";
+  overflowY = "scroll";
+}
+ta1.value = "0";
+
+with(ta2.style) {
+  width = "60px";
+  height = "160px";
+  overflowY = "scroll";
+}
+ta2.value = "0";
+
+with(ta3.style) {
+  width = "60px";
+  height = "160px";
+  overflowY = "scroll";
+}
+ta3.value = "0";
 
 with(ta4.style) {
   width = "60px";
@@ -242,18 +328,36 @@ const ms2 = 1000;
 const ms3 = 500;
 const ms4 = 250;
 
+let id1, id2, id3, id4;
+
 function toggle(e) {
   let caption = e.target.innerHTML;
   if(caption == "Run all") {
     caption = "Stop all";
+    id1 = setInterval(function() { update(ta1, 1); }, ms1);
+    id2 = setInterval(function() { update(ta2, 1); }, ms2);
+    id3 = setInterval(function() { update(ta3, 1); }, ms3);
+    id4 = setInterval(function() { update(ta4, 1); }, ms4);
   } else {
     caption = "Run all";
+    clearInterval(id1);
+    clearInterval(id2);
+    clearInterval(id3);
+    clearInterval(id4);
   }
   e.target.innerHTML = caption;
 }
-{{< /script/runner >}}
 
-..
+function update(ta, inc) {
+  let last = parseInt(ta.value.split("\n").at(-1));
+  last += inc;
+  ta.value += "\n" + last;
+  ta.scrollTop = ta.scrollHeight;
+}
+{{</* /script/runner */>}}
+```
+
+Notice that `toggle()` function toggles state of the `button`, "Run all" or "Stop all".  Then update process of each `textarea` is called using `setInterval()` calling `update()` function whose one of the arguments is targetted `textarea`. This update is only executed when `innerHTML` of the `button` is equal to "Run all". And when it is equal to "Stop all" it call `stopInterval()` function to stop all processes.
 
 
 ## refs
@@ -261,3 +365,4 @@ function toggle(e) {
 [^turner_2023]: Carl Turner, "Open the developer console to check for errors", Good Grants Help Center, 17 Aug 2023, url https://help.goodgrants.com/hc/en-gb/articles/360001956235 [20250315].
 [^viridi_2025a]: Sparisoma Viridi, "js for fun 1", notes, 9 Mar 2025, url https://dudung.github.io/notes/25c22/ [20250315].
 [^viridi_2025b]: Sparisoma Viridi, "js for fun 2", notes, 13 Mar 2025 (14 Mar 2025), url https://dudung.github.io/notes/25c36/ [20250315].
+[^gpt-4o_2025]: GPT-4o, "setInterval behavior and handling", Chat GPT, 16 Mar 2025, url https://chatgpt.com/share/67d656b9-5024-800a-82b5-8971266fa57b [20250316].
