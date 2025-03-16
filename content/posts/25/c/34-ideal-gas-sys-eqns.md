@@ -22,7 +22,7 @@ url = '25c34'
 {{< /columns >}}
 
 {{< columns >}}
-+ internal energi change
++ change in internal energy
 + cycle
 + entropy
 + the 1st law of thermodynamics
@@ -201,9 +201,76 @@ W_{i \rightarrow j}^{\rm adiabatic} =  -( n C_V T_j - n C_V T_i) = - n C_V (T_j 
 $$
 
 
+## heat
+For process from state $i$ to state $j$, heat can be obtained from 
+
+$$\tag{8a}
+Q = \int n C(T) dT,
+$$
+
+where
+
+$$\tag{8b}
+C(T) = C_P,
+$$
+
+$$
+Q = n C_P \Delta T
+$$
+
+for isobaric process,
+
+$$\tag{8c}
+C(T) = C_V,
+$$
+
+$$
+Q = n C_V \Delta T
+$$
+
+for isochoric process,
+
+$$\tag{8d}
+C(T) = 0,
+$$
+
+$$
+Q = 0
+$$
+
+for adiabatic process,
+
+$$\tag{8e}
+C(T) = C_{\rm eff} = \frac{1}{T} \frac{T}{V} \frac{dV}{dT},
+$$
+
+$$
+Q = n R T \ln \frac{V_j}{V_i}
+$$
+
+for isothermal process, and
+
+$$\tag{8f}
+C(T) = C_{\rm process} = \frac{dQ}{ndT}
+$$
+
+for arbitrary process [^gpt4o_2025].
+
+
+## change in internal energy
+For any process, the change of internal energy is simply
+
+$$\tag{9}
+\Delta U = n C_V \Delta T,
+$$
+
+where $\Delta T = T_j - T_i$ with initial state $i$ and final state $j$.
+
+
 ## refs
 [^britannica_2025]: The Editors of Encyclopaedia Britannica "ideal gas law", Encyclopedia Britannica, 12 Feb 2025, url https://www.britannica.com/science/ideal-gas-law [20250312].
 [^gans_2012]: Paul J. Gans, "Calculating work done on an ideal gas", Physics Stack Exchange, 22 Oct 2012, url https://physics.stackexchange.com/a/41377/260719 [20250316].
+[^gpt4o_2025]: GPT-4o, "Heat Transfer in Thermodynamics", Chat GPT, 17 Mar 2025, url https://chatgpt.com/share/67d751e3-e9a4-800a-8026-34fc108fda59 [20250317].
 [^hall_2021]: Nancy Hall (ed), "Specific Heats", National Aeronautics and Space Administration, 13 May 2021, url https://www.grc.nasa.gov/www/k-12/airplane/specheat.html [20250313].
 [^jones_2019]: Andrew Zimmerman Jones, "What Is Isobaric Process?", ThoughtCo, 30 Jun 2019, url https://www.thoughtco.com/p-2698984 [20250313].
 [^kamran_2021]: Muhammad Kamran, "Thermodynamics for renewable energy systems", in Renewable Energy Conversion Systems, ch 2, p 21-51, 2021, url https://doi.org/10.1016/C2019-0-05410-6.
