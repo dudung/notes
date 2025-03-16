@@ -21,6 +21,7 @@ accessed = '20250316'
 + select and options
 + click to move button
 + timer
++ svg circle and rect
 {{< /columns >}}
 
 {{< columns >}}
@@ -185,7 +186,7 @@ Two functions, `incLeft()` and `decLeft()`, are used to increse and decrease pos
 
 
 ## timer 
-Supposet that there are four independent processes in updating separate `textarea`s. This can be performed using timer with `setInterval()` to activate and `clearInterval()` to terminate, where all processes are concurrent but not parallel, since there will be no overlapping execution -- the next execution waits until the previous one finishes [^gpt-4o_2025].
+Supposet that there are four independent processes in updating separate `textarea`s. This can be performed using timer with `setInterval()` to activate and `clearInterval()` to terminate, where all processes are concurrent but not parallel, since there will be no overlapping execution -- the next execution waits until the previous one finishes [^gpt-4o_2025a].
 
 {{< script/runner id="cnt3" >}}
 const cnt = document.getElementById("cnt3");
@@ -360,9 +361,116 @@ function update(ta, inc) {
 Notice that `toggle()` function toggles state of the `button`, "Run all" or "Stop all".  Then update process of each `textarea` is called using `setInterval()` calling `update()` function whose one of the arguments is targetted `textarea`. This update is only executed when `innerHTML` of the `button` is equal to "Run all". And when it is equal to "Stop all" it call `stopInterval()` function to stop all processes.
 
 
+## svg circle and rect
+Circle and rectangle can also be drawn in HTML using SVG elements, where the result is as follow.
+
+{{< script/runner id="cnt4" >}}
+const cnt = document.getElementById("cnt4");
+
+with(cnt.style) {
+  height = "100px";
+  width = "400px"
+  border = "0.5px solid #ccc";
+}
+
+const ns = 'http://www.w3.org/2000/svg';
+const svg = document.createElementNS(ns, "svg");
+svg.setAttributeNS(null, "width", "100%");
+svg.setAttributeNS(null, "height", "100%");
+
+const rect1 = document.createElementNS(ns, "rect");
+rect1.setAttributeNS(null, "width", 40);
+rect1.setAttributeNS(null, "height", 40);
+rect1.setAttributeNS(null, "fill", '#4f81bd');
+
+const rect2 = document.createElementNS(ns, "rect");
+rect2.setAttributeNS(null, "width", 40);
+rect2.setAttributeNS(null, "height", 40);
+rect2.setAttributeNS(null, "x", 360);
+rect2.setAttributeNS(null, "y", 30);
+rect2.setAttributeNS(null, "fill", '#bd4f81');
+
+const circle1 = document.createElementNS(ns, "circle");
+circle1.setAttributeNS(null, "cx", 150);
+circle1.setAttributeNS(null, "cy", 80);
+circle1.setAttributeNS(null, "r", 20);
+circle1.setAttributeNS(null, "fill", "#4fbd81");
+
+const circle2 = document.createElementNS(ns, "circle");
+circle2.setAttributeNS(null, "cx", 250);
+circle2.setAttributeNS(null, "cy", 30);
+circle2.setAttributeNS(null, "r", 20);
+circle2.setAttributeNS(null, "fill", "#bd814f");
+
+cnt.appendChild(svg);
+  svg.appendChild(rect1);
+  svg.appendChild(circle1);
+  svg.appendChild(circle2);
+  svg.appendChild(rect2);
+{{< /script/runner >}}
+
+Following lines are used to produced previous result.
+
+```php
+{{</* script/runner id="cnt4" */>}}
+const cnt = document.getElementById("cnt4");
+
+with(cnt.style) {
+  height = "100px";
+  width = "400px"
+  border = "0.5px solid #ccc";
+}
+
+const ns = 'http://www.w3.org/2000/svg';
+const svg = document.createElementNS(ns, "svg");
+svg.setAttributeNS(null, "width", "100%");
+svg.setAttributeNS(null, "height", "100%");
+
+const rect1 = document.createElementNS(ns, "rect");
+rect1.setAttributeNS(null, "width", 40);
+rect1.setAttributeNS(null, "height", 40);
+rect1.setAttributeNS(null, "fill", '#4f81bd');
+
+const rect2 = document.createElementNS(ns, "rect");
+rect2.setAttributeNS(null, "width", 40);
+rect2.setAttributeNS(null, "height", 40);
+rect2.setAttributeNS(null, "x", 360);
+rect2.setAttributeNS(null, "y", 30);
+rect2.setAttributeNS(null, "fill", '#bd4f81');
+
+const circle1 = document.createElementNS(ns, "circle");
+circle1.setAttributeNS(null, "cx", 150);
+circle1.setAttributeNS(null, "cy", 80);
+circle1.setAttributeNS(null, "r", 20);
+circle1.setAttributeNS(null, "fill", "#4fbd81");
+
+const circle2 = document.createElementNS(ns, "circle");
+circle2.setAttributeNS(null, "cx", 250);
+circle2.setAttributeNS(null, "cy", 30);
+circle2.setAttributeNS(null, "r", 20);
+circle2.setAttributeNS(null, "fill", "#bd814f");
+
+cnt.appendChild(svg);
+  svg.appendChild(rect1);
+  svg.appendChild(circle1);
+  svg.appendChild(circle2);
+  svg.appendChild(rect2);
+{{</* /script/runner */>}}
+```
+
+Since SVGs are represented using the Document Object Model (DOM), like HTML, they can be manipulated with Javascript relatively easily [^collingridge_2018], but they might be in different category compared other previous discussed elements [^gpt-4o_2025b].
+
+
+## summaries
++ It has been shown that HTML elements, and also SVG elements, can be created and manipulated using JS.
++ For drawing primitives 2-d objects, there are two alternatives, using `canvas` or `svg` elements.
+
+
 ## refs
+[^collingridge_2018]: Peter Collingridge, "Using Javascript with SVG", Peter Collingridge Personal Site, 26 Apr 2018, url https://www.petercollingridge.co.uk/tutorials/svg/interactive/javascript/ [20250316].
 [^gam6itko_2014]: gam6itko, Michael Haddad, "Set the select option as blank as default in HTML select element", Stack Overflow, 13 May 2014 (edited 13 Jul 2022), url https://stackoverflow.com/a/23638053/9475509 [20250315].
+[^gpt-4o_2025a]: GPT-4o, "setInterval behavior and handling", Chat GPT, 16 Mar 2025, url https://chatgpt.com/share/67d656b9-5024-800a-82b5-8971266fa57b [20250316].
+[^gpt-4o_2025b]: GPT-4o, "Categories of HTML Elements", Chat GPT, 16 mar 2025, url https://chatgpt.com/share/67d67281-0148-800a-a9ba-f0744a96c842 [20250316].
 [^turner_2023]: Carl Turner, "Open the developer console to check for errors", Good Grants Help Center, 17 Aug 2023, url https://help.goodgrants.com/hc/en-gb/articles/360001956235 [20250315].
 [^viridi_2025a]: Sparisoma Viridi, "js for fun 1", notes, 9 Mar 2025, url https://dudung.github.io/notes/25c22/ [20250315].
 [^viridi_2025b]: Sparisoma Viridi, "js for fun 2", notes, 13 Mar 2025 (14 Mar 2025), url https://dudung.github.io/notes/25c36/ [20250315].
-[^gpt-4o_2025]: GPT-4o, "setInterval behavior and handling", Chat GPT, 16 Mar 2025, url https://chatgpt.com/share/67d656b9-5024-800a-82b5-8971266fa57b [20250316].
