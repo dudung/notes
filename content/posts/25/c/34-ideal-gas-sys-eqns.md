@@ -16,13 +16,13 @@ url = '25c34'
 + isochoric process
 + isothermal process
 + adiabatic process
++ heat capacity ratio
 + work
 + heat
-+ internal energi change
 {{< /columns >}}
 
 {{< columns >}}
-+ heat capacity ratio
++ internal energi change
 + cycle
 + entropy
 + the 1st law of thermodynamics
@@ -60,7 +60,13 @@ $$\tag{2c}
 T_j \ne T_i,
 $$
 
-in this process from state $i$ to state $j$.
+in this process from state $i$ to state $j$ and
+
+$$\tag{2d}
+\frac{V_j}{T_j} = \frac{V_i}{T_i}
+$$
+
+is relation between the two states.
 
 
 ## isochoric process
@@ -78,23 +84,78 @@ $$\tag{3c}
 T_j \ne T_i,
 $$
 
-in this process from state $i$ to state $j$.
+in this process from state $i$ to state $j$ and
+
+$$\tag{3d}
+\frac{P_j}{T_j} = \frac{P_i}{T_i}
+$$
+
+is relation between the two states.
+
+
+## isothermal process
+An isothermal process is A thermodynamic process that occurs at constant temperature [^kamran_2021], where the state variables are
+
+$$\tag{4a}
+P_j \ne P_i,
+$$
+
+$$\tag{4b}
+V_j \ne V_i,
+$$
+
+$$\tag{4c}
+T_j = T_i,
+$$
+
+in this process from state $i$ to state $j$ and
+
+$$\tag{4d}
+P_j V_j = P_i V_i
+$$
+
+is relation between the two states.
+
+
+## adiabatic process
+An adiabatic process is one in which no heat is gained or lost by the system [^nave_2017], where the state variables
+
+$$\tag{5a}
+P_j \ne P_i,
+$$
+
+$$\tag{5b}
+V_j \ne V_i,
+$$
+
+$$\tag{5c}
+T_j \ne T_i,
+$$
+
+in this process from state $i$ to state $j$ and
+
+$$\tag{5d}
+P_j V_j^\gamma = P_i V_i^\gamma
+$$
+
+is relation between the two states.
 
 
 ## specific heat ratio
 It is an additional variable in ideal gas system [^hall_2021]
 
-$$\tag{9}
+$$\tag{6}
 \gamma = \frac{c_p}{c_v},
 $$
 
 where at different temperature different gas has different value[^knowino_2010].
 
 
-
 ## refs
 [^britannica_2025]: The Editors of Encyclopaedia Britannica "ideal gas law", Encyclopedia Britannica, 12 Feb 2025, url https://www.britannica.com/science/ideal-gas-law [20250312].
 [^hall_2021]: Nancy Hall (ed), "Specific Heats", National Aeronautics and Space Administration, 13 May 2021, url https://www.grc.nasa.gov/www/k-12/airplane/specheat.html [20250313].
 [^jones_2019]: Andrew Zimmerman Jones, "What Is Isobaric Process?", ThoughtCo, 30 Jun 2019, url https://www.thoughtco.com/p-2698984 [20250313].
+[^kamran_2021]: Muhammad Kamran, "Thermodynamics for renewable energy systems", in Renewable Energy Conversion Systems, ch 2, p 21-51, 2021, url https://doi.org/10.1016/C2019-0-05410-6.
 [^knowino_2010]: Knowino contributors, "Specific heat ratio", Knowino, an encyclopedia, 19 Dec 2010, url https://www.theochem.ru.nl/~pwormer/Knowino/knowino.org/w/index306d.html?oldid=4599 [20250313].
+[^nave_2017]: Carl Rod Nave, "Adiabatic Process", HyperPhysics, 2017, url http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/adiab.html [20250316].
 [^wikipedia_2024]: Wikipedia contributors, "Isochoric process", Wikipedia, The Free Encyclopedia, 21 Jun 2024, url https://en.wikipedia.org/w/index.php?oldid=1230201749 [20250316].
