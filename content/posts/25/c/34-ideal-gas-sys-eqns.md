@@ -145,14 +145,65 @@ is relation between the two states.
 It is an additional variable in ideal gas system [^hall_2021]
 
 $$\tag{6}
-\gamma = \frac{c_p}{c_v},
+\gamma = \frac{C_P}{C_V},
 $$
 
-where at different temperature different gas has different value[^knowino_2010].
+where at different temperature different gas has different value[^knowino_2010]. The $C_P$ and $C_V$ are molar heat capacity at constant pressure and volume, respetively.
+
+
+## work
+From state $i$ to state $j$ work done by is defined as [^gans_2012]
+
+$$\tag{7a}
+W_{i \rightarrow j} = \int_{V_i}^{V_j} p dV.
+$$
+
+For isobaric process Eqn (7a) simply turns into
+
+$$\tag{7b}
+W_{i \rightarrow j}^{\rm isobaric} = p \Delta V = p (V_j - V_i).
+$$
+
+For isochoric process it becomes
+
+$$\tag{7c}
+W_{i \rightarrow j}^{\rm isochoric} = 0,
+$$
+
+since $V_j = V_i$. Then, for isothermal process $P = \frac{NRT}{V}$ that makes Eqn (7a)
+
+$$\tag{7d}
+W_{i \rightarrow j}^{\rm isothermal} = \int_{V_i}^{V_j} \frac{nRT}{V} dV = nRT \ln \left(  \frac{V_j}{V_i} \right).
+$$
+
+Finally, for adiabatic process
+
+$$\tag{7e}
+W_{i \rightarrow j} = \int_{V_i}^{V_j} \frac{c}{V^\gamma} dV = \frac{c}{1-\gamma} (V_j^{1-\gamma} - V_i^{1-\gamma}).
+$$
+
+using $PV^\gamma = c$, where $c = nRTV^{\gamma - 1}$ is a constant. With help of Eqn (6) it can obtained that
+
+$$\tag{7f}
+1 - \gamma = 1 - \frac{C_P}{C_V} = \frac{C_V - C_P}{C_V} = - \frac{R}{C_V}.
+$$
+
+Substitute back the result to Eqn (7e) will produce
+
+$$\tag{7g}
+W_{i \rightarrow j} = \int_{V_i}^{V_j} \frac{c}{V^\gamma} dV = -\frac{c C_V}{R} (V_j^{1-\gamma} - V_i^{1-\gamma}).
+$$
+
+Then $c = nRT_i V_i^{\gamma - 1}$ at state $i$ and $c = nRT_j V_j^{\gamma - 1}$ at state $j$. Substitute both to Eqn (7g) will give
+
+$$\tag{7h}
+W_{i \rightarrow j}^{\rm adiabatic} =  -( n C_V T_j - n C_V T_i) = - n C_V (T_j - T_i) = - n C_V \Delta T.
+$$
 
 
 ## refs
 [^britannica_2025]: The Editors of Encyclopaedia Britannica "ideal gas law", Encyclopedia Britannica, 12 Feb 2025, url https://www.britannica.com/science/ideal-gas-law [20250312].
+[^gans_2012]: Paul J. Gans, "Calculating work done on an ideal gas", Physics Stack Exchange, 22 Oct 2012, url https://physics.stackexchange.com/a/41377/260719 [20250316].
 [^hall_2021]: Nancy Hall (ed), "Specific Heats", National Aeronautics and Space Administration, 13 May 2021, url https://www.grc.nasa.gov/www/k-12/airplane/specheat.html [20250313].
 [^jones_2019]: Andrew Zimmerman Jones, "What Is Isobaric Process?", ThoughtCo, 30 Jun 2019, url https://www.thoughtco.com/p-2698984 [20250313].
 [^kamran_2021]: Muhammad Kamran, "Thermodynamics for renewable energy systems", in Renewable Energy Conversion Systems, ch 2, p 21-51, 2021, url https://doi.org/10.1016/C2019-0-05410-6.
