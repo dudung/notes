@@ -63,6 +63,24 @@ $$
 in this process from state $i$ to state $j$.
 
 
+## isochoric process
+An isochoric process is a thermodynamic process during which the volume of the closed system undergoing such a process remains constant, that is exemplified by the heating or the cooling of the contents of a sealed, inelastic, undeformable container [^wikipedia_2024]. There state variables are
+
+$$\tag{3a}
+P_j \ne P_i,
+$$
+
+$$\tag{3b}
+V_j = V_i,
+$$
+
+$$\tag{3c}
+T_j \ne T_i,
+$$
+
+in this process from state $i$ to state $j$.
+
+
 ## specific heat ratio
 It is an additional variable in ideal gas system [^hall_2021]
 
@@ -79,3 +97,4 @@ where at different temperature different gas has different value[^knowino_2010].
 [^hall_2021]: Nancy Hall (ed), "Specific Heats", National Aeronautics and Space Administration, 13 May 2021, url https://www.grc.nasa.gov/www/k-12/airplane/specheat.html [20250313].
 [^jones_2019]: Andrew Zimmerman Jones, "What Is Isobaric Process?", ThoughtCo, 30 Jun 2019, url https://www.thoughtco.com/p-2698984 [20250313].
 [^knowino_2010]: Knowino contributors, "Specific heat ratio", Knowino, an encyclopedia, 19 Dec 2010, url https://www.theochem.ru.nl/~pwormer/Knowino/knowino.org/w/index306d.html?oldid=4599 [20250313].
+[^wikipedia_2024]: Wikipedia contributors, "Isochoric process", Wikipedia, The Free Encyclopedia, 21 Jun 2024, url https://en.wikipedia.org/w/index.php?oldid=1230201749 [20250316].
