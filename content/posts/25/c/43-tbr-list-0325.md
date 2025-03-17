@@ -13,6 +13,7 @@ url = '25c43'
 + ai in healthcare
 + data science handbook
 + open-source ai
++ ai agents
 {{< /columns >}}
 
 {{< columns >}}
