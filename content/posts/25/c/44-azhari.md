@@ -4,7 +4,7 @@ date = '2025-03-17T18:29:56+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['landslide', 'nh']
+tags = ['stat-mech', 'ap']
 categories = ['users']
 url = '25c44'
 +++
