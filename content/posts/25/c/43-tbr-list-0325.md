@@ -34,3 +34,5 @@ Adam Bohr, Kaveh Memarzadeh (eds.), "Artificial Intelligence in Healthcare", Aca
 Field Cady, "The Data Science Handbook", Wiley, 2nd edition, Jan 2025.
 + `09-mar-2025` [`3ayxu`](https://osf.io/3ayxu) [`10.24198/farmaka.v20i2.34618`](https://doi.org/10.24198/farmaka.v20i2.34618) \
 Anisa Marieta, Keri Lestari, "Narrative Review: Rokok dan Berbagai Masalah Kesehatan yang Ditimbulkannya", Farmaka, vol 20, no 2, p 56-63, Jul 2022.
++ `02-mar-2025` [`x8nuk`](https://osf.io/x8nuk) [`mastering-ai-agents-galileo.pdf`](https://www.hkdca.com/wp-content/uploads/2025/02/mastering-ai-agents-galileo.pdf) [`galileo`](https://www.turingpost.com/p/galileo) \
+Galileo Editor(s), "Mastering AI Agents: A comprehensive guide for evaluating AI agents", Turing Post, 30 Jan 2025.
