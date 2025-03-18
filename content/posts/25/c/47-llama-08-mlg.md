@@ -9,4 +9,4 @@ categories = ['llama']
 url = '25c47'
 +++
 
-+ `18-mar-2025` [`gt2en`](https://osf.io/gt2en) Info and assignment ok.
++ `18-mar-2025` [`gt2en`](https://osf.io/gt2en) Info and offer accepted.
