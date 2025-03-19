@@ -9,7 +9,7 @@ categories = ['hugo']
 url = '25b73'
 +++
 
-{{< hello "Human" >}}
+{{</* hello "Human" */>}} -- This shortcode is deleted on 20-mar-2025 0611.
 + Usage
 ```js
 {{</* hello "Human" */>}}
