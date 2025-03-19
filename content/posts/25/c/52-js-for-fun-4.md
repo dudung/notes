@@ -19,10 +19,12 @@ accessed = '20250320'
 
 {{< columns >}}
 + style container
++ future plan
 {{< /columns >}}
 
 {{< columns >}}
-+ ..
++ others
++ refs
 {{< /columns >}}
 
 <!--more-->
@@ -76,6 +78,10 @@ cnt.innerHTML = "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 Notice that the style must be defined for all elements when necessary. In the given code begin and end shortcodes is not included since there are the same in previous notes [^viridi_2025a], [^viridi_2025b], [^viridi_2025c].
 
 
+## future plan
+To make shortcodes for displaying visual element in a Hugo post, as inspired by a discussion [^gpt-4o_2025].
+
+
 ## others
 + Delete `experimental.js` in `static/js`.
 + Rename `main.js` in `themes/default/assents/js/` to `main.js.md`.
@@ -92,8 +98,11 @@ CSS
 42.7%
 ```
 
+It is not necessary, but I just wanto to have a repo without JS? It seems cool. The JS files actually there in the shortcodes or partials.
+
 
 ## refs
+[^gpt-4o_2025]: GPT-4o, "Modular Shortcodes for Charts", ChatGPT, 20 Mar 2025, url https://chatgpt.com/share/67db5510-5908-800a-bc73-a5dba714c825 [20250320].
 [^viridi_2025a]: Sparisoma Viridi, "js for fun 1", notes, 9 Mar 2025, url https://dudung.github.io/notes/25c22/ [20250320].
 [^viridi_2025b]: Sparisoma Viridi, "js for fun 2", notes, 13 Mar 2025 (14 Mar 2025), url https://dudung.github.io/notes/25c36/ [20250320].
 [^viridi_2025c]: Sparisoma Viridi, "js for fun 3", notes, 15 Mar 2025 (16 Mar 2025), url https://dudung.github.io/notes/25c39/ [20250320].
