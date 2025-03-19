@@ -12,13 +12,13 @@ url = '25c52'
 author = 'Sparisoma Viridi'
 title = 'js for fun 4'
 source = 'notes, 20 Mar 2025'
-updated = '20 Mar 2025'
+updated = '-'
 url = 'https://dudung.github.io/notes/25c52/'
 accessed = '20250320'
 +++
 
 {{< columns >}}
-+ ..
++ style container
 {{< /columns >}}
 
 {{< columns >}}
@@ -28,6 +28,52 @@ accessed = '20250320'
 <!--more-->
 
 Related to this one, there are previous notes [^viridi_2025a], [^viridi_2025b], [^viridi_2025c].
+
+
+## style container
+Container for JS in a Hugo post can be styled as follow.
+
+{{< script/runner id="cnt1" >}}
+const width = "480px";
+const height = "270px";
+const border = "2px #4f81bd solid";
+const background = "#4f81bd";
+const borderRadius = "20px";
+const color = "#ffffff";
+
+const cnt = document.getElementById("cnt1");
+cnt.style.width = width;
+cnt.style.height = height;
+cnt.style.border = border;
+cnt.style.background = background;
+cnt.style.borderRadius = borderRadius;
+cnt.style.color = color;
+
+cnt.innerHTML = "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello, World!";
+{{< /script/runner >}}
+
+To produce above result, previous lines are used.
+
+```js
+const width = "480px";
+const height = "270px";
+const border = "2px #4f81bd solid";
+const background = "#4f81bd";
+const borderRadius = "20px";
+const color = "#ffffff";
+
+const cnt = document.getElementById("cnt1");
+cnt.style.width = width;
+cnt.style.height = height;
+cnt.style.border = border;
+cnt.style.background = background;
+cnt.style.borderRadius = borderRadius;
+cnt.style.color = color;
+
+cnt.innerHTML = "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello, World!";
+```
+
+Notice that the style must be defined for all elements when necessary. In the given code begin and end shortcodes is not included since there are the same in previous notes [^viridi_2025a], [^viridi_2025b], [^viridi_2025c].
 
 
 ## refs
