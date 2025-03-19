@@ -76,6 +76,11 @@ cnt.innerHTML = "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
 Notice that the style must be defined for all elements when necessary. In the given code begin and end shortcodes is not included since there are the same in previous notes [^viridi_2025a], [^viridi_2025b], [^viridi_2025c].
 
 
+## others
++ Delete `experimental.js` in `static/js`.
++ Rename `main.js` in `themes/default/assents/js/` to `main.js.md`.
+
+
 ## refs
 [^viridi_2025a]: Sparisoma Viridi, "js for fun 1", notes, 9 Mar 2025, url https://dudung.github.io/notes/25c22/ [20250320].
 [^viridi_2025b]: Sparisoma Viridi, "js for fun 2", notes, 13 Mar 2025 (14 Mar 2025), url https://dudung.github.io/notes/25c36/ [20250320].
