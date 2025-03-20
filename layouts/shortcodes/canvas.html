@@ -2,7 +2,7 @@
 {{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
 {{ $left := .Get "left" | default "0px" }}
 {{ $top := .Get "top" | default "0px" }}
-{{ $width := .Get "width" | default "200px" }}
+{{ $width := .Get "width" | default "300px" }}
 {{ $height := .Get "height" | default "200px"  }}
 {{ $borderwidth := .Get "borderwidth" | default "0px" }}
 {{ $fontsize := .Get "fontsize" | default "1em" }}
@@ -16,9 +16,45 @@
   height: {{ $height }};
   border: {{ $borderwidth }} #4f81bd solid;
 }
-
 </style>
 
 <div class="canvas" id="{{- $id -}}">
-{{ .Inner }}
+<script>
+const lines = "{{ .Inner }}".split("\r\n");
+if(lines[0].length == 0) {
+  lines.shift();
+}
+if(lines[lines.length-1].length == 0) {
+  lines.pop();
+}
+
+const xmin = params(lines, "xmin", "=");
+const ymin = params(lines, "ymin", "=");
+const xmax = params(lines, "xmax", "=");
+const ymax = params(lines, "ymax", "=");
+var fx = func(lines, "fx", "=");
+
+console.log(fx);
+
+function params(list, name, delim) {
+  for(let l of list) {
+    if(l.indexOf(name) > -1) {
+      let val = parseFloat(l.split(delim)[1]);
+      return val;
+    }
+  }
+}
+
+function func(list, name, delim) {
+  for(let l of list) {
+    if(l.indexOf(name) > -1) {
+      let fs = l.split(delim)[1];
+      let val = new Function("x", "return " + eval(fs));
+      return val;
+    }
+  }
+}
+
+</script>
+
 </div>
