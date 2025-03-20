@@ -7,10 +7,6 @@
 {{ $borderwidth := .Get "borderwidth" | default "0px" }}
 {{ $fontsize := .Get "fontsize" | default "1em" }}
 
-{{ $css := resources.Get "css/graphic.css" | resources.ExecuteAsTemplate "css/generated-graphic.css" . | minify | fingerprint }}
-
-<link rel="stylesheet" href="{{ $css.RelPermalink }}">
-
 <style>
 .sub-graphic-container {
   left: {{ $left }};

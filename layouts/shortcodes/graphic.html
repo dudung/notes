@@ -1,3 +1,6 @@
+{{ $css := resources.Get "css/graphic.css" | resources.ExecuteAsTemplate "css/generated-graphic.css" . | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
 <div class="graphic-container">
 {{ .Inner }}
 </div>
