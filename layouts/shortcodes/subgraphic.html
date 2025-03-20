@@ -1,0 +1,36 @@
+{{ $left := .Get "left" | default "0px" }}
+{{ $top := .Get "top" | default "0px" }}
+{{ $width := .Get "width" | default "10px" }}
+{{ $height := .Get "height" | default "10px" }}
+{{ $borderwidth := .Get "borderwidth" | default "0px" }}
+{{ $fontsize := .Get "fontsize" | default "100%" }}
+
+{{ $css := resources.Get "css/graphic.css" | resources.ExecuteAsTemplate "css/generated-graphic.css" . | minify | fingerprint }}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+<style>
+.sub-graphic-container {
+  left: {{ $left }};
+  top: {{ $top }};
+  width: {{ $width }};
+  height: {{ $height }};
+  border: {{ $borderwidth }} #4f81bd solid;
+}
+
+.sub-graphic-container {
+  .katex, .katex-display {
+    font-size: {{ $fontsize }} !important;
+  }
+
+  .katex .tag {
+    font-size: {{ $fontsize }} !important;
+  }
+}
+</style>
+
+
+
+<div class="sub-graphic-container">
+{{ .Inner }}
+</div>

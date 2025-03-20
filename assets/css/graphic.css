@@ -16,3 +16,9 @@
   height: calc(0.64 * var(--height));
   width: max(100%, calc(var(--width) - 100px));
 }
+
+.sub-graphic-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}

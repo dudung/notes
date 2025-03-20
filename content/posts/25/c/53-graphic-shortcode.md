@@ -23,7 +23,7 @@ accessed = '20250320'
 <!--more-->
 
 {{< graphic >}}
-$$
-{\mathbf H}  \ket{\psi} = E \ket{\psi}
-$$
+  {{< subgraphic left="20%" top="25%" width="30%" height="10%" borderwidth="1px" fontsize="1em" >}}
+    ${\mathbf H}  \ket{\psi} = E \ket{\psi}$
+  {{< /subgraphic >}}
 {{< /graphic >}}
