@@ -53,7 +53,9 @@ Feature for dynamic size of all elements is cancelled. Concentrate only for arti
 
 
 ## problem 2
-While editing Hugo post, template, shortcode, or CSS, it seems to cache previous version of style, so the current style does not affect immediately. Suggestions [^gpt-4o_2025] have been tested, but none works smoothly but only intermittens. 
+While editing Hugo post, template, shortcode, or CSS, it seems to cache previous version of style, so the current style does not affect immediately. Suggestions [^gpt-4o_2025] have been tested, but none works smoothly but only intermittens.
+
+The problem persists, even rendering in localhost works, but rendering on GitHub Pages does not.
 
 
 ## test area
