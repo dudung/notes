@@ -18,15 +18,25 @@ accessed = '20250320'
 +++
 
 {{< graphic >}}
-  {{< subgraphic left="20%" top="25%" width="30%" height="10%" borderwidth="1px" fontsize="2m" >}}
+  {{< subgraphic left="10%" top="25%" width="30%" height="10%" borderwidth="1px" fontsize="2m" >}}
+    ${\mathbf H}  \ket{\psi} = E \ket{\psi}$
+  {{< /subgraphic >}}
+  
+  {{< subgraphic left="10%" top="35%" width="30%" height="10%" borderwidth="1px" fontsize="2m" >}}
     ${\mathbf H}  \ket{\psi} = E \ket{\psi}$
   {{< /subgraphic >}}
 {{< /graphic >}}
 
 <!--more-->
 
+Problem by more that one container even with different ID. Can not continue. Close this as not work and will be continued in other note.
+
 {{< graphic >}}
-  {{< subgraphic left="20%" top="25%" width="30%" height="10%" borderwidth="1px" fontsize="1em" >}}
+  {{< subgraphic left="10%" top="25%" width="30%" height="10%" borderwidth="1px" fontsize="2m" >}}
+    ${\mathbf H}  \ket{\psi} = E \ket{\psi}$
+  {{< /subgraphic >}}
+  
+  {{< subgraphic left="10%" top="35%" width="30%" height="10%" borderwidth="1px" fontsize="2m" >}}
     ${\mathbf H}  \ket{\psi} = E \ket{\psi}$
   {{< /subgraphic >}}
 {{< /graphic >}}

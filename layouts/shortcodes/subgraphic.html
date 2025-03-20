@@ -1,3 +1,5 @@
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
 {{ $left := .Get "left" | default "0px" }}
 {{ $top := .Get "top" | default "0px" }}
 {{ $width := .Get "width" | default "10px" }}
@@ -31,6 +33,6 @@
 
 
 
-<div class="sub-graphic-container">
+<div class="sub-graphic-container" id="{{- $id -}}">
 {{ .Inner }}
 </div>
