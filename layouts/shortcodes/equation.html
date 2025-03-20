@@ -1,0 +1,34 @@
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{ $left := .Get "left" | default "0px" }}
+{{ $top := .Get "top" | default "0px" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $borderwidth := .Get "borderwidth" | default "0px" }}
+{{ $fontsize := .Get "fontsize" | default "1em" }}
+{{ $angle := .Get "angle" | default "0" }}
+
+<style>
+#{{- $id -}}.equation {
+  left: {{ $left }};
+  top: {{ $top }};
+  width: {{ $width }};
+  height: {{ $height }};
+  border: {{ $borderwidth }} #4f81bd solid;
+  transform: rotate({{- $angle -}}deg);
+}
+
+#{{- $id -}}.equation {
+  .katex, .katex-display {
+    font-size: {{ $fontsize }} !important;
+  }
+
+  .katex .tag {
+    font-size: {{ $fontsize }} !important;
+  }
+}
+</style>
+
+<div class="equation" id="{{- $id -}}">
+{{ .Inner }}
+</div>

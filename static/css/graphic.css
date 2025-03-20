@@ -1,0 +1,31 @@
+/*
+  graphics.css
+  style for graphic shortcode
+  
+  Sparisoma Viridi } https://github.com/dudung/
+  
+  20250320 Start this shortcode style.
+*/
+
+.graphic-container {
+  background: #eee;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: calc(0.64 * var(--height));
+  left: calc(0.00 * var(--height));
+  right: calc(0.10 * var(--height));
+  width: max(100%);
+}
+
+.equation {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,24 @@
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{ $left := .Get "left" | default "0px" }}
+{{ $top := .Get "top" | default "0px" }}
+{{ $width := .Get "width" | default "200px" }}
+{{ $height := .Get "height" | default "200px"  }}
+{{ $borderwidth := .Get "borderwidth" | default "0px" }}
+{{ $fontsize := .Get "fontsize" | default "1em" }}
+{{ $angle := .Get "angle" | default "0" }}
+
+<style>
+#{{- $id -}}.canvas {
+  left: {{ $left }};
+  top: {{ $top }};
+  width: {{ $width }};
+  height: {{ $height }};
+  border: {{ $borderwidth }} #4f81bd solid;
+}
+
+</style>
+
+<div class="canvas" id="{{- $id -}}">
+{{ .Inner }}
+</div>
