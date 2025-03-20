@@ -1,12 +1,10 @@
 {{ $background := .Get "background" | default "#fff" }}
 
-
 <style>
 .graphic-container {
   background: {{ $background }};
 }
 </style>
-
 
 <div class="graphic-container">
 {{ .Inner }}

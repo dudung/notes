@@ -1,5 +1,5 @@
 {{ $seed := "foo" }}
-{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{ $id := .Get "id" }}
 {{ $left := .Get "left" | default "0px" }}
 {{ $top := .Get "top" | default "0px" }}
 {{ $width := .Get "width" | default "300px" }}
