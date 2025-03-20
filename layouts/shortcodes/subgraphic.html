@@ -3,7 +3,7 @@
 {{ $width := .Get "width" | default "10px" }}
 {{ $height := .Get "height" | default "10px" }}
 {{ $borderwidth := .Get "borderwidth" | default "0px" }}
-{{ $fontsize := .Get "fontsize" | default "100%" }}
+{{ $fontsize := .Get "fontsize" | default "1em" }}
 
 {{ $css := resources.Get "css/graphic.css" | resources.ExecuteAsTemplate "css/generated-graphic.css" . | minify | fingerprint }}
 

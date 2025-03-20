@@ -18,6 +18,9 @@ accessed = '20250320'
 +++
 
 {{< graphic >}}
+  {{< subgraphic left="20%" top="25%" width="30%" height="10%" borderwidth="1px" fontsize="2m" >}}
+    ${\mathbf H}  \ket{\psi} = E \ket{\psi}$
+  {{< /subgraphic >}}
 {{< /graphic >}}
 
 <!--more-->
