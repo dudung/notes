@@ -1,0 +1,20 @@
+{{ $id := .Get "id" }}
+{{ $left := .Get "left" }}
+{{ $top := .Get "top" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+{{ $css := resources.Get "css/lissajous.css" | resources.ExecuteAsTemplate "css/generated-lissajous.css" . | minify | fingerprint }}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+<style>
+#{{- $id -}}.lissajous-container {
+  left: {{ $left }};
+  top: {{ $top }};
+}
+</style>
+
+<div class="lissajous-container" id="{{- $id -}}">
+{{ .Inner }}
+</div>
