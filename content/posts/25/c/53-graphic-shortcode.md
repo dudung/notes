@@ -19,6 +19,9 @@ accessed = '20250320'
 
 {{< columns >}}
 + problem 1
++ problem 2
++ test area
++ to-do
 {{< /columns >}}
 
 {{< columns >}}
@@ -118,7 +121,12 @@ $y = \sin 2t$
 {{</* /graphic */>}}
 ```
 
-Notice that instead of using $y = f(x)$ it uses parametric equations [^dawkins_2023], e.g. $x = fx(t)$ and $y = fy(t)$.
+Notice that instead of using $y = f(x)$ it uses parametric equations [^dawkins_2023], e.g. $x = f_x(t)$ and $y = f_y(t)$.
+
+
+## to-do
++ Put symbol on both axes.
++ Put numbers or symbols as ticks on both axes.
 
 
 ## refs
