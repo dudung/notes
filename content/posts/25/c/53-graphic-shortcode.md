@@ -2,7 +2,7 @@
 title = 'graphic shortcode'
 date = '2025-03-20T11:35:07+07:00'
 draft = false
-math = false
+math = true
 type = 'notes'
 authors = ['viridi']
 tags = ['graphic']
@@ -17,12 +17,13 @@ url = 'https://dudung.github.io/notes/25c53/'
 accessed = '20250320'
 +++
 
-{{< columns >}}
-+ ..
-{{< /columns >}}
-
-{{< columns >}}
-{{< /columns >}}
+{{< graphic >}}
+{{< /graphic >}}
 
 <!--more-->
 
+{{< graphic >}}
+$$
+{\mathbf H}  \ket{\psi} = E \ket{\psi}
+$$
+{{< /graphic >}}

@@ -6,3 +6,13 @@
   
   20250320 Start this shortcode style.
 */
+
+.graphic-container {
+  background: #eee;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  left: calc(-0.01 * var(--height));
+  height: calc(0.64 * var(--height));
+  width: max(100%, calc(var(--width) - 100px));
+}
