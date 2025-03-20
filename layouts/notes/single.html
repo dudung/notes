@@ -1,7 +1,7 @@
 {{ define "main" }}
   <head>
     <link rel="stylesheet" href="/notes/css/notes.css?v={{ now.Unix }}">
-    <link rel="stylesheet" href="/notes/css/graphic.css?v={{ now.Unix }}">
+    <link rel="stylesheet" href="{{ "css/graphic.css" | relURL }}?v={{ now.Unix }}">
   </head>
   
   {{ partial "floating-menu.html" . }}

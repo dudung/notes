@@ -9,16 +9,16 @@
 {{ $angle := .Get "angle" | default "0" }}
 
 <style>
-#{{- $id -}}.equation {
-  left: {{ $left }};
-  top: {{ $top }};
-  width: {{ $width }};
-  height: {{ $height }};
-  border: {{ $borderwidth }} #4f81bd solid;
-  transform: rotate({{- $angle -}}deg);
+.equation#{{- $id -}} {
+  left: {{ $left }} !important;
+  top: {{ $top }} !important;
+  width: {{ $width }} !important;
+  height: {{ $height }} !important;
+  border: {{ $borderwidth }} #4f81bd solid !important;
+  transform: rotate({{ $angle }}deg) !important;
 }
 
-#{{- $id -}}.equation {
+.equation#{{- $id -}} {
   .katex, .katex-display {
     font-size: {{ $fontsize }} !important;
   }
