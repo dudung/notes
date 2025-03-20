@@ -53,7 +53,16 @@ Feature for dynamic size of all elements is cancelled. Concentrate only for arti
 Following are current result after resolving previous problems.
 
 {{< graphic >}}
-..
+  {{< canvas borderwidth="1px" left="40px" top="40px" >}}
+  {{< /canvas >}}
+  
+  {{< equation borderwidth="1px" left="20px" top="40px" >}}
+    ${\mathbf X}  \ket{\psi} = x \ket{\psi}$
+  {{< /equation >}}
+  
+  {{< equation borderwidth="1px" left="20px" top="40px" angle="90" >}}
+    ${\mathbf Y}  \ket{\psi} = y \ket{\psi}$
+  {{< /equation >}}
 {{< /graphic >}}
 
 
