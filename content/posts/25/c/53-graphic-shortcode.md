@@ -54,20 +54,29 @@ Following are current result after resolving previous problems.
 
 {{< graphic >}}
 
-{{< canvas left="40px" top="20px" borderwidth="1px" >}}
-xmin = 0;
-ymin = 0;
-xmax = 10;
-ymax = 25;
-fx = "(x - 5)**2";
+{{< canvas left="60px" top="20px" width="200px" height="200px" >}}
+tmin = 0
+tmax = 6.28
+nt = 101
+
+xmin = -1.01
+xmax = 1.01
+nx = 11
+
+ymin = -1.01
+ymax = 1.01
+ny = 11
+
+fx = "Math.sin(1*t)"
+fy = "Math.sin(2*t)"
 {{< /canvas >}}
-  
-{{< equation left="140px" top="220px" borderwidth="1px" >}}
-${\mathbf X}  \ket{\psi} = x \ket{\psi}$
+
+{{< equation left="140px" top="250px" >}}
+$x = \sin t$
 {{< /equation >}}
-  
-{{< equation left="-20px" top="110px" angle="-90" borderwidth="1px" >}}
-${\mathbf Y}  \ket{\psi} = y \ket{\psi}$
+
+{{< equation left="-10px" top="110px" angle="-90" >}}
+$y = \sin 2t$
 {{< /equation >}}
 
 {{< /graphic >}}
