@@ -1,8 +1,8 @@
 +++
-title = 'info damars 2025'
+title = 'info damars-2025'
 date = '2025-03-15T11:59:09+07:00'
 draft = false
-type = 'notes'
+type = 'slides'
 authors = ['viridi']
 tags = ['meeting']
 categories = ['damars']
