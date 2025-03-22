@@ -10,6 +10,7 @@ url = '25c40'
 +++
 
 {{< columns >}}
++ `22-mar-2025` Lit-stu-ai lecture.
 + `15-mar-2025` Divs working plan.
 + `14-mar-2025` Site alternatives.
 {{</ columns >}}
