@@ -1,5 +1,5 @@
 +++
-title = 'info damars-2025'
+title = 'damars-on-Medium'
 date = '2025-03-15T11:59:09+07:00'
 draft = false
 type = 'slides'
@@ -11,8 +11,8 @@ url = '25c40'
 
 {{< columns >}}
 + `22-mar-2025` Lit-stu-ai lecture.
-+ `15-mar-2025` Divs working plan.
-+ `14-mar-2025` Site alternatives.
++ `15-mar-2025` [`r3hvm`](https://osf.io/r3hvm) General meeting, divisions plan.
++ `14-mar-2025` [`f598v`](https://osf.io/f598v) Initial meeting, site alternatives.
 {{</ columns >}}
 
 {{< columns >}}
@@ -27,20 +27,3 @@ Archive for activities in 2025.
 + Tarman, Lukitaningsih, etc.
 + Publication on Medium https://medium.com/damars-id.
 + Workshop on literature review using AI.
-
-
-## site alternatives
-+ Online [85392863692](https://us02web.zoom.us/j/85392863692?pwd=xQILnJ6YZjabrQOKbUYWyV0rMsmG02m.1x).
-+ Amin, Viridi, Tarman.
-{{< details >}}
-- content: history of damars, organization profile, membership
-- links: IG, FB, YT
-- photos: selected events
-- problems: maintainer, admin, etc
-- lesson learn: BPPT with Perhimpunan Mikrobiologi Indonesia (unsettled employee paid by BPPT)
-- scenario: all content + photo + video in website, or partially in IG, GB, YT, or other than text in social media
-- archive: webinar (YT), photos (IG), etc
-- financial support: currently none
-- medium example https://medium.com/@6unpnp/damars-on-salak-hotel-b3f5c0e286f6
-{{< /details >}}
-
