@@ -9,21 +9,9 @@ categories = ['damars']
 url = '25c40'
 +++
 
-{{< columns >}}
-+ `22-mar-2025` Lit-stu-ai lecture.
-+ `15-mar-2025` [`r3hvm`](https://osf.io/r3hvm) General meeting, divisions plan.
++ `22-mar-2025` [`r2kpq`](https://osf.io/r2kpq) AI-assisted tools online workshop.
+{{< details >}}
+- Sparisoma Viridi, "AI-assisted literature review and data analysis for adacemics", Medium, 22 Mar 2025, url https://medium.com/p/bc15cb284624 [20250322].
+{{< /details >}}
++ `15-mar-2025` [`c4wky`](https://osf.io/c4wky) General meeting, divisions plan.
 + `14-mar-2025` [`f598v`](https://osf.io/f598v) Initial meeting, site alternatives.
-{{</ columns >}}
-
-{{< columns >}}
-{{</ columns >}}
-
-<!--more-->
-
-Archive for activities in 2025.
-
-## divs working plan
-+ Online [92188973215](https://ipb-university.zoom.us/j/92188973215?pwd=xLBxsGx7jzMvcI1b2xlooqnaCyJ8UZd.1x).
-+ Tarman, Lukitaningsih, etc.
-+ Publication on Medium https://medium.com/damars-id.
-+ Workshop on literature review using AI.
