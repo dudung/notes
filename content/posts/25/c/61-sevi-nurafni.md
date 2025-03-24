@@ -8,7 +8,7 @@ categories = ['users']
 url = '25c61'
 +++
 
-+ `25-mar-2025` [`osfio`](https://osf.io/) Offline meetup 2025.
++ `25-mar-2025` [`grpw3`](https://osf.io/grpw3) Offline meetup 2025.
 {{< details >}}
 + 1726 The OSF still can not be accessed.
 {{< /details >}}
