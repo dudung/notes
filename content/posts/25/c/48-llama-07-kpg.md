@@ -9,6 +9,7 @@ categories = ['llama']
 url = '25c48'
 +++
 
-+ `19-mar-2025` [`n8t6e`](https://osf.io/n8t6e) Plan to send signed docs.
++ `24-mar-2025` [`j2v6c`](https://osf.io/j2v6c) Upload scanned via admin.
++ `19-mar-2025` [`n8t6e`](https://osf.io/n8t6e) Send signed docs to kupang.
 + `18-mar-2025` [`hax6f`](https://osf.io/hax6f) Reimbursement submission.
 + `11-jan-2025` [`25a31`](http://dudung.github.io/notes/25a31/) Previous version of notes.
