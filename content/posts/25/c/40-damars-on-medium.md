@@ -9,6 +9,10 @@ categories = ['damars']
 url = '25c40'
 +++
 
++ `24-mar-2025` [osfio](https://osf.io/) Photos from damars-leader (bali, bogor).
+{{< details >}}
++ 1732 The OSF still can not be accessed.
+{{< /details >}}
 + `22-mar-2025` [`r2kpq`](https://osf.io/r2kpq) AI-assisted tools online workshop.
 {{< details >}}
 - Sparisoma Viridi, "AI-assisted literature review and data analysis for adacemics", Medium, 22 Mar 2025, url https://medium.com/p/bc15cb284624 [20250322].
