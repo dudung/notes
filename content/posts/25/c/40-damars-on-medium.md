@@ -9,7 +9,7 @@ categories = ['damars']
 url = '25c40'
 +++
 
-+ `24-mar-2025` [`osfio`](https://osf.io/) Photos from damars-leader (bali, bogor).
++ `24-mar-2025` [`ngjt6`](https://osf.io/ngjt6) Photos from damars-leader (bali, bogor).
 {{< details >}}
 + 1732 The OSF still can not be accessed.
 {{< /details >}}
