@@ -94,16 +94,16 @@ Current shortcode is a follow.
 {{</* /progresslist */>}}
 ```
 
-
-## to-do
-+ Apply CSS to style the appearance.
-+ Plan to use `flex` and `div` instead of `ul` and `li` to get better UX.
-
-
 ## notes
 + This shortcode is used to list all unfinished tasks and put it in article part of a note. Then in the slide part of the note is list of handled tasks for the day, since in one day there will be only limited energy to finish tasks and slide can only contain 10 lines without scrolling.
 + This note is not listed to today daily-note due to limiation above. 
 + Further modification of the shortcode will be reported in other note refering to this one.
+
+
+## to-do
++ Apply CSS to style the appearance.
++ Plan to use `flex` and `div` instead of `ul` and `li` to get better UX.
++ Use `notes` instead of `slide` for daily-note.
 
 
 ## refs
