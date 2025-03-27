@@ -1,7 +1,7 @@
 {{ $urls := slice }}
 {{ $states := slice }}
 
-{{ range split (strings.TrimSpace .Inner) "\n" }}
+{{ range split (trim .Inner " \n\r\t") "\n" }}
   {{ $parts := split . " | " }}
   {{ $urls = $urls | append (index $parts 0) }}
   {{ $states = $states | append (index $parts 1) }}
