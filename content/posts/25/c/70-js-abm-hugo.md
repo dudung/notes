@@ -121,6 +121,6 @@ Experiment with code is documented here.
 
 
 ## refs
-[^masduki_2025]: F. Masduki, "Private communication", Mar 2025.
+[^masduki_2025]: F. Masduki, P. M. Widartiningsih, S. Nurafni, "Private communication", Mar 2025.
 [^viridi_2018]: S. Viridi, F. Haryanto, "Agent-based Model and its Potential in Simulating Some Physical Systems", IOP Conference Series: Materials Science and Engineering, vol 599, no 1, p 012008, 2018, url http://doi.org/10.1088/1757-899X/599/1/012008.
 [^widartiningsih_2025]: P. M. Widartiningsih, M. I. R. Putra, D. P. P. Aji, A. N. F. Rudiawan, S. Viridi, "Experimental investigation of pile characteristics of non-spherical particles mixtures: pile height and angle of repose", Journal of Physics: Conference Series, vol 2243, no 1, p 012079, 2021, url http://doi.org/10.1088/1742-6596/2243/1/012079.
