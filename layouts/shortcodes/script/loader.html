@@ -1,5 +1,5 @@
 {{ $baseURL := site.BaseURL }}
-{{ range split .Inner "\n" }}
+{{ range split .Inner "\r\n" }}
   {{- $script := trim . " " -}}
   {{- if ne $script "" -}}
     <script src="{{ printf "%sjs/%s?v=1" $baseURL $script | relURL }}"></script>
