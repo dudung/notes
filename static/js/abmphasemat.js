@@ -243,7 +243,7 @@ function configure(cnt) {
 	sel.size = "9";
 	sel.style.height = (height + 2) + "px";
 	sel.style.float = "left";
-	for(var i = -4; i < 20; i++) {
+	for(var i = 0; i < 24; i++) {
 		var op = document.createElement("option");
 		op.text = i;
 		sel.append(op);
@@ -351,24 +351,24 @@ function initialize() {
 	switch(phase) {
 	
 	// Grid 1x1
-	case -4: probs = [pGra1]; break;
-	case -3: probs = [pGra2]; break;
-	case -2: probs = [pGra3]; break;
-	case -1: probs = [pGra4]; break;
-	case 0: probs = [pGra5]; break;
+	case 0: probs = [pGra1]; break;
+	case 1: probs = [pGra2]; break;
+	case 2: probs = [pGra3]; break;
+	case 3: probs = [pGra4]; break;
+	case 4: probs = [pGra5]; break;
     
-	case 1: probs = [pSol]; break;
-	case 2: probs = [pLiq]; break;
-	case 3: probs = [pGas]; break;
+	case 5: probs = [pSol]; break;
+	case 6: probs = [pLiq]; break;
+	case 7: probs = [pGas]; break;
 	
 	// Grid 2x2
-	case 4: 
+	case 8: 
 		probs = [
 			pSE, pSW,
 			pNE, pNW
 		];
 	break;
-	case 5: 
+	case 9: 
 		probs = [
 			pNW, pNE,
 			pSW, pSE
@@ -376,21 +376,21 @@ function initialize() {
 	break;
 	
 	// Grid 3x3
-	case 6: 
+	case 10: 
 		probs = [
 			pSE, pWE, pSW,
 			pNO, pIS, pSO,
 			pNE, pEA, pNW
 		];
 	break;
-	case 7: 
+	case 11: 
 		probs = [
 			pSE, pEA, pSW,
 			pSO, pIS, pNO,
 			pNE, pWE, pNW
 		];
 	break;
-	case 8: 
+	case 12: 
 		probs = [
 			pSW, pSO, pSW,
 			pEA, pIS, pWE,
@@ -399,7 +399,7 @@ function initialize() {
 	break;
 	
 	// Grid 4x4
-	case 9: 
+	case 13: 
 		probs = [
 			pNW, pNO, pNO, pNE,
 			pWE, pIS, pIS, pEA,
@@ -407,7 +407,7 @@ function initialize() {
 			pSW, pSO, pSO, pSE
 		];
 	break;
-	case 10: 
+	case 14: 
 		probs = [
 			pSE, pSO, pSO, pSW,
 			pWE, pIS, pIS, pEA,
@@ -415,7 +415,7 @@ function initialize() {
 			pNE, pNO, pNO, pNW
 		];
 	break;
-	case 11: 
+	case 15: 
 		probs = [
 			pSE, pNO, pNO, pSW,
 			pEA, pIS, pIS, pWE,
@@ -423,7 +423,7 @@ function initialize() {
 			pNE, pSO, pSO, pNW
 		];
 	break;
-	case 12: 
+	case 16: 
 		probs = [
 			pSE, pSO, pSO, pSW,
 			pEA, pIS, pIS, pWE,
@@ -431,7 +431,7 @@ function initialize() {
 			pNE, pNO, pNO, pNW
 		];
 	break;
-	case 13:
+	case 17:
 		probs = [
 			pNE, pEA, pEA, pSE,
 			pNO, pIS, pIS, pSO,
@@ -439,7 +439,7 @@ function initialize() {
 			pNW, pWE, pWE, pSW
 		];
 	break;
-	case 14: 
+	case 18: 
 		probs = [
 			pNE, pEA, pEA, pSE,
 			pNO, pNW, pNE, pSO,
@@ -447,7 +447,7 @@ function initialize() {
 			pNW, pWE, pWE, pSW
 		];
 	break;
-	case 15: 
+	case 19: 
 		probs = [
 			pNE, pSE, pSW, pNW,
 			pNO, pSO, pSO, pNO,
@@ -455,7 +455,7 @@ function initialize() {
 			pNW, pSW, pSE, pNE
 		];
 	break;
-	case 16: 
+	case 20: 
 		probs = [
 			pSW, pNW, pNE, pSE,
 			pSO, pNO, pNO, pSO,
@@ -465,7 +465,7 @@ function initialize() {
 	break;
 	
 	// Grid 5x5
-	case 17: 
+	case 21: 
 		probs = [
 			pNE, pSE, pIS, pNE, pSE,
 			pNO, pSO, pIS, pNO, pSO,
@@ -476,7 +476,7 @@ function initialize() {
 	break;
 	
 	// Grid 6x6
-	case 18: 
+	case 22: 
 		probs = [
 			pSE, pSO, pSW, pSE, pSO, pNW,
 			pEA, pIS, pWE, pEA, pIS, pWE,
@@ -486,7 +486,7 @@ function initialize() {
 			pIS, pIS, pIS, pNE, pNO, pNW
 		];
 	break;
-	case 19: 
+	case 23: 
 		probs = [
 			pSE, pSO, pSW, pSE, pSO, pNW,
 			pEA, pIS, pWE, pEA, pIS, pWE,

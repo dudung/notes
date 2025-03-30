@@ -16,7 +16,9 @@ accessed = '20250331'
 +++
 
 {{< columns >}}
-+ ui
++ result
++ code
++ experiment
 {{< /columns >}}
 
 {{< columns >}}
@@ -69,7 +71,7 @@ main();
 
 
 ## code
-For monodispersed granular materials (options -4 -- 0) following are the parameters
+For monodispersed granular materials (options 0 -- 4) following are the parameters
 
 ```js
 var pGra1 = [
@@ -111,7 +113,11 @@ var pGas = [
 ];
 ```
 
-for other monodispersed phases (options 1 -- 3).
+for other monodispersed phases (options 5 -- 7).
+
+
+## experiment
+Experiment with code is documented here.
 
 
 ## refs
