@@ -13,8 +13,8 @@
   font-size: 80%;
   background: #f4f4f4;
   border: 1px solid #ccc;
-  height: 80px;
-  width: 80px;
+  height: 96px;
+  width: 110px;
   scrollbar-color: #4f81bd #f1f1f1;
   scrollbar-width: thin;
   overflow: auto;
@@ -28,6 +28,8 @@
   scrollbar-color: #4f81bd #f1f1f1;
   scrollbar-width: thin;
   overflow: auto;
+  height: 3.5em;
+  padding-bottom: 1em;
 }
 
 .task-state {

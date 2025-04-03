@@ -12,9 +12,9 @@ url = '25d04'
 author = 'Sparisoma Viridi'
 title = 'tasklist shortcode'
 source = 'notes, 3 Apr 2025'
-updated = '-'
+updated = '(4 apr 2025)'
 url = 'https://dudung.github.io/notes/25d04/'
-accessed = '20250403'
+accessed = '20250404'
 +++
 
 {{< columns >}}
@@ -39,6 +39,7 @@ It is an evolution of previous shortcode [^viridi_2025], which only lists availa
 Following is the current result of this shortcode.
 
 {{< tasklist >}}
+25d06 | 1
 25d05 | 1
 25d04 | 1
 25d03 | 1
