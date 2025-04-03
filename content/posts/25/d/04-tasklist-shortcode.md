@@ -12,7 +12,7 @@ url = '25d04'
 author = 'Sparisoma Viridi'
 title = 'tasklist shortcode'
 source = 'notes, 3 Apr 2025'
-updated = '(4 apr 2025)'
+updated = '4 apr 2025'
 url = 'https://dudung.github.io/notes/25d04/'
 accessed = '20250404'
 +++
