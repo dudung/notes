@@ -1,0 +1,35 @@
+.task-list-container {
+  padding: 10px;
+  text-align: left;
+}
+
+.task {
+  border: 1px solid blue;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 4px 6px;
+  margin: 2px 0px;
+  word-break: break-all;
+  font-size: 80%;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  height: 80px;
+  width: 80px;
+  scrollbar-color: #4f81bd #f1f1f1;
+  scrollbar-width: thin;
+  overflow: auto;
+  line-height: 18.7px;
+}
+
+.task-url {
+}
+
+.task-title {
+  scrollbar-color: #4f81bd #f1f1f1;
+  scrollbar-width: thin;
+  overflow: auto;
+}
+
+.task-state {
+}
+
