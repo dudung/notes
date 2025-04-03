@@ -11,7 +11,7 @@ url = '25d04'
 [ref]
 author = 'Sparisoma Viridi'
 title = 'tasklist shortcode'
-source = 'notes, 4 Apr 2025'
+source = 'notes, 3 Apr 2025'
 updated = '-'
 url = 'https://dudung.github.io/notes/25d04/'
 accessed = '20250403'
@@ -34,6 +34,18 @@ accessed = '20250403'
 
 It is an evolution of previous shortcode [^viridi_2025], which only lists available unfinished tasks and shows only general information as overview.
 
+
+## results
+Following is the current result of this shortcode.
+
+{{< tasklist >}}
+25d05 | 1
+25d04 | 1
+25d03 | 1
+25d02 | 1
+25d01 | 1
+25d00 | 1
+{{< /tasklist >}}
 
 ## refs
 [^viridi_2025]: Sparisoma Viridi, "progress shortcode", notes, 27 Mar 2025, (-), url https://dudung.github.io/notes/25c65/ [20250327].

@@ -1,3 +1,7 @@
+{{ $styles := resources.Get "css/tasklist.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+
 {{ $urls := slice }}
 {{ $states := slice }}
 
@@ -7,16 +11,16 @@
   {{ $states = $states | append (index $parts 1) }}
 {{ end }}
 
-<ul>
+<div class="task-list-container">
   {{ range $i, $url := $urls }}
     {{ $matchedPages := where site.RegularPages "Params.url" $url }}
     {{ if gt (len $matchedPages) 0 }}
       {{ $page := index $matchedPages 0 }}
-      <li>
-        <a href="{{ $page.RelPermalink }}"><code>{{ $page.Params.url }}</code></a>
-        <code>{{ index $states $i }}</code>
-        &nbsp;{{ $page.Title }}
-      </li>
+      <div class="task">
+        <div class="task-url">{{ $page.Params.url }}</div>
+        <div class="task-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></div>
+        <div class="task-state"><code>{{ index $states $i }}</code></div>
+      </div>
     {{ end }}
   {{ end }}
-</ul>
+</div>
