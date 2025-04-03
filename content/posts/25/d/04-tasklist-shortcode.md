@@ -39,13 +39,13 @@ It is an evolution of previous shortcode [^viridi_2025], which only lists availa
 Following is the current result of this shortcode.
 
 {{< tasklist >}}
-25d06 | 1
-25d05 | 1
-25d04 | 1
-25d03 | 1
-25d02 | 1
-25d01 | 1
-25d00 | 1
+25d06 | 1 | 1
+25d05 | 1 | 0
+25d04 | 2 | 0
+25d03 | 1 | 1
+25d02 | 1 | 1
+25d01 | 4 | 1
+25d00 | 1 | 1
 {{< /tasklist >}}
 
 ## refs

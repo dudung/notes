@@ -3,12 +3,14 @@
 
 
 {{ $urls := slice }}
-{{ $states := slice }}
+{{ $updates := slice }}
+{{ $status := slice }}
 
 {{ range split (trim .Inner " \n\r\t") "\n" }}
   {{ $parts := split . " | " }}
   {{ $urls = $urls | append (index $parts 0) }}
-  {{ $states = $states | append (index $parts 1) }}
+  {{ $updates = $updates | append (index $parts 1) }}
+  {{ $status = $status | append (index $parts 2) }}
 {{ end }}
 
 <div class="task-list-container">
@@ -17,9 +19,17 @@
     {{ if gt (len $matchedPages) 0 }}
       {{ $page := index $matchedPages 0 }}
       <div class="task">
-        <div class="task-url">{{ $page.Params.url }}</div>
+        <div class="task-header">
+          <div class="task-url">{{ $page.Params.url }}</div>
+          <div class="task-date">{{ dateFormat "2-Jan-2006" $page.Params.date }}</div>
+        </div>
+        
         <div class="task-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></div>
-        <div class="task-state"><code>{{ index $states $i }}</code></div>
+        
+        <div class="task-footer">
+          <div class="task-updates"><code>{{ strings.Repeat (int (index $updates $i)) "▮" }}</code></div>
+          <div class="task-status">{{ (index $status $i) }}</div>
+        </div>
       </div>
     {{ end }}
   {{ end }}

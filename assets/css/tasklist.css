@@ -8,7 +8,7 @@
   border-radius: 8px;
   display: inline-block;
   padding: 4px 6px;
-  margin: 2px 0px;
+  margin: -1.5px 0px;
   word-break: break-all;
   font-size: 80%;
   background: #f4f4f4;
@@ -21,7 +21,16 @@
   line-height: 18.7px;
 }
 
+.task-header {
+  display: flex;
+}
+
 .task-url {
+  flex: 1;
+}
+
+.task-date {
+  flex: none;
 }
 
 .task-title {
@@ -32,6 +41,14 @@
   padding-bottom: 1em;
 }
 
-.task-state {
+.task-footer {
+  display: flex;
 }
 
+.task-updates {
+  flex: 1;
+}
+
+.task-status {
+  flex: none;
+}
