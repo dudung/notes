@@ -9,6 +9,8 @@ url = '25a21'
 +++
 <!--more-->
 
++ `14-feb-2025` [`9wgmb`](https://osf.io/9wgmb) CV for p2mi-multi-kk proposal.
++ `06-feb-2025` [`bjq7s`](https://osf.io/bjq7s) Revision of financial application.
 + `31-jan-2025` [`vm4zs`](https://osf.io/vm4zs) Proposal seminar perfomance.
 + `24-jan-2024` [`dwqkr`](https://osf.io/dwqkr) Seminar cancellation misinformation.
 + `17-jan-2025` [`8ndyp`](https://osf.io/8ndyp) Proposal seminar permission.

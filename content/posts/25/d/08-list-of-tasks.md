@@ -49,12 +49,13 @@ Following are tasks indicated as finished and unfinished, which might be used as
 25c46 | 1 | 1
 25c44 | 6 | 1
 25c28 | 9 | 2
+25a21 | 12 | 1
 {{< /tasklist >}}
 
 {{< tasklist >}}
 25c27 | 3 | 1
 25c26 | 3 | 1
-25c16 | 6 | 1
+25c16 | 7 | 1
 {{< /tasklist >}}
 
 {{< tasklist >}}
