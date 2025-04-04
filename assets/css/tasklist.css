@@ -13,7 +13,7 @@
   font-size: 80%;
   background: #f4f4f4;
   border: 1px solid #ccc;
-  height: 96px;
+  height:118px;
   width: 110px;
   scrollbar-color: #4f81bd #f1f1f1;
   scrollbar-width: thin;
@@ -39,7 +39,8 @@
   scrollbar-color: #4f81bd #f1f1f1;
   scrollbar-width: thin;
   overflow: auto;
-  height: 3.5em;
+  min-height: 3.6em;
+  max-height: 3.6em;
   padding-bottom: 1em;
 }
 
@@ -52,9 +53,12 @@
   letter-spacing: -2px;
   color: #4f81bd;
   font-family: monospace;
+  line-height: 0.94em;
 }
 
 .task-status {
   flex: none;
   font-family: monospace;
+  line-height: 0.9em;
+  padding-right: 2px;
 }

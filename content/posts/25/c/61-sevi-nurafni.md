@@ -1,6 +1,7 @@
 +++
 title = 'sevi nurafni'
 date = '2025-03-24T17:16:25+07:00'
+draft = false
 type = 'slides'
 authors = ['viridi']
 tags = ['volvox', 'computation', 'sk', 'sv']

@@ -48,8 +48,8 @@ Following are tasks indicated as finished and unfinished, which might be used as
 25c61 | 1 | 1
 25c46 | 1 | 1
 25c44 | 6 | 1
-25c28 | 9 | 2
-25a21 | 12 | 1
+25c28 | 9 | 2-
+25a21 | 13 | 1
 {{< /tasklist >}}
 
 {{< tasklist >}}

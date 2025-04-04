@@ -40,8 +40,8 @@ Following is the current result of this shortcode.
 
 {{< tasklist >}}
 25d07 | 1 | 1
-25d06 | 1 | 2
-25d05 | 1 | 1
+25d06 | 48 | 2
+25d05 | 20 | 1
 25d04 | 2 | 2
 25d03 | 1 | 2
 25d02 | 1 | 2
