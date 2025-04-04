@@ -27,7 +27,7 @@
         <div class="task-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></div>
         
         <div class="task-footer">
-          <div class="task-updates"><code>{{ strings.Repeat (int (index $updates $i)) "▮" }}</code></div>
+          <div class="task-updates">{{ strings.Repeat (int (index $updates $i)) "▮" }}</div>
           <div class="task-status">{{ (index $status $i) }}</div>
         </div>
       </div>

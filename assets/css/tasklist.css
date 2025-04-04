@@ -27,10 +27,12 @@
 
 .task-url {
   flex: 1;
+  font-family: monospace;
 }
 
 .task-date {
   flex: none;
+  font-family: monospace;
 }
 
 .task-title {
@@ -47,8 +49,12 @@
 
 .task-updates {
   flex: 1;
+  letter-spacing: -2px;
+  color: #4f81bd;
+  font-family: monospace;
 }
 
 .task-status {
   flex: none;
+  font-family: monospace;
 }
