@@ -39,6 +39,7 @@ It is an evolution of previous shortcode [^viridi_2025a], which only lists avail
 Following is the current result of this shortcode.
 
 {{< tasklist >}}
+25d07 | 1 | 1
 25d06 | 1 | 2
 25d05 | 1 | 1
 25d04 | 2 | 2
@@ -49,6 +50,8 @@ Following is the current result of this shortcode.
 {{< /tasklist >}}
 
 The status at lower right corner of each task can have value of 0 (not started), 1 (in progress), 2 (completed), where daily note should have 2 by the end of the day when it is created.
+
+For simplicity, updates show how many times a task has been further processed, with each consecutive processing separated by at least half a day.
 
 
 ## shortcode
