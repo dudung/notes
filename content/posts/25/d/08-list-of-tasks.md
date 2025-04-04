@@ -53,6 +53,7 @@ Following are tasks indicated as finished and unfinished, which might be used as
 {{< /tasklist >}}
 
 {{< tasklist >}}
+25d12 | 8 | 1 | y
 25d11 | 1 | 1
 25d10 | 3 | 1
 25d09 | 1 | 1
