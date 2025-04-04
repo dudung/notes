@@ -37,8 +37,7 @@ There is suggestion that whenever possible, use milestones or other progress ind
 
 
 ## tasks
-Following are tasks indicated as unfinished, which might be used as initial information for a daily note, a to-do list created daily, hat unfortunately has limitation of number of tasks every day. That is also the other reason in creating this shortcode.
-
+Following are tasks indicated as finished and unfinished, which might be used as initial information for a daily note, a to-do list created daily, hat unfortunately has limitation of number of tasks every day. That is also the other reason in creating this shortcode.
 
 {{< tasklist >}}
 25c32 | 7 | 1
@@ -72,10 +71,12 @@ Following are tasks indicated as unfinished, which might be used as initial info
 25c40 | 4 | 1
 {{< /tasklist >}}
 
-
 {{< tasklist >}}
 25d07 | 1 | 1
 {{< /tasklist >}}
+
+After a task is complete, it will have status of 2 in a daily note and then it will be excluded in the next day daily note in order to reduce number of displayed tasks. To trace it, just progate the daily notes.
+
 
 ## refs
 [^barten_2021]: Sebastien Berten, "The effects of Zeigarnik and Ovsyankina", US-Republic, 22 Jul 2021, url https://www.ux-republic.com/en/the-effects-of-zeigarnik-and-dovsyankina/ [20250404].
