@@ -41,21 +41,21 @@ Following are tasks indicated as finished and unfinished, which might be used as
 
 {{< tasklist >}}
 25c32 | 7 | 1
-25c12 | 7 | 1
+25c12 | 7 | 1 
 {{< /tasklist >}}
 
 {{< tasklist >}}
 25c61 | 1 | 1
 25c46 | 1 | 1
 25c44 | 6 | 1
-25c28 | 9 | 2-
-25a21 | 13 | 1
+25c28 | 9 | 2
+25a21 | 13 | 1 | y
 {{< /tasklist >}}
 
 {{< tasklist >}}
 25c27 | 3 | 1
 25c26 | 3 | 1
-25c16 | 7 | 1
+25c16 | 7 | 1 | y
 {{< /tasklist >}}
 
 {{< tasklist >}}
@@ -73,7 +73,7 @@ Following are tasks indicated as finished and unfinished, which might be used as
 {{< /tasklist >}}
 
 {{< tasklist >}}
-25d07 | 1 | 1
+25d07 | 1 | 1 | y
 {{< /tasklist >}}
 
 After a task is complete, it will have status of 2 in a daily note and then it will be excluded in the next day daily note in order to reduce number of displayed tasks. To trace it, just progate the daily notes.
