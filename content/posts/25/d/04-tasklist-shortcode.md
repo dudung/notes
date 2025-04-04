@@ -25,6 +25,7 @@ accessed = '20250404'
 {{< /columns >}}
 
 {{< columns >}}
++ notes
 + to-do
 + refs
 {{< /columns >}}
@@ -182,6 +183,11 @@ To use the shortcode put following lines
 in a Hugo post, or note in this repository.
 
 
+## notes
++ Suggestion about alternatives for the progress bar does not work well, since syntax for Hugo `strings.Repeat` uses wrong order of arguments [^gp4-4o_2025].
++ Solution is given on Hugo [strings.Repeat page](https://gohugo.io/functions/strings/repeat/).
+
+
 ## to-do
 + Post this note on Medium as story with topics of Hugo SSG, shortcodes, or other related terms or phrases.
 
@@ -189,3 +195,4 @@ in a Hugo post, or note in this repository.
 ## refs
 [^viridi_2025a]: Sparisoma Viridi, "progress shortcode", notes, 27 Mar 2025, (-), url https://dudung.github.io/notes/25c65/ [20250327].
 [^viridi_2025b]: Sparisoma Viridi, "post with long title just for testing vertical scrollbar in task-title in task", notes, 4 Apr 2025, (-), url https://dudung.github.io/notes/25d06/ [20250404].
+[^gp4-4o_2025]: GPT-4o, "Task Monitoring and Status", Chat GPT, 4 Apr 2025, url https://chatgpt.com/share/67ef2677-e934-800a-b17b-87d55f52e432 [20250404]
