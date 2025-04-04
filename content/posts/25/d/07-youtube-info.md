@@ -4,8 +4,8 @@ date = '2025-04-04T07:57:40+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['daily-notes']
-categories = ['to-do']
+tags = ['info']
+categories = ['youtube']
 url = '25d07'
 +++
 

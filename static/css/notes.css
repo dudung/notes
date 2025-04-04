@@ -639,3 +639,7 @@ ul.authors-container li.author:last-child::after {
   top: 8em;
   padding: 1em;
 }
+
+.center {
+  margin: auto;
+}
