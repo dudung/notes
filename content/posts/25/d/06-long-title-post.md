@@ -6,7 +6,7 @@ math = true
 type = 'notes'
 authors = ['viridi']
 tags = ['tasklist']
-categories = ['shortcode']
+categories = ['dummy']
 url = '25d06'
 [ref]
 author = 'Sparisoma Viridi'
