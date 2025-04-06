@@ -1,11 +1,11 @@
 +++
-title = 'html-css-on-medium'
+title = 'html-css on medium'
 date = '2025-04-06T23:02:00+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['medium']
-categoris = ['html-css']
+tags = ['html-css']
+categories = ['medium']
 url = '25d17'
 +++
 

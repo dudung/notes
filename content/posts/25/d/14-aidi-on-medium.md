@@ -1,11 +1,11 @@
 +++
-title = 'aidi-on-medium'
+title = 'aidi on medium'
 date = '2025-04-05T05:05:18+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['medium']
-categoris = ['aidi']
+tags = ['aidi']
+categories = ['medium']
 url = '25d14'
 +++
 
