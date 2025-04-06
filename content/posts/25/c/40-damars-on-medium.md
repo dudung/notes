@@ -1,10 +1,10 @@
 +++
-title = 'damars-on-Medium'
+title = 'damars-on-medium'
 date = '2025-03-15T11:59:09+07:00'
 draft = false
 type = 'slides'
 authors = ['viridi']
-tags = ['meeting']
+tags = ['medium']
 categories = ['damars']
 url = '25c40'
 +++
