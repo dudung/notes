@@ -199,3 +199,24 @@ html, body {
   font-size: calc(0.04 * var(--height));
   */
 }
+
+/* footer-left for tags */
+
+.tags-footer-left,
+.tags-footer-right {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.tags-footer-left li,
+.tags-footer-right li {
+  display: inline-block;
+}
+
+.tags-footer-left li:not(:last-child)::after,
+.tags-footer-right li:not(:last-child)::after {
+  content: ",";
+  margin-right: 0;
+}

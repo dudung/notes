@@ -38,13 +38,14 @@
     </div>
     
     <div class="slide-footer-left">
-    </div>
-    <div class="slide-footer-center">
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </div>    <div class="slide-footer-center">
       <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
         {{ .Date | time.Format "2006-01-02" }}
       </time>
     </div>
     <div class="slide-footer-right">
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
     </div>
   </div>
 
