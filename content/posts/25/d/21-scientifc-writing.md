@@ -1,5 +1,5 @@
 +++
-title = 'scientifc writing'
+title = 'scientific writing'
 subtitle = 'a short intro'
 date = '2025-04-08T06:26:56+07:00'
 draft = false
