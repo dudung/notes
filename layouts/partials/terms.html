@@ -10,7 +10,7 @@ For a given taxonomy, renders a list of terms assigned to the page.
 {{- $page := .page }}
 {{- $taxonomy := .taxonomy }}
 
-{{ if or (eq $page.Params.type "slides") (eq $page.Params.type "notes") }}
+{{ if or (eq $page.Params.type "slides") (eq $page.Params.type "notes") (eq $page.Params.type "talks") }}
   {{- with $page.GetTerms $taxonomy }}
     <ul class="tags-footer-left">
       {{- range . }}
