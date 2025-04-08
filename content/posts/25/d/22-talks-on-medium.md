@@ -8,3 +8,5 @@ tags = ['talks']
 categories = ['medium']
 url = '25d22'
 +++
+
++ `08-apr-2025` [`22250916eec3`](https://medium.com/p/22250916eec3) Scientific writing.
