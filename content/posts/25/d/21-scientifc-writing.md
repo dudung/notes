@@ -1,6 +1,6 @@
 +++
 title = 'scientific writing'
-subtitle = 'a short intro'
+subtitle = 'a little bit more than just a short intro'
 date = '2025-04-08T06:26:56+07:00'
 draft = false
 link = 'https://osf.io/yt2un'
