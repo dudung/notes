@@ -9,6 +9,7 @@ categories = ['users']
 url = '25c61'
 +++
 
++ `10-apr-2025` [`hkxu3`](https://osf.io/hkxu3) Discussion about abm.
 + `25-mar-2025` [`grpw3`](https://osf.io/grpw3) Offline meetup 2025.
 {{< details >}}
 + ~1726 The OSF still can not be accessed~.
