@@ -9,6 +9,10 @@ categories = ['medium']
 url = '25c40'
 +++
 
++ `12-apr-2025` [`gbq3d`](https://osf.io/gbq3d) Worshop on po-bkd in animal-sci, unja.
+{{< details >}}
++ [`fcdb034dc6b3`](https://medium.com/p/fcdb034dc6b3) Persamaan Persepsi Beban Kerja Dosen, delivered by Prof. Dr. Trina Ekawati Tallei, hosted by Prof. Dr. Ir. Hj. Nurhayati, M.Sc. agr.
+{{< /details >}}
 + `24-mar-2025` [`ngjt6`](https://osf.io/ngjt6) Photos from damars-leader (bali, bogor).
 {{< details >}}
 + 1732 The OSF still can not be accessed.
