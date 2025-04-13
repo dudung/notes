@@ -9,7 +9,8 @@ categories = ['llama']
 url = '25c49'
 +++
 
-+ `10-apr-2025` [`9mw5y`](https://osf.io/9mw5y) Archive of revision of pic.
++ `14-apr-2025` [`xhpuk`](https://osf.io/xhpuk) Submission of ak-rev-2.
++ `10-apr-2025` [`9mw5y`](https://osf.io/9mw5y) Archive of revision images.
 + `06-apr-2025` [`pkn6y`](https://osf.io/pkn6y) Revising of ak cycle-1.
 + `29-mar-2025` [`3nw2x`](https://osf.io/3nw2x) Finalization of ak on d-2.
 + `29-mar-2025` [`fbdtg`](https://osf.io/fbdtg) Processing of ak on d-1.
